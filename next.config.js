@@ -1,13 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  images: {
-    loader: 'akamai',
-    path: '',
-    unoptimized: true,
-  },
-  basePath: '',
-  assetPrefix: '',
-}
 
-module.exports = nextConfig
+const {withContentlayer} = require("next-contentlayer")
+
+const nextConfig = {
+    compiler:{
+        removeConsole: true,
+    }
+};
+
+module.exports = withContentlayer({ ...nextConfig });

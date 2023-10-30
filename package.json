@@ -1,55 +1,42 @@
 {
-  "name": "nextjs-prixite",
-  "version": "0.1.0",
+  "name": "Radii Labs",
+  "version": "0.9.5",
   "private": true,
-  "engines": {
-    "node": ">=16"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
-    "export": "next export",
-    "lint": "next lint && eslint && prettier --check .",
-    "fix": "prettier --write ."
+    "lint": "next lint"
   },
-  "pre-commit": [
-    "lint"
-  ],
   "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "^5.14.9",
-    "@mui/material": "^5.14.9",
-    "@sendgrid/mail": "^7.7.0",
-    "axios": "^1.5.0",
-    "gray-matter": "^4.0.3",
-    "markdown-it": "^13.0.1",
-    "markdown-to-jsx": "^7.3.2",
-    "next": "13.4.19",
-    "next-share": "^0.25.0",
-    "prismjs": "^1.29.0",
+    "@dotlottie/react-player": "^1.2.1",
+    "@supabase/auth-helpers-nextjs": "^0.7.4",
+    "@tailwindcss/forms": "^0.5.5",
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "10.4.15",
+    "contentlayer": "^0.3.4",
+    "date-fns": "^2.30.0",
+    "eslint": "8.48.0",
+    "eslint-config-next": "13.4.19",
+    "github-slugger": "^2.0.0",
+    "next": "13.5.4",
+    "next-contentlayer": "^0.3.4",
+    "next-sitemap": "^4.2.2",
+    "postcss": "8.4.31",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.11.0",
-    "react-slick": "^0.29.0",
-    "react-toastify": "^9.1.3",
-    "sass": "^1.67.0",
-    "slick-carousel": "^1.8.1",
-    "styled-components": "^6.0.8"
+    "react-hook-form": "^7.45.4",
+    "reading-time": "^1.5.0",
+    "rehype-autolink-headings": "^6.1.1",
+    "rehype-pretty-code": "^0.10.0",
+    "rehype-slug": "^5.1.0",
+    "remark-gfm": "^3.0.1",
+    "shiki": "^0.14.3",
+    "tailwindcss": "3.3.3"
   },
   "devDependencies": {
-    "@types/markdown-it": "^13.0.1",
-    "@types/node": "^20.6.2",
-    "@types/prismjs": "^1.26.0",
-    "@types/react": "^18.2.21",
-    "@types/react-slick": "^0.23.10",
-    "@typescript-eslint/eslint-plugin": "^6.7.0",
-    "eslint": "8.49.0",
-    "eslint-config-next": "13.4.19",
-    "eslint-config-prettier": "^9.0.0",
-    "pre-commit": "^1.2.2",
-    "prettier": "^3.0.3",
-    "typescript": "^5.2.2"
+    "encoding": "^0.1.13",
+    "sharp": "^0.32.5"
   }
 }

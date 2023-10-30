@@ -1,53 +1,89 @@
-## Background
+# Next.js 13 Blog Tutorial: Build SEO Optimized Personal Blog with Next.js, Contentlayer, and Tailwind CSS 🔥
 
-This repository is used to hold the code for the website of [Prixite](https://prixite.com). Prixite is a leading software development company of Pakistan. It has offices in Lahore, Pakistan and Wyoming, USA.
+![GitHub stars](https://img.shields.io/github/stars/codebucks27/Nextjs-tailwindcss-blog-template?style=social&logo=ApacheSpark&label=Stars)&nbsp;&nbsp;
+![GitHub forks](https://img.shields.io/github/forks/codebucks27/Nextjs-tailwindcss-blog-template?style=social&logo=KashFlow&maxAge=3600)&nbsp;&nbsp;
+![Github Followers](https://img.shields.io/github/followers/codebucks27.svg?style=social&label=Follow)&nbsp;&nbsp;<br />
 
-This repository can also be used as a starter template for a Next.js project. The code in this repository is freely distributed.
+For Demo checkout following links👇: <br />
+[Nextjs Personal Blog Website](https://create-blog-with-nextjs.vercel.app/) <br />
 
-Some interesting things you can learn from this template:
+Starter Code Files👇: <br />
+[Nextjs Personal Blog Website Starter Code](https://github.com/codebucks27/Nextjs-contentlayer-blog) <br />
 
-- Deployment of Next.js static website to Github Pages.
-- Github Workflows
-- CI/CD pipeline setup
-- TypeScript with React.js and Next.js
-- Integration of linters and formatters.
+If you want to learn how to create it please follow below tutorial👇: <br />
+https://youtu.be/1QGLHOaRLwM <br />
+[![YouTube Video Views](https://img.shields.io/youtube/views/1QGLHOaRLwM?style=social)](https://youtu.be/1QGLHOaRLwM)<br />
 
-You can also use this template to create and host a free website on [Github Pages](https://pages.github.com/) or any other static website host. Advantages of a static website:
+Checkout My Personal blog: [DevDreaming](https://devdreaming.com/)<br />
 
-- Speed 🚀
-- Security 🛡️
-- Scalability 🙌
 
-## Requirements:
+### ⭐DO NOT FORGET TO STAR THIS REPO⭐
 
-Node: >=16
+### Images of The Portfolio Website:
+
+#### Home
+![Nextjs Personal Blog Website](https://github.com/codebucks27/Nextjs-contentlayer-blog/blob/main/project%20images/Home-Big.png?raw=true)
+
+#### About
+![Nextjs Personal Blog Website About Page](https://github.com/codebucks27/Nextjs-contentlayer-blog/blob/main/project%20images/About-Big.png?raw=true)
+
+#### Contact
+![Next.js Personal Blog Website Contact Page](https://github.com/codebucks27/Nextjs-contentlayer-blog/blob/main/project%20images/Cotnact-Big.png?raw=true)
+
+For more Images please check the [project images](https://github.com/codebucks27/Nextjs-contentlayer-blog/tree/main/project%20images) folder from this repo or check the demo link. 
+
+### Resources Used in This Project
+
+- Character image in the About page created by using [Bing Search[(https://www.bing.com/).
+- Lottie animation in the contact page: [from here](https://lottiefiles.com/animations/sloth-meditate-SzNofNFhYY)
+- Fonts from https://fonts.google.com/ <br />
+- Icons from https://iconify.design/ <br />
+
+### All the images used in the blogs:
+- Photo by <a href="https://unsplash.com/@kmuza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Carlos Muza</a> on <a href="https://unsplash.com/photos/hpjSkU2UYSU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Photo by <a href="https://unsplash.com/@marvelous?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marvin Meyer</a> on <a href="https://unsplash.com/photos/SYTO3xs06fU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Photo by <a href="https://unsplash.com/@pinjasaur?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Paul Esch-Laurent</a> on <a href="https://unsplash.com/photos/oZMUrWFHOB4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Photo by <a href="https://unsplash.com/@kellysikkema?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kelly Sikkema</a> on <a href="https://unsplash.com/photos/-1_RZL8BGBM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Photo by <a href="https://unsplash.com/@laurenmancke?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lauren Mancke</a> on <a href="https://unsplash.com/photos/aOC7TSLb1o8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Photo by <a href="https://unsplash.com/@lucabravo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Luca Bravo</a> on <a href="https://unsplash.com/photos/XJXWbfSo2f0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Photo by <a href="https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christina @ wocintechchat.com</a> on <a href="https://unsplash.com/photos/OtHEYbQXLFU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Photo by <a href="https://unsplash.com/@cdx2?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">C D-X</a> on <a href="https://unsplash.com/photos/PDX_a_82obo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">charlesdeluvio</a> on <a href="https://unsplash.com/photos/cZr2sgaxy3Q?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Photo by <a href="https://unsplash.com/@emilep?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Emile Perron</a> on <a href="https://unsplash.com/photos/xrVDYZRGdw4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Photo by <a href="https://unsplash.com/@synkevych?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Roman Synkevych</a> on <a href="https://unsplash.com/photos/vXInUOv1n84?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, Create an environment file (.env) in the root of the project. You can get the initial file by copying env.sample to .env
-
-Second, run the development server:
+First, run the development server:
 
 ```bash
-npm install
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Contributing
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-See [CONTRIBUTING.md](https://github.com/prixite/prixite.github.io/blob/master/CONTRIBUTING.md) on how to contribute to this project.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Future Plan
+## Learn More
 
-We would like to reach to a place where anyone can fork this template, make few changes, and create a free website. For this to happen, following needs to happen:
+To learn more about Next.js, take a look at the following resources:
 
-- All text should be read from markdown files.
-- User interface can be changed easily.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## License
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-The MIT License (MIT)
+## Deploy on Vercel
 
-The data folder and logo of Prixite are the property of [Prixite](https://prixite.com/). The rest of the stuff in this repo can be used freely.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
