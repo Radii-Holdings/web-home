@@ -1,6 +1,6 @@
 {
-  "name": "Radii Labs",
-  "version": "0.9.5",
+  "name": "developer-blog-starter-code",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
