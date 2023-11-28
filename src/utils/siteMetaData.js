@@ -1,20 +1,20 @@
 // please update required information
 const siteMetadata = {
-    title: 'Next.js Blog With Tailwind CSS and Contentlayer',
+    title: 'Radii Labs | Making Machines humane',
     author: 'CodeBucks',
-    headerTitle: 'Next.js Blog',
+    headerTitle: 'Making Machines humane',
     description: 'A blog created with Next.js, Tailwind.css and contentlayer.',
     language: 'en-us',
     theme: 'system', // system, dark or light
-    siteUrl: 'https://create-blog-with-nextjs.vercel.app', // your website URL
+    siteUrl: 'https://www.radii.in', // your website URL
     siteLogo: '/logo.png',
     socialBanner: '/social-banner.png', // add social banner in the public folder
-    email: 'codebucks27@gmail.com', 
-    github: 'https://github.com/codebucks27',
-    twitter: 'https://twitter.com/code_bucks',
-    facebook: 'https://facebook.com',
-    youtube: 'https://youtube.com/codebucks',
-    linkedin: 'https://www.linkedin.com/in/codebucks/',
+    email: 'sales4radii@gmail.com', 
+    github: 'https://github.com/radiilab',
+    twitter: 'https://twitter.com/LabRadii',
+    facebook: 'https://www.facebook.com/radiilab',
+    youtube: 'https://youtube.com/',
+    linkedin: 'https://www.linkedin.com/company/radii-lab',
     dribbble: 'https://www.dribbble.com',
     locale: 'en-US',
   }
