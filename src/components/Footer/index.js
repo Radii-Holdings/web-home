@@ -13,7 +13,7 @@ const Footer = () => {
   } = useForm();
   const onSubmit = async (data) => {
   try {
-    const res = await fetch('https://api.resend.com/emails', {
+    const res = await fetch('/api/subscribe', {
       method: 'POST',
   
       body: JSON.stringify(data),
