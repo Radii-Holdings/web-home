@@ -3,16 +3,29 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { DribbbleIcon, GithubIcon, LinkedinIcon, TwitterIcon } from "../Icons";
 import Link from "next/link";
-import siteMetadata from "@/src/utils/siteMetaData";
-
+import siteMetadata from "../../utils/siteMetaData";
+import { toast } from "react-hot-toast";
 const Footer = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
-  console.log(errors);
+  const onSubmit = async (data) => {
+  try {
+    const res = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+  
+      body: JSON.stringify(data),
+    });
+    if (res.status === 200) {
+      toast.success('You have successfully subscribed to our newsletters')
+    }
+  }
+ catch (error) {
+    console.log(error);
+  }
+}
 
   return (
     <footer className="mt-16 rounded-2xl bg-dark dark:bg-accentDark/90 m-2 sm:m-10 flex flex-col items-center text-light dark:text-dark">
