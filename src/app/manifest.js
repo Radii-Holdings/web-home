@@ -1,8 +1,8 @@
 export default function manifest() {
     return {
-      name: 'Next.js App',
-      short_name: 'Next.js App',
-      description: 'Next.js App',
+      name: 'Radii Lab | Making Machines humane',
+      short_name: 'Radii Lab | Making Machines humane',
+      description: 'Radii Lab | Making Machines humane',
       start_url: '/',
       display: 'standalone',
     //   background_color: '#fff',
