@@ -90,7 +90,7 @@ const Footer = () => {
 
       <div className="w-full  mt-16 md:mt-24 relative font-medium border-t border-solid border-light py-6 px-8 flex  flex-col md:flex-row items-center justify-between">
         <span className="text-center">
-          &copy;2023 CodeBucks. All rights reserved.
+          &copy;2023 Radii Lab. All rights reserved.
         </span>
         <Link
           href="/sitemap.xml"
@@ -101,7 +101,7 @@ const Footer = () => {
         <div className="text-center">
           Made with &hearts; by{" "}
           <a href="https://devdreaming.com" className="underline" target="_blank">
-            CodeBucks
+          Radii Lab
           </a>
         </div>
       </div>
