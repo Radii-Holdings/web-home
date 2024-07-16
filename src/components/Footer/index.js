@@ -100,7 +100,7 @@ const Footer = () => {
         </Link>
         <div className="text-center">
           Made with &hearts; by{" "}
-          <a href="https://devdreaming.com" className="underline" target="_blank">
+          <a href="https://github.com/Radii-Holdings" className="underline" target="_blank">
           Radii Lab
           </a>
         </div>
