@@ -11,7 +11,7 @@ export async function POST(
 ) {
     const body = await req.json();
     const response = resend.emails.send({
-        from: 'notify-noReply@radii.in',
+        from: 'onboarding@resend.dev',
         to: body?.email,
         subject: 'You are successfully subscribed to our newsletter',
         react: EmailTemplate({ firstName: body?.email }),
