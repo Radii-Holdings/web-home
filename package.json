@@ -15,6 +15,7 @@
     "@tailwindcss/forms": "^0.5.5",
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "10.4.15",
+    "bufferutil": "^4.0.9",
     "contentlayer": "^0.3.4",
     "date-fns": "^2.30.0",
     "eslint": "8.48.0",
@@ -35,7 +36,8 @@
     "remark-gfm": "^3.0.1",
     "resend": "^2.0.0",
     "shiki": "^0.14.3",
-    "tailwindcss": "3.3.3"
+    "tailwindcss": "3.3.3",
+    "utf-8-validate": "^6.0.5"
   },
   "devDependencies": {
     "@types/react": "18.2.39",
