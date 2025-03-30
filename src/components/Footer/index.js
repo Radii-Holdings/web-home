@@ -32,27 +32,58 @@ const Footer = () => {
       <h3 className="mt-16 font-medium dark:font-bold text-center capitalize text-2xl sm:text-3xl lg:text-4xl px-4">
         Interesting Stories | Updates | Guides
       </h3>
-      <p className="mt-5 px-4 text-center w-full sm:w-3/5 font-light dark:font-medium text-sm sm:text-base">
-        Subscribe to learn about new technology and updates. Join over 5000+
-        members community to stay up to date with latest news.
-      </p>
 
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        className="mt-6 w-fit sm:min-w-[384px] flex items-stretch bg-light dark:bg-dark p-1 sm:p-2 rounded mx04"
-      >
-        <input
-          type="email"
-          placeholder="Enter your email"
-          {...register("email", { required: true, maxLength: 80 })}
-          className="w-full bg-transparent pl-2 sm:pl-0 text-dark focus:border-dark focus:ring-0 border-0 border-b mr-2 pb-1"
-        />
 
-        <input
-          type="submit"
-          className="bg-dark text-light dark:text-dark dark:bg-light cursor-pointer font-medium rounded px-3 sm:px-5 py-1"
-        />
-      </form>
+      <div className="mt-6 w-full sm:w-3/5 px-4 py-6 bg-light dark:bg-dark rounded-lg shadow-lg">
+        <h4 className="text-lg font-medium text-dark dark:text-light mb-4">
+          Latest Posts
+        </h4>
+        <div id="substack-feed-embed" className="space-y-4">
+          {React.useEffect(() => {
+        const script1 = document.createElement("script");
+        script1.innerHTML = `
+          window.SubstackFeedWidget = {
+            substackUrl: "radiilab.substack.com",
+            posts: 3,
+          };
+        `;
+        document.body.appendChild(script1);
+
+        const script2 = document.createElement("script");
+        script2.src = "https://substackapi.com/embeds/feed.js";
+        script2.async = true;
+        document.body.appendChild(script2);
+
+        return () => {
+          document.body.removeChild(script1);
+          document.body.removeChild(script2);
+        };
+          }, [])}
+        </div>
+      </div>      
+          <p className="mt-5 px-4 text-center w-full sm:w-3/5 font-light dark:font-medium text-sm sm:text-base">
+            Subscribe to learn about new developments and updates. Join us as one of our
+            <span className="font-medium dark:font-bold"> 100+ </span>
+            subscribers and get the latest updates in your inbox.
+            <br /> It's FREE ...
+          </p>
+      <div className="mt-6 w-fit sm:min-w-[384px] flex items-stretch bg-light dark:bg-dark p-1 sm:p-2 rounded mx04">
+        <iframe
+          src="https://radiilab.substack.com/embed"
+          style={{
+            border: "1px solid transparent",
+            background: "inherit",
+            color: "inherit",
+            borderRadius: "8px",
+            width: "100%",
+            height: "100%",
+          }}
+          frameBorder="0"
+          scrolling="no"
+          title="Substack Embed"
+        ></iframe>
+      </div>
+
       <div className="flex items-center mt-8">
         <a
           href={siteMetadata.linkedin}
