@@ -1,8 +1,9 @@
 export default function manifest() {
     return {
-      name: 'Radii Lab | Making Machines humane',
-      short_name: 'Radii Lab | Making Machines humane',
-      description: 'Radii Lab | Making Machines humane',
+      name: 'Radii Lab | Quantitative Research Holding Firm with actionable insights',
+      short_name: 'Radii Lab | Quantitative Research Holding Firm ',
+      description: 'Semi Automated Quantitative Research for the Digital Age',
+      theme_color: '#fff',
       start_url: '/',
       display: 'standalone',
     //   background_color: '#fff',

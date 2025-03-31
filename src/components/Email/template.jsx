@@ -6,6 +6,6 @@ export const EmailTemplate = ({
 }) => (
   <div>
     <h1>Welcome to Radii School of Thoughts, {firstName}!</h1>
-    <a href='https://www.radii.in/'>Making Machines Humane</a>
+    <a href='https://www.radii.in/'>Quantitative Research Holding Firm with actionable insights</a>
   </div>
 );

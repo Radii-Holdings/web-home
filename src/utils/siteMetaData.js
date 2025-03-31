@@ -1,8 +1,8 @@
 // please update required information
 const siteMetadata = {
-    title: 'Radii Labs | Making Machines humane',
+    title: 'Radii Labs | Quantitative Research Holding Firm with actionable insights',
     author: 'Radii Lab',
-    headerTitle: 'Making Machines humane',
+    headerTitle: 'Quantitative Research Holding Firm with actionable insights',
     description: 'A blog created with Next.js, Tailwind.css and contentlayer.',
     language: 'en-us',
     theme: 'system', // system, dark or light
