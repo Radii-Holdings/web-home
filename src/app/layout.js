@@ -5,6 +5,8 @@ import Header from "@/src/components/Header";
 import Footer from "../components/Footer";
 import siteMetadata from "../utils/siteMetaData";
 import Script from "next/script";
+import TelegramButton from "@/src/components/TelegramButton";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -73,6 +75,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <TelegramButton /> {/* Add the Telegram button here */}
       </body>
     </html>
   );
