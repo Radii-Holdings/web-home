@@ -8,8 +8,36 @@ export default function ContactForm() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = async (data) => {
+    data.preventDefault();
+    setStatus('Submitting...');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: data,
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setStatus('Message sent successfully!');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setStatus(result.error || 'Failed to send message.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setStatus('An error occurred. Please try again.');
+    }
+  };
   console.log(errors);
+
+
+  
 
   return (
     <form
@@ -31,12 +59,12 @@ export default function ContactForm() {
       <input
         type="tel"
         placeholder="your phone"
-        {...register("phone number", {})}
+        {...register("phone_number", {})}
         className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
         focus:border-gray bg-transparent"
       />
       Here are some details about my work: <br />
-      <textarea {...register("project details", {})} 
+      <textarea {...register("project_details", {})} 
       placeholder="My project is about..."
       rows={3}
       className="w-full outline-none border-0 p-0 mx-0 focus:ring-0  placeholder:text-lg border-b border-gray 
