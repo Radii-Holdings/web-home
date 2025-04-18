@@ -8,30 +8,57 @@ export default function ContactForm() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = async (data) => {
-    data.preventDefault();
-    setStatus('Submitting...');
+  // const [status, setStatus] = useState('');
+  // const onSubmit = async (data) => {
+  //   try {
+  //     const response = await fetch('/api/contact', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify(data),
+  //     });
 
+  //     const result = await response.json();
+
+  //     if (response.ok) {
+  //       console.log('Message sent successfully:', result);
+  //       alert('Your message has been sent successfully!');
+  //       // Optionally, reset the form or redirect the user
+  //       // reset();
+  //     } else {
+  //       console.error('Failed to send message:', result.error || 'Unknown error');
+  //       alert('Failed to send your message. Please try again.');
+  //     }
+  //   } catch (error) {
+  //     console.error('Error submitting form:', error);
+  //     alert('An error occurred. Please try again.');
+  //   }
+  // };
+  const onSubmit = async (data) => {
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: data,
+        body: JSON.stringify(data),
       });
 
       const result = await response.json();
 
       if (response.ok) {
-        setStatus('Message sent successfully!');
-        setFormData({ name: '', email: '', message: '' });
+        console.log('Message sent successfully:', result);
+        alert('Your message has been sent successfully!');
+        // Optionally, reset the form or redirect the user
+        // reset();
       } else {
-        setStatus(result.error || 'Failed to send message.');
+        console.error('Failed to send message:', result.error || 'Unknown error');
+        alert('Failed to send your message. Please try again.');
       }
     } catch (error) {
       console.error('Error submitting form:', error);
-      setStatus('An error occurred. Please try again.');
+      alert('An error occurred. Please try again.');
     }
   };
   console.log(errors);
