@@ -1,68 +1,50 @@
 "use client";
-import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import React, { useEffect, useState } from "react";
 
-const supabase = createClientComponentClient();
-
-const ViewCounter = ({ slug, noCount = false, showCount = true }) => {
+const ViewCounter = ({ slug }) => {
   const [views, setViews] = useState(0);
 
   useEffect(() => {
-    const incrementView = async () => {
+    const fetchViews = async () => {
       try {
-        let { error } = await supabase.rpc("increment", {
-          slug_text:slug ,
+        const response = await fetch(`/api/views?slug=${slug}`);
+        const data = await response.json();
+
+        if (response.ok) {
+          setViews(data.views);
+        } else {
+          console.error('Error fetching views:', data.error);
+        }
+      } catch (error) {
+        console.error('Error fetching views:', error);
+      }
+    };
+
+    const incrementViews = async () => {
+      try {
+        const response = await fetch('/api/views', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ slug }),
         });
 
-        if (error){
-            console.error("Error incrementing view count inside try block:", error)
-        };
-        
+        const data = await response.json();
+
+        if (!response.ok) {
+          console.error('Error incrementing views:', data.error);
+        }
       } catch (error) {
-        console.error(
-          "An error occurred while incrementing the view count:",
-          error
-        );
+        console.error('Error incrementing views:', error);
       }
     };
 
-    if(!noCount){
-        incrementView();
-    }
-  }, [slug, noCount]);
-
-  useEffect(() => {
-    const getViews = async () => {
-      try {
-        let { data, error } = await supabase
-  .from('views')
-  .select('count')
-  .match({slug: slug})
-  .single()
-
-        if (error){
-            console.error("Error incrementing view count inside try block:", error)
-        };
-
-
-        setViews(data ? data.count : 0)
-        
-      } catch (error) {
-        console.error(
-          "An error occurred while incrementing the view count:",
-          error
-        );
-      }
-    };
-
-        getViews();
+    fetchViews();
+    incrementViews();
   }, [slug]);
 
-  if (showCount) {
-    return <div>{views} views</div>;
-  } else {
-    return null;
-  }
+  return <div>{views} views</div>;
 };
 
 export default ViewCounter;
