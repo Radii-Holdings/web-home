@@ -3,7 +3,7 @@ import React from "react";
 const TelegramButton = () => {
   return (
     <a
-      href="https://t.me/Radiilab" // Replace with your Telegram link
+      href="https://www.radii.in/about" // Replace with your Telegram link
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center shadow-lg hover:bg-blue-600 transition-all"
