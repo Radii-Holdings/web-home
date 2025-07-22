@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-hot-toast";
 
 export default function ContactForm() {
   const {
@@ -8,33 +9,6 @@ export default function ContactForm() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  // const [status, setStatus] = useState('');
-  // const onSubmit = async (data) => {
-  //   try {
-  //     const response = await fetch('/api/contact', {
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //       },
-  //       body: JSON.stringify(data),
-  //     });
-
-  //     const result = await response.json();
-
-  //     if (response.ok) {
-  //       console.log('Message sent successfully:', result);
-  //       alert('Your message has been sent successfully!');
-  //       // Optionally, reset the form or redirect the user
-  //       // reset();
-  //     } else {
-  //       console.error('Failed to send message:', result.error || 'Unknown error');
-  //       alert('Failed to send your message. Please try again.');
-  //     }
-  //   } catch (error) {
-  //     console.error('Error submitting form:', error);
-  //     alert('An error occurred. Please try again.');
-  //   }
-  // };
   const onSubmit = async (data) => {
     try {
       const response = await fetch('/api/contact', {
@@ -49,16 +23,16 @@ export default function ContactForm() {
 
       if (response.ok) {
         console.log('Message sent successfully:', result);
-        alert('Your message has been sent successfully!');
+        toast.success('Your message has been sent successfully!');
         // Optionally, reset the form or redirect the user
         // reset();
       } else {
         console.error('Failed to send message:', result.error || 'Unknown error');
-        alert('Failed to send your message. Please try again.');
+        toast.error('Failed to send your message. Please try again.');
       }
     } catch (error) {
       console.error('Error submitting form:', error);
-      alert('An error occurred. Please try again.');
+      toast.error('An error occurred. Please try again.');
     }
   };
   console.log(errors);
