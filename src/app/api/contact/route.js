@@ -21,7 +21,7 @@ export async function POST(req) {
     // Send email using Resend
     const response = await resend.emails.send({
       from: 'Acme <onboarding@resend.dev>', // Replace with your verified sender email
-      to: 'adysenlab@gmail.com', // Your email address
+      to: 'info@radii.in', // Your email address
       subject: `New Contact Form Submission from ${body.name}`,
       html: `
         <h1>Contact Form Submission</h1>
