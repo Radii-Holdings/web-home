@@ -18,6 +18,6 @@ const siteMetadata = {
     linkedin: 'https://www.linkedin.com/company/radii-lab',
     // dribbble: 'https://www.dribbble.com',
     locale: 'en-US',
-  }
-  
-  module.exports = siteMetadata
+}
+
+export default siteMetadata
