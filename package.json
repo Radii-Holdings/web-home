@@ -5,12 +5,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@dotlottie/react-player": "^1.2.1",
+    "@opennextjs/cloudflare": "^1.5.3",
     "@supabase/auth-helpers-nextjs": "^0.7.4",
     "@tailwindcss/forms": "^0.5.5",
     "@tailwindcss/typography": "^0.5.9",
@@ -19,14 +23,13 @@
     "contentlayer": "^0.3.4",
     "date-fns": "^2.30.0",
     "eslint": "8.48.0",
-    "eslint-config-next": "13.4.19",
     "github-slugger": "^2.0.0",
-    "next": "13.5.4",
+    "next": "^14.2.30",
     "next-contentlayer": "^0.3.4",
     "next-sitemap": "^4.2.2",
     "postcss": "8.4.31",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-hook-form": "^7.45.4",
     "react-hot-toast": "^2.4.1",
     "reading-time": "^1.5.0",
@@ -42,6 +45,8 @@
   "devDependencies": {
     "@types/react": "18.2.39",
     "encoding": "^0.1.13",
-    "sharp": "^0.32.5"
+    "eslint-config-next": "^14.2.30",
+    "sharp": "^0.32.5",
+    "wrangler": "^4.25.1"
   }
 }
