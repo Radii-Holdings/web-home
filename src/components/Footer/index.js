@@ -65,7 +65,7 @@ const Footer = () => {
             Subscribe to learn about new developments and updates. Join us as one of our
             <span className="font-medium dark:font-bold"> 100+ </span>
             subscribers and get the latest updates in your inbox.
-            <br /> It's FREE ...
+            <br /> It&apos;s FREE ...
           </p>
       <div className="mt-6 w-fit sm:min-w-[384px] flex items-stretch bg-light dark:bg-dark p-1 sm:p-2 rounded mx04">
         <iframe

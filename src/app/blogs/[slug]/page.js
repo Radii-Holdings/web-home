@@ -2,7 +2,7 @@ import BlogDetails from "@/src/components/Blog/BlogDetails";
 import RenderMdx from "@/src/components/Blog/RenderMdx";
 import Tag from "@/src/components/Elements/Tag";
 import siteMetadata from "@/src/utils/siteMetaData";
-import { allBlogs } from "contentlayer/generated";
+import { allBlogs } from "contentlayer2/generated";
 import { slug } from "github-slugger";
 import Image from "next/image";
 
@@ -11,7 +11,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const blog = allBlogs.find((blog) => blog._raw.flattenedPath === params.slug);
+  const { slug: slugParam } = await params;
+  const blog = allBlogs.find((blog) => blog._raw.flattenedPath === slugParam);
   if (!blog) {
     return;
   }
@@ -56,8 +57,9 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function BlogPage({ params }) {
-  const blog = allBlogs.find((blog) => blog._raw.flattenedPath === params.slug);
+export default async function BlogPage({ params }) {
+  const { slug: slugParam } = await params;
+  const blog = allBlogs.find((blog) => blog._raw.flattenedPath === slugParam);
 
   let imageList = [siteMetadata.socialBanner];
   if (blog.image) {
@@ -115,7 +117,7 @@ export default function BlogPage({ params }) {
           sizes="100vw"
         />
       </div>
-      <BlogDetails blog={blog} slug={params.slug} />
+      <BlogDetails blog={blog} slug={slugParam} />
 
       <div className="grid grid-cols-12  gap-y-8 lg:gap-8 sxl:gap-16 mt-8 px-5 md:px-10">
         <div className="col-span-12  lg:col-span-4">

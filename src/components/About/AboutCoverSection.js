@@ -18,7 +18,7 @@ const AboutCoverSection = () => {
             Fusion of Power and Vitality. 
             </h2>
             <p className='font-medium capitalize mt-4 text-base'>
-            We Symbolize strength, power and freedom, blending the eagle's courage with the Yiking's energetic rhythm.
+            We Symbolize strength, power and freedom, blending the eagle&apos;s courage with the Yiking&apos;s energetic rhythm.
             It also represents balance, harmony and spritual connection, reflecting growth and embracing unique energy and sprirt.
             </p>
         </div>
