@@ -8,4 +8,8 @@ updates:
   - package-ecosystem: 'npm' # See documentation for possible values
     directory: '/' # Location of package manifests
     schedule:
-      interval: 'weekly'
+      interval: 'monthly' # See documentation for possible values
+    commit-message:
+      prefix: 'fix(deps)' # Prefix for commit messages  
+    open-pull-requests-limit: 10 # Maximum number of open PRs
+    
