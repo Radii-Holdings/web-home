@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <!-- Light blue plastics -->
+    <linearGradient id="bezelBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D9ECFF"/>
+      <stop offset="100%" stop-color="#A9CFF3"/>
+    </linearGradient>
+    <linearGradient id="edgeBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#94BFE8"/>
+      <stop offset="100%" stop-color="#7FB0DE"/>
+    </linearGradient>
+    <radialGradient id="screenGrad" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#183252"/>
+      <stop offset="60%" stop-color="#152F4D"/>
+      <stop offset="100%" stop-color="#122944"/>
+    </radialGradient>
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="6" result="off"/>
+      <feMerge>
+        <feMergeNode in="off"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- No outer background rectangle: transparent canvas -->
+
+  <!-- Monitor -->
+  <g id="monitor" transform="translate(116,120)" filter="url(#softShadow)">
+    <rect x="0" y="0" rx="28" ry="28" width="792" height="612" fill="url(#bezelBlue)" stroke="#6B9CCB" stroke-width="3"/>
+    <rect x="80" y="70" rx="22" ry="22" width="632" height="420" fill="url(#bezelBlue)" stroke="#6A9ACA" stroke-width="2"/>
+    <path d="M120,120 h552 a18,18 0 0 1 18,18 v324 a18,18 0 0 1 -18,18 H120 a18,18 0 0 1 -18,-18 V138 a18,18 0 0 1 18,-18 z"
+          fill="url(#screenGrad)"/>
+    <rect x="116" y="120" width="8" height="360" fill="#0E223A" opacity="0.6"/>
+    <rect x="664" y="120" width="8" height="360" fill="#0E223A" opacity="0.6"/>
+    <rect x="120" y="460" width="552" height="18" fill="#0E223A" opacity="0.55"/>
+
+    <!-- CLI prompt -->
+    <g transform="translate(176,174)">
+      <path d="M0,40 l36,-36 v20 l-20,16 20,16 v20 l-36,-36 z" fill="#FBFCFF"/>
+      <rect x="66" y="63" width="56" height="10" rx="2" ry="2" fill="#FBFCFF"/>
+    </g>
+
+    <rect x="64" y="530" width="664" height="20" fill="#6A9ACA" opacity="0.35"/>
+    <rect x="56" y="548" width="680" height="24" rx="6" ry="6" fill="url(#edgeBlue)"/>
+  </g>
+
+  <!-- Base unit -->
+  <g id="base" transform="translate(88,706)" filter="url(#softShadow)">
+    <rect x="0" y="0" rx="22" ry="22" width="848" height="240" fill="url(#bezelBlue)" stroke="#6B9CCB" stroke-width="3"/>
+    <rect x="72" y="128" width="192" height="10" fill="#7FB0DE"/>
+    <rect x="72" y="152" width="192" height="10" fill="#7FB0DE"/>
+    <rect x="72" y="176" width="192" height="10" fill="#7FB0DE"/>
+    <g transform="translate(428,88)">
+      <rect x="0" y="0" width="336" height="128" rx="8" ry="8" fill="#9CC7EE" stroke="#6A9ACA" stroke-width="2"/>
+      <rect x="32" y="40" width="272" height="40" rx="4" ry="4" fill="#5F7C9A"/>
+      <rect x="152" y="84" width="64" height="28" rx="3" ry="3" fill="#5F7C9A"/>
+    </g>
+    <circle cx="816" cy="192" r="18" fill="#6FA7DA" stroke="#5A8EC3" stroke-width="2"/>
+    <circle cx="752" cy="192" r="18" fill="#6FA7DA" stroke="#5A8EC3" stroke-width="2"/>
+    <circle cx="816" cy="192" r="11" fill="#2DB74C"/>
+  </g>
+
+  <!-- Keep subtle ground shadow for depth; remove bezel/background -->
+  <ellipse cx="512" cy="948" rx="380" ry="24" fill="#000" opacity="0.18"/>
+</svg>

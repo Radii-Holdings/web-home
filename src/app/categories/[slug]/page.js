@@ -13,7 +13,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const { slug: s } = params;
+  const { slug: s } = await params;
   const normalized = s.replace(/-\d+$/, "");
   return {
     title: `${normalized.replaceAll("-"," ")} Blogs`,
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
 
 
 const CategoryPage = async ({ params }) => {
-  const { slug: current } = params;
+  const { slug: current } = await params;
   const normalized = current.replace(/-\d+$/, "");
   if (!current || typeof current !== 'string') {
     return <div>Category Not Found</div>;
