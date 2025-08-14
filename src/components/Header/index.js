@@ -1,17 +1,14 @@
 "use client"
 import Link from "next/link";
+import Image from "next/image";
 import Logo from "./Logo";
-import { DribbbleIcon, GithubIcon, LinkedinIcon, MoonIcon, SunIcon, TwitterIcon } from "../Icons";
+import { DribbbleIcon, GithubIcon, LinkedinIcon, TwitterIcon } from "../Icons";
 import siteMetadata from "@/src/utils/siteMetaData";
-import { useThemeSwitch } from "../Hooks/useThemeSwitch";
 import { useEffect, useState } from "react";
-import { cx } from "@/src/utils";
 
 const Header = () => {
 
-  const [mode, setMode] = useThemeSwitch();
   const [mounted, setMounted] = useState(false);
-
   useEffect(() => setMounted(true), []);
   const [click, setClick] = useState(false);
 
@@ -53,18 +50,10 @@ const toggle = () =>{
             <Link href="/" className="mr-2">Home</Link>
             <Link href="/about" className="mx-2">About</Link>
             <Link href="/contact" className="mx-2">Contact</Link>
-            {mounted && (
-              <button
-                onClick={() => setMode(mode === "light" ? "dark" : "light")}
-                className={cx(
-                  "w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1",
-                  mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
-                )}
-                aria-label="theme-switcher"
-              >
-                {mode === "light" ? <MoonIcon /> : <SunIcon />}
-              </button>
-            )}
+            <Link href="/console" className="ml-3 inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-black btn-bezel">
+              <span>Console</span>
+              <Image src="/svgs/cli_mainframe_logo_blue.svg" alt="CLI Mainframe" width={16} height={16} />
+            </Link>
         </nav>
 
 
@@ -73,18 +62,10 @@ const toggle = () =>{
             <Link href="/" className="mr-2">Home</Link>
             <Link href="/about" className="mx-2">About</Link>
             <Link href="/contact" className="mx-2">Contact</Link>
-            {mounted && (
-              <button
-                onClick={() => setMode(mode === "light" ? "dark" : "light")}
-                className={cx(
-                  "w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1",
-                  mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
-                )}
-                aria-label="theme-switcher"
-              >
-                {mode === "light" ? <MoonIcon /> : <SunIcon />}
-              </button>
-            )}
+            <Link href="/console" className="ml-3 inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-black btn-bezel">
+              <span>Console</span>
+              <Image src="/svgs/cli_mainframe_logo_blue.svg" alt="CLI Mainframe" width={16} height={16} />
+            </Link>
         </nav>
         <div className=" hidden sm:flex items-center">
             <a href={siteMetadata.linkedin} className="inline-block w-6 h-6 mr-4" aria-label="Reach out to me via LinkedIn" target="_blank"><LinkedinIcon className="hover:scale-125 transition-all ease duration-200" /></a>
