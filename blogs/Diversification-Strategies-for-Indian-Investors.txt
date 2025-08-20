@@ -1,0 +1,226 @@
+1:"$Sreact.fragment"
+2:I[9243,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","148","static/chunks/148-7caa5d4606632bad.js","177","static/chunks/app/layout-cc9bb439db195741.js"],""]
+3:I[854,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","148","static/chunks/148-7caa5d4606632bad.js","177","static/chunks/app/layout-cc9bb439db195741.js"],"default"]
+4:I[7555,[],""]
+5:I[1295,[],""]
+6:I[6874,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","744","static/chunks/app/blogs/%5Bslug%5D/page-bf2f560f8e63c394.js"],""]
+7:I[3320,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","148","static/chunks/148-7caa5d4606632bad.js","177","static/chunks/app/layout-cc9bb439db195741.js"],"default"]
+8:I[9039,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","148","static/chunks/148-7caa5d4606632bad.js","177","static/chunks/app/layout-cc9bb439db195741.js"],"default"]
+a:I[9665,[],"OutletBoundary"]
+c:I[4911,[],"AsyncMetadataOutlet"]
+e:I[9665,[],"ViewportBoundary"]
+10:I[9665,[],"MetadataBoundary"]
+11:"$Sreact.suspense"
+13:I[8393,[],""]
+:HL["/_next/static/media/4c9affa5bc8f420e-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/fb75ce67fe671751.css","style"]
+0:{"P":null,"b":"RZY3k2D7vQE4EEdvFRYid","p":"","c":["","blogs","Diversification-Strategies-for-Indian-Investors"],"i":false,"f":[[["",{"children":["blogs",{"children":[["slug","Diversification-Strategies-for-Indian-Investors","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fb75ce67fe671751.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"__variable_e8ce0c __variable_73ee6c font-mr bg-light dark:bg-dark","children":[["$","$L2",null,{"id":"theme-switcher","strategy":"beforeInteractive","children":"if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {\n    document.documentElement.classList.add('dark')\n  } else {\n    document.documentElement.classList.remove('dark')\n  }"}],["$","$L3",null,{}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","main",null,{"className":"my-32 w-full dark:bg-dark flex justify-center font-mr","children":["$","div",null,{"className":"relative flex flex-col items-center justify-center","children":[["$","h1",null,{"className":"inline-block text-dark dark:text-light\n      text-6xl font-bold w-full capitalize xl:text-8xl text-center","children":"404"}],["$","h2",null,{"className":"inline-block text-dark dark:text-light\n      text-5xl font-bold w-full capitalize xl:text-6xl text-center mt-4 tracking-wide leading-snug","children":"Page Not Found!"}],["$","$L6",null,{"href":"/","className":"self-center mt-8 inline-block rounded-lg border-2 border-solid bg-dark px-4 py-2 font-semibold text-light hover:border-dark hover:bg-light hover:text-dark  dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light ","children":"Go To Home"}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L7",null,{}],["$","$L8",null,{}]," "]}]}]]}],{"children":["blogs",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","Diversification-Strategies-for-Indian-Investors","d"],["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L9",null,["$","$La",null,{"children":["$Lb",["$","$Lc",null,{"promise":"$@d"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Le",null,{"children":"$Lf"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$L10",null,{"children":["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"children":"$L12"}]}]}]]}],false]],"m":"$undefined","G":["$13",[]],"s":false,"S":true}
+14:I[3063,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","744","static/chunks/app/blogs/%5Bslug%5D/page-bf2f560f8e63c394.js"],"Image"]
+9:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"NewsArticle\",\"headline\":\"Diversification Strategies for Indian Investors\",\"description\":\"A comprehensive guide on diversification strategies for Indian investors to optimize their portfolios.\",\"image\":[\"https://www.radii.in/blogs/anees-ur-rehman-uw2Q0TGfiN8-unsplash.jpg\"],\"datePublished\":\"2024-07-01T00:00:00.000Z\",\"dateModified\":\"2024-07-01T00:00:00.000Z\",\"author\":[{\"@type\":\"Person\",\"name\":[\"Radii Lab\"],\"url\":\"https://twitter.com/LabRadii\"}]}"}}],["$","article",null,{"children":[["$","div",null,{"className":"mb-8 text-center relative w-full h-[70vh] bg-dark","children":[["$","div",null,{"className":"w-full z-10 flex flex-col items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2","children":[["$","$L6",null,{"href":"/categories/diversification","className":"inline-block py-2 sm:py-3 px-6 sm:px-10  bg-dark text-light rounded-full capitalize font-semibold border-2 border-solid border-light hover:scale-105 transition-all ease duration-200 text-sm sm:text-base px-6 text-sm py-2 hero-tag-animated","children":"diversification"}],["$","h1",null,{"className":"inline-block mt-6 font-semibold capitalize text-2xl md:text-3xl lg:text-5xl !leading-normal relative w-5/6","children":["$","span",null,{"className":"hero-title-underline","children":"Diversification Strategies for Indian Investors"}]}]]}],["$","div",null,{"className":"absolute top-0 left-0 right-0 bottom-0 h-full bg-dark/60 dark:bg-dark/40"}],["$","$L14",null,{"src":"/blogs/anees-ur-rehman-uw2Q0TGfiN8-unsplash.jpg","placeholder":"blur","blurDataURL":"data:image/jpeg;base64,/9j/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAAIAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAeEAABAwQDAAAAAAAAAAAAAAABAAIDBAURIRITMf/EABQBAQAAAAAAAAAAAAAAAAAAAAT/xAAXEQADAQAAAAAAAAAAAAAAAAAAAQIh/9oADAMBAAIRAxEAPwCTS2E0lzhfFO48i4SRdZ00Z2XeIiItaxKP/9k=","alt":"Diversification Strategies for Indian Investors","width":1920,"height":2880,"className":"aspect-square w-full h-full object-cover object-center","priority":true,"sizes":"100vw"}]]}],["$","div",null,{"className":"px-2  md:px-10 bg-accent dark:bg-accentDark text-light dark:text-dark py-2 flex items-center justify-around flex-wrap text-lg sm:text-xl font-medium mx-5  md:mx-10 rounded-lg","children":[["$","time",null,{"className":"m-3","children":"July 1, 2024"}],["$","div",null,{"className":"m-3","children":"2 min read"}],["$","$L6",null,{"href":"/categories/diversification","className":"m-3","children":["#","diversification"]}]]}],["$","div",null,{"className":"grid grid-cols-12  gap-y-8 lg:gap-8 sxl:gap-16 mt-8 px-5 md:px-10","children":[["$","div",null,{"className":"col-span-12  lg:col-span-4","children":["$","details",null,{"className":"border-[1px] border-solid border-dark dark:border-light text-dark dark:text-light rounded-lg p-4 sticky top-6 max-h-[80vh] overflow-hidden overflow-y-auto","open":true,"children":[["$","summary",null,{"className":"text-lg font-semibold capitalize cursor-pointer","children":"Table Of Content"}],["$","ul",null,{"className":"mt-4 font-in text-base","children":[["$","li","#diversification-strategies-for-indian-investors",{"className":"py-1","children":["$","a",null,{"href":"#diversification-strategies-for-indian-investors","data-level":"two","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[null,"$L15"]}]}],"$L16","$L17","$L18","$L19","$L1a","$L1b","$L1c","$L1d","$L1e","$L1f","$L20","$L21","$L22","$L23","$L24","$L25","$L26","$L27","$L28","$L29","$L2a","$L2b"]}]]}]}],"$L2c"]}]]}]]
+2d:I[3391,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","744","static/chunks/app/blogs/%5Bslug%5D/page-bf2f560f8e63c394.js"],"default"]
+15:["$","span",null,{"className":"hover:underline","children":"Diversification Strategies for Indian Investors"}]
+16:["$","li","#introduction",{"className":"py-1","children":["$","a",null,{"href":"#introduction","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Introduction"}]]}]}]
+17:["$","li","#what-is-diversification",{"className":"py-1","children":["$","a",null,{"href":"#what-is-diversification","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"What is Diversification?"}]]}]}]
+18:["$","li","#definition",{"className":"py-1","children":["$","a",null,{"href":"#definition","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Definition"}]]}]}]
+19:["$","li","#importance",{"className":"py-1","children":["$","a",null,{"href":"#importance","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Importance"}]]}]}]
+1a:["$","li","#diversification-across-asset-classes",{"className":"py-1","children":["$","a",null,{"href":"#diversification-across-asset-classes","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Diversification Across Asset Classes"}]]}]}]
+1b:["$","li","#equities",{"className":"py-1","children":["$","a",null,{"href":"#equities","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Equities"}]]}]}]
+1c:["$","li","#fixed-income",{"className":"py-1","children":["$","a",null,{"href":"#fixed-income","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Fixed Income"}]]}]}]
+1d:["$","li","#real-estate",{"className":"py-1","children":["$","a",null,{"href":"#real-estate","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Real Estate"}]]}]}]
+1e:["$","li","#mutual-funds",{"className":"py-1","children":["$","a",null,{"href":"#mutual-funds","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Mutual Funds"}]]}]}]
+1f:["$","li","#gold",{"className":"py-1","children":["$","a",null,{"href":"#gold","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Gold"}]]}]}]
+20:["$","li","#sectoral-diversification",{"className":"py-1","children":["$","a",null,{"href":"#sectoral-diversification","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Sectoral Diversification"}]]}]}]
+21:["$","li","#technology",{"className":"py-1","children":["$","a",null,{"href":"#technology","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Technology"}]]}]}]
+22:["$","li","#healthcare",{"className":"py-1","children":["$","a",null,{"href":"#healthcare","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Healthcare"}]]}]}]
+23:["$","li","#financial-services",{"className":"py-1","children":["$","a",null,{"href":"#financial-services","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Financial Services"}]]}]}]
+24:["$","li","#geographic-diversification",{"className":"py-1","children":["$","a",null,{"href":"#geographic-diversification","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Geographic Diversification"}]]}]}]
+25:["$","li","#domestic-vs-international",{"className":"py-1","children":["$","a",null,{"href":"#domestic-vs-international","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Domestic vs. International"}]]}]}]
+26:["$","li","#research-and-analysis",{"className":"py-1","children":["$","a",null,{"href":"#research-and-analysis","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Research and Analysis"}]]}]}]
+27:["$","li","#technical-analysis",{"className":"py-1","children":["$","a",null,{"href":"#technical-analysis","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Technical Analysis"}]]}]}]
+28:["$","li","#fundamental-analysis",{"className":"py-1","children":["$","a",null,{"href":"#fundamental-analysis","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Fundamental Analysis"}]]}]}]
+29:["$","li","#real-life-examples",{"className":"py-1","children":["$","a",null,{"href":"#real-life-examples","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Real-life Examples"}]]}]}]
+2a:["$","li","#conclusion",{"className":"py-1","children":["$","a",null,{"href":"#conclusion","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Conclusion"}]]}]}]
+2b:["$","li","#references",{"className":"py-1","children":["$","a",null,{"href":"#references","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"References"}]]}]}]
+2e:Tf89,
+## Diversification Strategies for Indian Investors
+
+### Introduction
+
+Diversification is a key strategy to manage risk and enhance returns in investment portfolios. This guide provides detailed insights and practical tips for Indian investors to diversify their investments effectively.
+
+![Diversification](../../public/blogs/anees-ur-rehman-uw2Q0TGfiN8-unsplash.jpg)
+
+
+### What is Diversification?
+
+#### Definition
+
+Diversification involves spreading investments across various asset classes to reduce risk.
+
+#### Importance
+
+1. **Risk Management**: Mitigates the impact of a single asset's poor performance.
+2. **Enhanced Returns**: Balances high-risk and low-risk investments.
+
+### Diversification Across Asset Classes
+
+#### Equities
+
+- **Blue-chip Stocks**: Stable and reliable. Examples: [Reliance Industries](https://www.moneycontrol.com/financials/relianceindustries/annual-report/RI).
+- **Mid-cap and Small-cap Stocks**: Potential for higher growth but higher risk.
+
+#### Fixed Income
+
+- **Government Bonds**: Safe and low-risk investments. See [RBI Bond Offerings](https://www.rbi.org.in/scripts/Publications.aspx).
+- **Corporate Bonds**: Higher yields but with credit risk.
+
+#### Real Estate
+
+- **Residential Properties**: Long-term appreciation. Check [99acres](https://www.99acres.com/) for property listings.
+- **Commercial Properties**: Rental income and value appreciation.
+
+#### Mutual Funds
+
+- **Equity Mutual Funds**: Diversified equity exposure. Refer to [MoneyControl Mutual Funds](https://www.moneycontrol.com/mutual-funds) for detailed fund information.
+- **Debt Mutual Funds**: Stable returns with lower risk.
+
+#### Gold
+
+- **Physical Gold**: Traditional investment. Refer to [India Bullion](https://www.indiabullion.com/).
+- **Gold ETFs**: Easier to trade and store. Check [NSE Gold ETFs](https://www.nseindia.com/products-services/etfs).
+
+### Sectoral Diversification
+
+#### Technology
+
+- **Companies to Watch**: [Infosys](https://www.moneycontrol.com/financials/infosys/annual-report/IT), [TCS](https://www.moneycontrol.com/financials/tataconsultancyservices/annual-report/TCS).
+
+#### Healthcare
+
+- **Key Players**: [Dr. Reddy's Laboratories](https://www.moneycontrol.com/financials/drreddys/annual-report/DRL), [Sun Pharma](https://www.moneycontrol.com/financials/sunpharma/annual-report/SP).
+
+#### Financial Services
+
+- **Top Banks**: [HDFC Bank](https://www.moneycontrol.com/financials/hdfcbank/annual-report/HDF), [ICICI Bank](https://www.moneycontrol.com/financials/icicibank/annual-report/ICI).
+
+### Geographic Diversification
+
+#### Domestic vs. International
+
+- **Domestic Investments**: Focus on Indian market dynamics.
+- **International Exposure**: Access to global growth opportunities. Refer to [Motilal Oswal International Funds](https://www.motilaloswal.com).
+
+### Research and Analysis
+
+#### Technical Analysis
+
+- **Diversified Portfolio Performance**: Use [TradingView](https://www.tradingview.com/) for technical charts and analysis.
+
+#### Fundamental Analysis
+
+- **Company Financials**: Analyze balance sheets and income statements. See [Morningstar India](https://www.morningstar.in).
+
+### Real-life Examples
+
+- **Investor Stories**: Interviews with investors who have successfully diversified their portfolios.
+- **Case Studies**: Detailed analysis of diversified portfolios.
+
+### Conclusion
+
+Diversification is essential for Indian investors to manage risk and achieve balanced returns. Stay informed with [The Economic Times](https://economictimes.indiatimes.com) for the latest market updates and strategies.
+
+### References
+
+1. **[Reliance Industries Annual Report](https://www.moneycontrol.com/financials/relianceindustries/annual-report/RI)**
+2. **[RBI Bond Offerings](https://www.rbi.org.in/scripts/Publications.aspx)**
+3. **[MoneyControl Mutual Funds](https://www.moneycontrol.com/mutual-funds)**
+4. **[NSE Gold ETFs](https://www.nseindia.com/products-services/etfs)**
+5. **[Morningstar India](https://www.morningstar.in)**
+2f:T31f0,var Component=(()=>{var f=Object.create;var s=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var w=(e,n)=>()=>(n||e((n={exports:{}}).exports,n),n.exports),v=(e,n)=>{for(var r in n)s(e,r,{get:n[r],enumerable:!0})},l=(e,n,r,t)=>{if(n&&typeof n=="object"||typeof n=="function")for(let a of m(n))!g.call(e,a)&&a!==r&&s(e,a,{get:()=>n[a],enumerable:!(t=u(n,a))||t.enumerable});return e};var I=(e,n,r)=>(r=e!=null?f(p(e)):{},l(n||!e||!e.__esModule?s(r,"default",{value:e,enumerable:!0}):r,e)),y=e=>l(s({},"__esModule",{value:!0}),e);var d=w((N,c)=>{c.exports=_jsx_runtime});var k={};v(k,{default:()=>h,frontmatter:()=>b});var i=I(d()),b={title:"Diversification Strategies for Indian Investors",description:"A comprehensive guide on diversification strategies for Indian investors to optimize their portfolios.",image:"../../public/blogs/anees-ur-rehman-uw2Q0TGfiN8-unsplash.jpg",publishedAt:"2024-07-01",updatedAt:"2024-07-01",author:"Radii Lab",isPublished:!0,tags:["diversification","investment strategies","market wrap","Indian market"]};function o(e){let n={a:"a",h2:"h2",h3:"h3",h4:"h4",img:"img",li:"li",ol:"ol",p:"p",span:"span",strong:"strong",ul:"ul",...e.components};return(0,i.jsxs)(i.Fragment,{children:[(0,i.jsxs)(n.h2,{id:"diversification-strategies-for-indian-investors",children:["Diversification Strategies for Indian Investors",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#diversification-strategies-for-indian-investors",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.h3,{id:"introduction",children:["Introduction",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#introduction",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsx)(n.p,{children:"Diversification is a key strategy to manage risk and enhance returns in investment portfolios. This guide provides detailed insights and practical tips for Indian investors to diversify their investments effectively."}),`
+`,(0,i.jsx)(n.p,{children:(0,i.jsx)(n.img,{src:"../../public/blogs/anees-ur-rehman-uw2Q0TGfiN8-unsplash.jpg",alt:"Diversification"})}),`
+`,(0,i.jsxs)(n.h3,{id:"what-is-diversification",children:["What is Diversification?",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#what-is-diversification",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.h4,{id:"definition",children:["Definition",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#definition",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsx)(n.p,{children:"Diversification involves spreading investments across various asset classes to reduce risk."}),`
+`,(0,i.jsxs)(n.h4,{id:"importance",children:["Importance",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#importance",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ol,{children:[`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Risk Management"}),": Mitigates the impact of a single asset's poor performance."]}),`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Enhanced Returns"}),": Balances high-risk and low-risk investments."]}),`
+`]}),`
+`,(0,i.jsxs)(n.h3,{id:"diversification-across-asset-classes",children:["Diversification Across Asset Classes",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#diversification-across-asset-classes",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.h4,{id:"equities",children:["Equities",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#equities",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ul,{children:[`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Blue-chip Stocks"}),": Stable and reliable. Examples: ",(0,i.jsx)(n.a,{href:"https://www.moneycontrol.com/financials/relianceindustries/annual-report/RI",children:"Reliance Industries"}),"."]}),`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Mid-cap and Small-cap Stocks"}),": Potential for higher growth but higher risk."]}),`
+`]}),`
+`,(0,i.jsxs)(n.h4,{id:"fixed-income",children:["Fixed Income",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#fixed-income",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ul,{children:[`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Government Bonds"}),": Safe and low-risk investments. See ",(0,i.jsx)(n.a,{href:"https://www.rbi.org.in/scripts/Publications.aspx",children:"RBI Bond Offerings"}),"."]}),`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Corporate Bonds"}),": Higher yields but with credit risk."]}),`
+`]}),`
+`,(0,i.jsxs)(n.h4,{id:"real-estate",children:["Real Estate",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#real-estate",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ul,{children:[`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Residential Properties"}),": Long-term appreciation. Check ",(0,i.jsx)(n.a,{href:"https://www.99acres.com/",children:"99acres"})," for property listings."]}),`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Commercial Properties"}),": Rental income and value appreciation."]}),`
+`]}),`
+`,(0,i.jsxs)(n.h4,{id:"mutual-funds",children:["Mutual Funds",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#mutual-funds",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ul,{children:[`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Equity Mutual Funds"}),": Diversified equity exposure. Refer to ",(0,i.jsx)(n.a,{href:"https://www.moneycontrol.com/mutual-funds",children:"MoneyControl Mutual Funds"})," for detailed fund information."]}),`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Debt Mutual Funds"}),": Stable returns with lower risk."]}),`
+`]}),`
+`,(0,i.jsxs)(n.h4,{id:"gold",children:["Gold",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#gold",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ul,{children:[`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Physical Gold"}),": Traditional investment. Refer to ",(0,i.jsx)(n.a,{href:"https://www.indiabullion.com/",children:"India Bullion"}),"."]}),`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Gold ETFs"}),": Easier to trade and store. Check ",(0,i.jsx)(n.a,{href:"https://www.nseindia.com/products-services/etfs",children:"NSE Gold ETFs"}),"."]}),`
+`]}),`
+`,(0,i.jsxs)(n.h3,{id:"sectoral-diversification",children:["Sectoral Diversification",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#sectoral-diversification",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.h4,{id:"technology",children:["Technology",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#technology",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ul,{children:[`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Companies to Watch"}),": ",(0,i.jsx)(n.a,{href:"https://www.moneycontrol.com/financials/infosys/annual-report/IT",children:"Infosys"}),", ",(0,i.jsx)(n.a,{href:"https://www.moneycontrol.com/financials/tataconsultancyservices/annual-report/TCS",children:"TCS"}),"."]}),`
+`]}),`
+`,(0,i.jsxs)(n.h4,{id:"healthcare",children:["Healthcare",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#healthcare",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ul,{children:[`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Key Players"}),": ",(0,i.jsx)(n.a,{href:"https://www.moneycontrol.com/financials/drreddys/annual-report/DRL",children:"Dr. Reddy's Laboratories"}),", ",(0,i.jsx)(n.a,{href:"https://www.moneycontrol.com/financials/sunpharma/annual-report/SP",children:"Sun Pharma"}),"."]}),`
+`]}),`
+`,(0,i.jsxs)(n.h4,{id:"financial-services",children:["Financial Services",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#financial-services",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ul,{children:[`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Top Banks"}),": ",(0,i.jsx)(n.a,{href:"https://www.moneycontrol.com/financials/hdfcbank/annual-report/HDF",children:"HDFC Bank"}),", ",(0,i.jsx)(n.a,{href:"https://www.moneycontrol.com/financials/icicibank/annual-report/ICI",children:"ICICI Bank"}),"."]}),`
+`]}),`
+`,(0,i.jsxs)(n.h3,{id:"geographic-diversification",children:["Geographic Diversification",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#geographic-diversification",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.h4,{id:"domestic-vs-international",children:["Domestic vs. International",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#domestic-vs-international",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ul,{children:[`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Domestic Investments"}),": Focus on Indian market dynamics."]}),`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"International Exposure"}),": Access to global growth opportunities. Refer to ",(0,i.jsx)(n.a,{href:"https://www.motilaloswal.com",children:"Motilal Oswal International Funds"}),"."]}),`
+`]}),`
+`,(0,i.jsxs)(n.h3,{id:"research-and-analysis",children:["Research and Analysis",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#research-and-analysis",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.h4,{id:"technical-analysis",children:["Technical Analysis",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#technical-analysis",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ul,{children:[`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Diversified Portfolio Performance"}),": Use ",(0,i.jsx)(n.a,{href:"https://www.tradingview.com/",children:"TradingView"})," for technical charts and analysis."]}),`
+`]}),`
+`,(0,i.jsxs)(n.h4,{id:"fundamental-analysis",children:["Fundamental Analysis",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#fundamental-analysis",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ul,{children:[`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Company Financials"}),": Analyze balance sheets and income statements. See ",(0,i.jsx)(n.a,{href:"https://www.morningstar.in",children:"Morningstar India"}),"."]}),`
+`]}),`
+`,(0,i.jsxs)(n.h3,{id:"real-life-examples",children:["Real-life Examples",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#real-life-examples",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ul,{children:[`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Investor Stories"}),": Interviews with investors who have successfully diversified their portfolios."]}),`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Case Studies"}),": Detailed analysis of diversified portfolios."]}),`
+`]}),`
+`,(0,i.jsxs)(n.h3,{id:"conclusion",children:["Conclusion",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#conclusion",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.p,{children:["Diversification is essential for Indian investors to manage risk and achieve balanced returns. Stay informed with ",(0,i.jsx)(n.a,{href:"https://economictimes.indiatimes.com",children:"The Economic Times"})," for the latest market updates and strategies."]}),`
+`,(0,i.jsxs)(n.h3,{id:"references",children:["References",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#references",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ol,{children:[`
+`,(0,i.jsx)(n.li,{children:(0,i.jsx)(n.strong,{children:(0,i.jsx)(n.a,{href:"https://www.moneycontrol.com/financials/relianceindustries/annual-report/RI",children:"Reliance Industries Annual Report"})})}),`
+`,(0,i.jsx)(n.li,{children:(0,i.jsx)(n.strong,{children:(0,i.jsx)(n.a,{href:"https://www.rbi.org.in/scripts/Publications.aspx",children:"RBI Bond Offerings"})})}),`
+`,(0,i.jsx)(n.li,{children:(0,i.jsx)(n.strong,{children:(0,i.jsx)(n.a,{href:"https://www.moneycontrol.com/mutual-funds",children:"MoneyControl Mutual Funds"})})}),`
+`,(0,i.jsx)(n.li,{children:(0,i.jsx)(n.strong,{children:(0,i.jsx)(n.a,{href:"https://www.nseindia.com/products-services/etfs",children:"NSE Gold ETFs"})})}),`
+`,(0,i.jsx)(n.li,{children:(0,i.jsx)(n.strong,{children:(0,i.jsx)(n.a,{href:"https://www.morningstar.in",children:"Morningstar India"})})}),`
+`]})]})}function h(e={}){let{wrapper:n}=e.components||{};return n?(0,i.jsx)(n,{...e,children:(0,i.jsx)(o,{...e})}):o(e)}return y(k);})();
+;return Component;2c:["$","$L2d",null,{"blog":{"title":"Diversification Strategies for Indian Investors","publishedAt":"2024-07-01T00:00:00.000Z","updatedAt":"2024-07-01T00:00:00.000Z","description":"A comprehensive guide on diversification strategies for Indian investors to optimize their portfolios.","image":{"filePath":"../public/blogs/anees-ur-rehman-uw2Q0TGfiN8-unsplash.jpg","relativeFilePath":"../../public/blogs/anees-ur-rehman-uw2Q0TGfiN8-unsplash.jpg","format":"jpeg","height":2880,"width":1920,"aspectRatio":0.6666666666666666,"blurhashDataUrl":"data:image/jpeg;base64,/9j/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAAIAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAeEAABAwQDAAAAAAAAAAAAAAABAAIDBAURIRITMf/EABQBAQAAAAAAAAAAAAAAAAAAAAT/xAAXEQADAQAAAAAAAAAAAAAAAAAAAQIh/9oADAMBAAIRAxEAPwCTS2E0lzhfFO48i4SRdZ00Z2XeIiItaxKP/9k="},"isPublished":true,"author":"Radii Lab","tags":["diversification","investment strategies","market wrap","Indian market"],"body":{"raw":"$2e","code":"$2f"},"_id":"Diversification-Strategies-for-Indian-Investors/index.mdx","_raw":{"sourceFilePath":"Diversification-Strategies-for-Indian-Investors/index.mdx","sourceFileName":"index.mdx","sourceFileDir":"Diversification-Strategies-for-Indian-Investors","contentType":"mdx","flattenedPath":"Diversification-Strategies-for-Indian-Investors"},"type":"Blog","url":"/blogs/Diversification-Strategies-for-Indian-Investors","readingTime":{"text":"2 min read","minutes":1.835,"time":110100,"words":367},"toc":[{"level":"two","text":"Diversification Strategies for Indian Investors","slug":"diversification-strategies-for-indian-investors"},{"level":"three","text":"Introduction","slug":"introduction"},{"level":"three","text":"What is Diversification?","slug":"what-is-diversification"},{"level":"three","text":"Definition","slug":"definition"},{"level":"three","text":"Importance","slug":"importance"},{"level":"three","text":"Diversification Across Asset Classes","slug":"diversification-across-asset-classes"},{"level":"three","text":"Equities","slug":"equities"},{"level":"three","text":"Fixed Income","slug":"fixed-income"},{"level":"three","text":"Real Estate","slug":"real-estate"},{"level":"three","text":"Mutual Funds","slug":"mutual-funds"},{"level":"three","text":"Gold","slug":"gold"},{"level":"three","text":"Sectoral Diversification","slug":"sectoral-diversification"},{"level":"three","text":"Technology","slug":"technology"},{"level":"three","text":"Healthcare","slug":"healthcare"},{"level":"three","text":"Financial Services","slug":"financial-services"},{"level":"three","text":"Geographic Diversification","slug":"geographic-diversification"},{"level":"three","text":"Domestic vs. International","slug":"domestic-vs-international"},{"level":"three","text":"Research and Analysis","slug":"research-and-analysis"},{"level":"three","text":"Technical Analysis","slug":"technical-analysis"},{"level":"three","text":"Fundamental Analysis","slug":"fundamental-analysis"},{"level":"three","text":"Real-life Examples","slug":"real-life-examples"},{"level":"three","text":"Conclusion","slug":"conclusion"},{"level":"three","text":"References","slug":"references"}]}}]
+f:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+b:null
+30:I[8175,[],"IconMark"]
+d:{"metadata":[["$","title","0",{"children":"Diversification Strategies for Indian Investors | Radii Labs | Quantitative Research Holding Firm with actionable insights"}],["$","meta","1",{"name":"description","content":"A comprehensive guide on diversification strategies for Indian investors to optimize their portfolios."}],["$","link","2",{"rel":"manifest","href":"/manifest.webmanifest","crossOrigin":"$undefined"}],["$","meta","3",{"name":"robots","content":"index, follow"}],["$","meta","4",{"name":"googlebot","content":"index, follow, noimageindex, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","meta","5",{"property":"og:title","content":"Diversification Strategies for Indian Investors"}],["$","meta","6",{"property":"og:description","content":"A comprehensive guide on diversification strategies for Indian investors to optimize their portfolios."}],["$","meta","7",{"property":"og:url","content":"https://www.radii.in/blogs/Diversification-Strategies-for-Indian-Investors"}],["$","meta","8",{"property":"og:site_name","content":"Radii Labs | Quantitative Research Holding Firm with actionable insights"}],["$","meta","9",{"property":"og:locale","content":"en_US"}],["$","meta","10",{"property":"og:image","content":"https://www.radii.in/blogs/anees-ur-rehman-uw2Q0TGfiN8-unsplash.jpg"}],["$","meta","11",{"property":"og:type","content":"article"}],["$","meta","12",{"property":"article:published_time","content":"2024-07-01T00:00:00.000Z"}],["$","meta","13",{"property":"article:modified_time","content":"2024-07-01T00:00:00.000Z"}],["$","meta","14",{"property":"article:author","content":"Radii Lab"}],["$","meta","15",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","16",{"name":"twitter:title","content":"Diversification Strategies for Indian Investors"}],["$","meta","17",{"name":"twitter:description","content":"A comprehensive guide on diversification strategies for Indian investors to optimize their portfolios."}],["$","meta","18",{"name":"twitter:image","content":"https://www.radii.in/blogs/anees-ur-rehman-uw2Q0TGfiN8-unsplash.jpg"}],["$","link","19",{"rel":"apple-touch-icon","href":"/apple-icon.png?2c33ea0c67d23d40","type":"image/png","sizes":"180x180"}],["$","$L30","20",{}]],"error":null,"digest":"$undefined"}
+12:"$d:metadata"

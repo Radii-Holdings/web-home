@@ -1,0 +1,203 @@
+1:"$Sreact.fragment"
+2:I[9243,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","148","static/chunks/148-7caa5d4606632bad.js","177","static/chunks/app/layout-cc9bb439db195741.js"],""]
+3:I[854,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","148","static/chunks/148-7caa5d4606632bad.js","177","static/chunks/app/layout-cc9bb439db195741.js"],"default"]
+4:I[7555,[],""]
+5:I[1295,[],""]
+6:I[6874,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","744","static/chunks/app/blogs/%5Bslug%5D/page-bf2f560f8e63c394.js"],""]
+7:I[3320,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","148","static/chunks/148-7caa5d4606632bad.js","177","static/chunks/app/layout-cc9bb439db195741.js"],"default"]
+8:I[9039,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","148","static/chunks/148-7caa5d4606632bad.js","177","static/chunks/app/layout-cc9bb439db195741.js"],"default"]
+a:I[9665,[],"OutletBoundary"]
+c:I[4911,[],"AsyncMetadataOutlet"]
+e:I[9665,[],"ViewportBoundary"]
+10:I[9665,[],"MetadataBoundary"]
+11:"$Sreact.suspense"
+13:I[8393,[],""]
+:HL["/_next/static/media/4c9affa5bc8f420e-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/fb75ce67fe671751.css","style"]
+0:{"P":null,"b":"RZY3k2D7vQE4EEdvFRYid","p":"","c":["","blogs","Top-Blue-chipStocks-for-a-Stable-Portfolio"],"i":false,"f":[[["",{"children":["blogs",{"children":[["slug","Top-Blue-chipStocks-for-a-Stable-Portfolio","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fb75ce67fe671751.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"__variable_e8ce0c __variable_73ee6c font-mr bg-light dark:bg-dark","children":[["$","$L2",null,{"id":"theme-switcher","strategy":"beforeInteractive","children":"if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {\n    document.documentElement.classList.add('dark')\n  } else {\n    document.documentElement.classList.remove('dark')\n  }"}],["$","$L3",null,{}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","main",null,{"className":"my-32 w-full dark:bg-dark flex justify-center font-mr","children":["$","div",null,{"className":"relative flex flex-col items-center justify-center","children":[["$","h1",null,{"className":"inline-block text-dark dark:text-light\n      text-6xl font-bold w-full capitalize xl:text-8xl text-center","children":"404"}],["$","h2",null,{"className":"inline-block text-dark dark:text-light\n      text-5xl font-bold w-full capitalize xl:text-6xl text-center mt-4 tracking-wide leading-snug","children":"Page Not Found!"}],["$","$L6",null,{"href":"/","className":"self-center mt-8 inline-block rounded-lg border-2 border-solid bg-dark px-4 py-2 font-semibold text-light hover:border-dark hover:bg-light hover:text-dark  dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light ","children":"Go To Home"}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L7",null,{}],["$","$L8",null,{}]," "]}]}]]}],{"children":["blogs",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","Top-Blue-chipStocks-for-a-Stable-Portfolio","d"],["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L9",null,["$","$La",null,{"children":["$Lb",["$","$Lc",null,{"promise":"$@d"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Le",null,{"children":"$Lf"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$L10",null,{"children":["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"children":"$L12"}]}]}]]}],false]],"m":"$undefined","G":["$13",[]],"s":false,"S":true}
+14:I[3063,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","744","static/chunks/app/blogs/%5Bslug%5D/page-bf2f560f8e63c394.js"],"Image"]
+9:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"NewsArticle\",\"headline\":\"Top Blue-chip Stocks for a Stable Portfolio\",\"description\":\"An in-depth look at top blue-chip stocks that can provide stability and growth to your investment portfolio.\",\"image\":[\"https://www.radii.in/blogs/anne-nygard-vDwGiU4uKYU-unsplash.jpg\"],\"datePublished\":\"2024-07-01T00:00:00.000Z\",\"dateModified\":\"2024-07-01T00:00:00.000Z\",\"author\":[{\"@type\":\"Person\",\"name\":[\"Your Name\"],\"url\":\"https://twitter.com/LabRadii\"}]}"}}],["$","article",null,{"children":[["$","div",null,{"className":"mb-8 text-center relative w-full h-[70vh] bg-dark","children":[["$","div",null,{"className":"w-full z-10 flex flex-col items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2","children":[["$","$L6",null,{"href":"/categories/blue-chip-stocks","className":"inline-block py-2 sm:py-3 px-6 sm:px-10  bg-dark text-light rounded-full capitalize font-semibold border-2 border-solid border-light hover:scale-105 transition-all ease duration-200 text-sm sm:text-base px-6 text-sm py-2 hero-tag-animated","children":"blue-chip stocks"}],["$","h1",null,{"className":"inline-block mt-6 font-semibold capitalize text-2xl md:text-3xl lg:text-5xl !leading-normal relative w-5/6","children":["$","span",null,{"className":"hero-title-underline","children":"Top Blue-chip Stocks for a Stable Portfolio"}]}]]}],["$","div",null,{"className":"absolute top-0 left-0 right-0 bottom-0 h-full bg-dark/60 dark:bg-dark/40"}],["$","$L14",null,{"src":"/blogs/anne-nygard-vDwGiU4uKYU-unsplash.jpg","placeholder":"blur","blurDataURL":"data:image/jpeg;base64,/9j/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAAIAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAL/xAAeEAABBAEFAAAAAAAAAAAAAAABAAIDBBEFEhQiof/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFxEAAwEAAAAAAAAAAAAAAAAAAQIRAP/aAAwDAQACEQMRAD8Aihbj1TbNYma/j1wBg57OJ9w0IiJUUXQ5jTf/2Q==","alt":"Top Blue-chip Stocks for a Stable Portfolio","width":1920,"height":2880,"className":"aspect-square w-full h-full object-cover object-center","priority":true,"sizes":"100vw"}]]}],["$","div",null,{"className":"px-2  md:px-10 bg-accent dark:bg-accentDark text-light dark:text-dark py-2 flex items-center justify-around flex-wrap text-lg sm:text-xl font-medium mx-5  md:mx-10 rounded-lg","children":[["$","time",null,{"className":"m-3","children":"July 1, 2024"}],["$","div",null,{"className":"m-3","children":"2 min read"}],["$","$L6",null,{"href":"/categories/blue-chip-stocks","className":"m-3","children":["#","blue-chip stocks"]}]]}],["$","div",null,{"className":"grid grid-cols-12  gap-y-8 lg:gap-8 sxl:gap-16 mt-8 px-5 md:px-10","children":[["$","div",null,{"className":"col-span-12  lg:col-span-4","children":["$","details",null,{"className":"border-[1px] border-solid border-dark dark:border-light text-dark dark:text-light rounded-lg p-4 sticky top-6 max-h-[80vh] overflow-hidden overflow-y-auto","open":true,"children":[["$","summary",null,{"className":"text-lg font-semibold capitalize cursor-pointer","children":"Table Of Content"}],["$","ul",null,{"className":"mt-4 font-in text-base","children":[["$","li","#top-blue-chip-stocks-for-a-stable-portfolio",{"className":"py-1","children":["$","a",null,{"href":"#top-blue-chip-stocks-for-a-stable-portfolio","data-level":"two","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[null,["$","span",null,{"className":"hover:underline","children":"Top Blue-chip Stocks for a Stable Portfolio"}]]}]}],"$L15","$L16","$L17","$L18","$L19","$L1a","$L1b","$L1c","$L1d","$L1e","$L1f","$L20","$L21","$L22","$L23","$L24","$L25"]}]]}]}],"$L26"]}]]}]]
+27:I[3391,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","744","static/chunks/app/blogs/%5Bslug%5D/page-bf2f560f8e63c394.js"],"default"]
+15:["$","li","#introduction",{"className":"py-1","children":["$","a",null,{"href":"#introduction","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Introduction"}]]}]}]
+16:["$","li","#what-are-blue-chip-stocks",{"className":"py-1","children":["$","a",null,{"href":"#what-are-blue-chip-stocks","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"What are Blue-chip Stocks?"}]]}]}]
+17:["$","li","#definition",{"className":"py-1","children":["$","a",null,{"href":"#definition","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Definition"}]]}]}]
+18:["$","li","#importance",{"className":"py-1","children":["$","a",null,{"href":"#importance","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Importance"}]]}]}]
+19:["$","li","#top-blue-chip-stocks",{"className":"py-1","children":["$","a",null,{"href":"#top-blue-chip-stocks","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Top Blue-chip Stocks"}]]}]}]
+1a:["$","li","#reliance-industries",{"className":"py-1","children":["$","a",null,{"href":"#reliance-industries","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Reliance Industries"}]]}]}]
+1b:["$","li","#hdfc-bank",{"className":"py-1","children":["$","a",null,{"href":"#hdfc-bank","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"HDFC Bank"}]]}]}]
+1c:["$","li","#tata-consultancy-services-tcs",{"className":"py-1","children":["$","a",null,{"href":"#tata-consultancy-services-tcs","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Tata Consultancy Services (TCS)"}]]}]}]
+1d:["$","li","#infosys",{"className":"py-1","children":["$","a",null,{"href":"#infosys","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Infosys"}]]}]}]
+1e:["$","li","#itc-limited",{"className":"py-1","children":["$","a",null,{"href":"#itc-limited","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"ITC Limited"}]]}]}]
+1f:["$","li","#sectoral-analysis",{"className":"py-1","children":["$","a",null,{"href":"#sectoral-analysis","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Sectoral Analysis"}]]}]}]
+20:["$","li","#technology",{"className":"py-1","children":["$","a",null,{"href":"#technology","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Technology"}]]}]}]
+21:["$","li","#financial-services",{"className":"py-1","children":["$","a",null,{"href":"#financial-services","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Financial Services"}]]}]}]
+22:["$","li","#fmcg",{"className":"py-1","children":["$","a",null,{"href":"#fmcg","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"FMCG"}]]}]}]
+23:["$","li","#real-life-examples",{"className":"py-1","children":["$","a",null,{"href":"#real-life-examples","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Real-life Examples"}]]}]}]
+24:["$","li","#conclusion",{"className":"py-1","children":["$","a",null,{"href":"#conclusion","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Conclusion"}]]}]}]
+25:["$","li","#references",{"className":"py-1","children":["$","a",null,{"href":"#references","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"References"}]]}]}]
+28:Td5e,
+## Top Blue-chip Stocks for a Stable Portfolio
+
+### Introduction
+
+Blue-chip stocks are known for their stability, reliability, and consistent returns. This blog explores the top blue-chip stocks in the Indian market that can help build a stable investment portfolio.
+
+![Blue-chip Stocks](../../public/blogs/anne-nygard-vDwGiU4uKYU-unsplash.jpg)
+
+### What are Blue-chip Stocks?
+
+#### Definition
+
+Blue-chip stocks are shares of large, well-established, and financially sound companies with a history of reliable performance.
+
+#### Importance
+
+1. **Stability**: Less volatile compared to smaller companies.
+2. **Dividend Payments**: Regular dividends provide steady income.
+
+### Top Blue-chip Stocks
+
+#### Reliance Industries
+
+- **Overview**: Largest conglomerate in India with diversified business interests.
+- **Technical Analysis**: Strong upward trend with support at ₹2,000.
+- **Fundamental Analysis**: Refer to [Reliance Annual Report](https://www.ril.com/InvestorRelations/FinancialReporting.aspx).
+
+#### HDFC Bank
+
+- **Overview**: Leading private sector bank with robust financial health.
+- **Technical Analysis**: Consistent growth with key support at ₹1,500.
+- **Fundamental Analysis**: See [HDFC Bank Annual Report](https://www.hdfcbank.com/personal/about-us/investor-relations/annual-reports).
+
+#### Tata Consultancy Services (TCS)
+
+- **Overview**: Major player in the IT services sector.
+- **Technical Analysis**: Bullish momentum with resistance at ₹3,500.
+- **Fundamental Analysis**: Check [TCS Financials](https://www.tcs.com/investor-relations).
+
+#### Infosys
+
+- **Overview**: A leading IT services company known for its strong financial performance.
+- **Technical Analysis**: Steady growth with support at ₹1,600.
+- **Fundamental Analysis**: Refer to [Infosys Annual Report](https://www.infosys.com/investors/reports-filings/annual-report.html).
+
+#### ITC Limited
+
+- **Overview**: Diversified conglomerate with interests in FMCG, hotels, and more.
+- **Technical Analysis**: Upward trend with key support at ₹250.
+- **Fundamental Analysis**: See [ITC Financials](https://www.itcportal.com/investor/investor-relations.aspx).
+
+### Sectoral Analysis
+
+#### Technology
+
+- **Growth Drivers**: Digital transformation and IT services demand.
+- **Key Stocks**: TCS, Infosys.
+
+#### Financial Services
+
+- **Growth Drivers**: Banking sector reforms and digital banking.
+- **Key Stocks**: HDFC Bank, ICICI Bank.
+
+#### FMCG
+
+- **Growth Drivers**: Rising consumer demand and brand loyalty.
+- **Key Stocks**: ITC, Hindustan Unilever.
+
+### Real-life Examples
+
+- **Investor Stories**: Interviews with successful blue-chip investors.
+- **Case Studies**: Detailed analysis of blue-chip portfolio performance.
+
+### Conclusion
+
+Investing in blue-chip stocks is a sound strategy for building a stable and growth-oriented portfolio. Stay informed with [Economic Times](https://economictimes.indiatimes.com) for the latest updates and market trends.
+
+### References
+
+1. **[Reliance Annual Report](https://www.ril.com/InvestorRelations/FinancialReporting.aspx)**
+2. **[HDFC Bank Annual Report](https://www.hdfcbank.com/personal/about-us/investor-relations/annual-reports)**
+3. **[TCS Financials](https://www.tcs.com/investor-relations)**
+4. **[Infosys Annual Report](https://www.infosys.com/investors/reports-filings/annual-report.html)**
+5. **[ITC Financials](https://www.itcportal.com/investor/investor-relations.aspx)**
+29:T2b17,var Component=(()=>{var p=Object.create;var l=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var w=(e,n)=>()=>(n||e((n={exports:{}}).exports,n),n.exports),b=(e,n)=>{for(var r in n)l(e,r,{get:n[r],enumerable:!0})},s=(e,n,r,t)=>{if(n&&typeof n=="object"||typeof n=="function")for(let a of f(n))!g.call(e,a)&&a!==r&&l(e,a,{get:()=>n[a],enumerable:!(t=u(n,a))||t.enumerable});return e};var k=(e,n,r)=>(r=e!=null?p(m(e)):{},s(n||!e||!e.__esModule?l(r,"default",{value:e,enumerable:!0}):r,e)),y=e=>s(l({},"__esModule",{value:!0}),e);var o=w((S,c)=>{c.exports=_jsx_runtime});var I={};b(I,{default:()=>d,frontmatter:()=>v});var i=k(o()),v={title:"Top Blue-chip Stocks for a Stable Portfolio",description:"An in-depth look at top blue-chip stocks that can provide stability and growth to your investment portfolio.",image:"../../public/blogs/anne-nygard-vDwGiU4uKYU-unsplash.jpg",publishedAt:"2024-07-01",updatedAt:"2024-07-01",author:"Your Name",isPublished:!0,tags:["blue-chip stocks","stable portfolio","market wrap","Indian market"]};function h(e){let n={a:"a",h2:"h2",h3:"h3",h4:"h4",img:"img",li:"li",ol:"ol",p:"p",span:"span",strong:"strong",ul:"ul",...e.components};return(0,i.jsxs)(i.Fragment,{children:[(0,i.jsxs)(n.h2,{id:"top-blue-chip-stocks-for-a-stable-portfolio",children:["Top Blue-chip Stocks for a Stable Portfolio",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#top-blue-chip-stocks-for-a-stable-portfolio",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.h3,{id:"introduction",children:["Introduction",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#introduction",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsx)(n.p,{children:"Blue-chip stocks are known for their stability, reliability, and consistent returns. This blog explores the top blue-chip stocks in the Indian market that can help build a stable investment portfolio."}),`
+`,(0,i.jsx)(n.p,{children:(0,i.jsx)(n.img,{src:"../../public/blogs/anne-nygard-vDwGiU4uKYU-unsplash.jpg",alt:"Blue-chip Stocks"})}),`
+`,(0,i.jsxs)(n.h3,{id:"what-are-blue-chip-stocks",children:["What are Blue-chip Stocks?",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#what-are-blue-chip-stocks",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.h4,{id:"definition",children:["Definition",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#definition",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsx)(n.p,{children:"Blue-chip stocks are shares of large, well-established, and financially sound companies with a history of reliable performance."}),`
+`,(0,i.jsxs)(n.h4,{id:"importance",children:["Importance",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#importance",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ol,{children:[`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Stability"}),": Less volatile compared to smaller companies."]}),`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Dividend Payments"}),": Regular dividends provide steady income."]}),`
+`]}),`
+`,(0,i.jsxs)(n.h3,{id:"top-blue-chip-stocks",children:["Top Blue-chip Stocks",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#top-blue-chip-stocks",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.h4,{id:"reliance-industries",children:["Reliance Industries",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#reliance-industries",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ul,{children:[`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Overview"}),": Largest conglomerate in India with diversified business interests."]}),`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Technical Analysis"}),": Strong upward trend with support at \u20B92,000."]}),`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Fundamental Analysis"}),": Refer to ",(0,i.jsx)(n.a,{href:"https://www.ril.com/InvestorRelations/FinancialReporting.aspx",children:"Reliance Annual Report"}),"."]}),`
+`]}),`
+`,(0,i.jsxs)(n.h4,{id:"hdfc-bank",children:["HDFC Bank",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#hdfc-bank",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ul,{children:[`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Overview"}),": Leading private sector bank with robust financial health."]}),`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Technical Analysis"}),": Consistent growth with key support at \u20B91,500."]}),`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Fundamental Analysis"}),": See ",(0,i.jsx)(n.a,{href:"https://www.hdfcbank.com/personal/about-us/investor-relations/annual-reports",children:"HDFC Bank Annual Report"}),"."]}),`
+`]}),`
+`,(0,i.jsxs)(n.h4,{id:"tata-consultancy-services-tcs",children:["Tata Consultancy Services (TCS)",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#tata-consultancy-services-tcs",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ul,{children:[`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Overview"}),": Major player in the IT services sector."]}),`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Technical Analysis"}),": Bullish momentum with resistance at \u20B93,500."]}),`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Fundamental Analysis"}),": Check ",(0,i.jsx)(n.a,{href:"https://www.tcs.com/investor-relations",children:"TCS Financials"}),"."]}),`
+`]}),`
+`,(0,i.jsxs)(n.h4,{id:"infosys",children:["Infosys",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#infosys",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ul,{children:[`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Overview"}),": A leading IT services company known for its strong financial performance."]}),`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Technical Analysis"}),": Steady growth with support at \u20B91,600."]}),`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Fundamental Analysis"}),": Refer to ",(0,i.jsx)(n.a,{href:"https://www.infosys.com/investors/reports-filings/annual-report.html",children:"Infosys Annual Report"}),"."]}),`
+`]}),`
+`,(0,i.jsxs)(n.h4,{id:"itc-limited",children:["ITC Limited",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#itc-limited",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ul,{children:[`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Overview"}),": Diversified conglomerate with interests in FMCG, hotels, and more."]}),`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Technical Analysis"}),": Upward trend with key support at \u20B9250."]}),`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Fundamental Analysis"}),": See ",(0,i.jsx)(n.a,{href:"https://www.itcportal.com/investor/investor-relations.aspx",children:"ITC Financials"}),"."]}),`
+`]}),`
+`,(0,i.jsxs)(n.h3,{id:"sectoral-analysis",children:["Sectoral Analysis",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#sectoral-analysis",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.h4,{id:"technology",children:["Technology",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#technology",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ul,{children:[`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Growth Drivers"}),": Digital transformation and IT services demand."]}),`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Key Stocks"}),": TCS, Infosys."]}),`
+`]}),`
+`,(0,i.jsxs)(n.h4,{id:"financial-services",children:["Financial Services",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#financial-services",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ul,{children:[`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Growth Drivers"}),": Banking sector reforms and digital banking."]}),`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Key Stocks"}),": HDFC Bank, ICICI Bank."]}),`
+`]}),`
+`,(0,i.jsxs)(n.h4,{id:"fmcg",children:["FMCG",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#fmcg",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ul,{children:[`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Growth Drivers"}),": Rising consumer demand and brand loyalty."]}),`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Key Stocks"}),": ITC, Hindustan Unilever."]}),`
+`]}),`
+`,(0,i.jsxs)(n.h3,{id:"real-life-examples",children:["Real-life Examples",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#real-life-examples",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ul,{children:[`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Investor Stories"}),": Interviews with successful blue-chip investors."]}),`
+`,(0,i.jsxs)(n.li,{children:[(0,i.jsx)(n.strong,{children:"Case Studies"}),": Detailed analysis of blue-chip portfolio performance."]}),`
+`]}),`
+`,(0,i.jsxs)(n.h3,{id:"conclusion",children:["Conclusion",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#conclusion",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.p,{children:["Investing in blue-chip stocks is a sound strategy for building a stable and growth-oriented portfolio. Stay informed with ",(0,i.jsx)(n.a,{href:"https://economictimes.indiatimes.com",children:"Economic Times"})," for the latest updates and market trends."]}),`
+`,(0,i.jsxs)(n.h3,{id:"references",children:["References",(0,i.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#references",children:(0,i.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,i.jsxs)(n.ol,{children:[`
+`,(0,i.jsx)(n.li,{children:(0,i.jsx)(n.strong,{children:(0,i.jsx)(n.a,{href:"https://www.ril.com/InvestorRelations/FinancialReporting.aspx",children:"Reliance Annual Report"})})}),`
+`,(0,i.jsx)(n.li,{children:(0,i.jsx)(n.strong,{children:(0,i.jsx)(n.a,{href:"https://www.hdfcbank.com/personal/about-us/investor-relations/annual-reports",children:"HDFC Bank Annual Report"})})}),`
+`,(0,i.jsx)(n.li,{children:(0,i.jsx)(n.strong,{children:(0,i.jsx)(n.a,{href:"https://www.tcs.com/investor-relations",children:"TCS Financials"})})}),`
+`,(0,i.jsx)(n.li,{children:(0,i.jsx)(n.strong,{children:(0,i.jsx)(n.a,{href:"https://www.infosys.com/investors/reports-filings/annual-report.html",children:"Infosys Annual Report"})})}),`
+`,(0,i.jsx)(n.li,{children:(0,i.jsx)(n.strong,{children:(0,i.jsx)(n.a,{href:"https://www.itcportal.com/investor/investor-relations.aspx",children:"ITC Financials"})})}),`
+`]})]})}function d(e={}){let{wrapper:n}=e.components||{};return n?(0,i.jsx)(n,{...e,children:(0,i.jsx)(h,{...e})}):h(e)}return y(I);})();
+;return Component;26:["$","$L27",null,{"blog":{"title":"Top Blue-chip Stocks for a Stable Portfolio","publishedAt":"2024-07-01T00:00:00.000Z","updatedAt":"2024-07-01T00:00:00.000Z","description":"An in-depth look at top blue-chip stocks that can provide stability and growth to your investment portfolio.","image":{"filePath":"../public/blogs/anne-nygard-vDwGiU4uKYU-unsplash.jpg","relativeFilePath":"../../public/blogs/anne-nygard-vDwGiU4uKYU-unsplash.jpg","format":"jpeg","height":2880,"width":1920,"aspectRatio":0.6666666666666666,"blurhashDataUrl":"data:image/jpeg;base64,/9j/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAAIAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAL/xAAeEAABBAEFAAAAAAAAAAAAAAABAAIDBBEFEhQiof/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFxEAAwEAAAAAAAAAAAAAAAAAAQIRAP/aAAwDAQACEQMRAD8Aihbj1TbNYma/j1wBg57OJ9w0IiJUUXQ5jTf/2Q=="},"isPublished":true,"author":"Your Name","tags":["blue-chip stocks","stable portfolio","market wrap","Indian market"],"body":{"raw":"$28","code":"$29"},"_id":"Top-Blue-chipStocks-for-a-Stable-Portfolio/index.mdx","_raw":{"sourceFilePath":"Top-Blue-chipStocks-for-a-Stable-Portfolio/index.mdx","sourceFileName":"index.mdx","sourceFileDir":"Top-Blue-chipStocks-for-a-Stable-Portfolio","contentType":"mdx","flattenedPath":"Top-Blue-chipStocks-for-a-Stable-Portfolio"},"type":"Blog","url":"/blogs/Top-Blue-chipStocks-for-a-Stable-Portfolio","readingTime":{"text":"2 min read","minutes":1.83,"time":109800,"words":366},"toc":[{"level":"two","text":"Top Blue-chip Stocks for a Stable Portfolio","slug":"top-blue-chip-stocks-for-a-stable-portfolio"},{"level":"three","text":"Introduction","slug":"introduction"},{"level":"three","text":"What are Blue-chip Stocks?","slug":"what-are-blue-chip-stocks"},{"level":"three","text":"Definition","slug":"definition"},{"level":"three","text":"Importance","slug":"importance"},{"level":"three","text":"Top Blue-chip Stocks","slug":"top-blue-chip-stocks"},{"level":"three","text":"Reliance Industries","slug":"reliance-industries"},{"level":"three","text":"HDFC Bank","slug":"hdfc-bank"},{"level":"three","text":"Tata Consultancy Services (TCS)","slug":"tata-consultancy-services-tcs"},{"level":"three","text":"Infosys","slug":"infosys"},{"level":"three","text":"ITC Limited","slug":"itc-limited"},{"level":"three","text":"Sectoral Analysis","slug":"sectoral-analysis"},{"level":"three","text":"Technology","slug":"technology"},{"level":"three","text":"Financial Services","slug":"financial-services"},{"level":"three","text":"FMCG","slug":"fmcg"},{"level":"three","text":"Real-life Examples","slug":"real-life-examples"},{"level":"three","text":"Conclusion","slug":"conclusion"},{"level":"three","text":"References","slug":"references"}]}}]
+f:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+b:null
+2a:I[8175,[],"IconMark"]
+d:{"metadata":[["$","title","0",{"children":"Top Blue-chip Stocks for a Stable Portfolio | Radii Labs | Quantitative Research Holding Firm with actionable insights"}],["$","meta","1",{"name":"description","content":"An in-depth look at top blue-chip stocks that can provide stability and growth to your investment portfolio."}],["$","link","2",{"rel":"manifest","href":"/manifest.webmanifest","crossOrigin":"$undefined"}],["$","meta","3",{"name":"robots","content":"index, follow"}],["$","meta","4",{"name":"googlebot","content":"index, follow, noimageindex, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","meta","5",{"property":"og:title","content":"Top Blue-chip Stocks for a Stable Portfolio"}],["$","meta","6",{"property":"og:description","content":"An in-depth look at top blue-chip stocks that can provide stability and growth to your investment portfolio."}],["$","meta","7",{"property":"og:url","content":"https://www.radii.in/blogs/Top-Blue-chipStocks-for-a-Stable-Portfolio"}],["$","meta","8",{"property":"og:site_name","content":"Radii Labs | Quantitative Research Holding Firm with actionable insights"}],["$","meta","9",{"property":"og:locale","content":"en_US"}],["$","meta","10",{"property":"og:image","content":"https://www.radii.in/blogs/anne-nygard-vDwGiU4uKYU-unsplash.jpg"}],["$","meta","11",{"property":"og:type","content":"article"}],["$","meta","12",{"property":"article:published_time","content":"2024-07-01T00:00:00.000Z"}],["$","meta","13",{"property":"article:modified_time","content":"2024-07-01T00:00:00.000Z"}],["$","meta","14",{"property":"article:author","content":"Your Name"}],["$","meta","15",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","16",{"name":"twitter:title","content":"Top Blue-chip Stocks for a Stable Portfolio"}],["$","meta","17",{"name":"twitter:description","content":"An in-depth look at top blue-chip stocks that can provide stability and growth to your investment portfolio."}],["$","meta","18",{"name":"twitter:image","content":"https://www.radii.in/blogs/anne-nygard-vDwGiU4uKYU-unsplash.jpg"}],["$","link","19",{"rel":"apple-touch-icon","href":"/apple-icon.png?2c33ea0c67d23d40","type":"image/png","sizes":"180x180"}],["$","$L2a","20",{}]],"error":null,"digest":"$undefined"}
+12:"$d:metadata"

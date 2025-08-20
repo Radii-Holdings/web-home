@@ -1,0 +1,266 @@
+1:"$Sreact.fragment"
+2:I[9243,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","148","static/chunks/148-7caa5d4606632bad.js","177","static/chunks/app/layout-cc9bb439db195741.js"],""]
+3:I[854,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","148","static/chunks/148-7caa5d4606632bad.js","177","static/chunks/app/layout-cc9bb439db195741.js"],"default"]
+4:I[7555,[],""]
+5:I[1295,[],""]
+6:I[6874,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","744","static/chunks/app/blogs/%5Bslug%5D/page-bf2f560f8e63c394.js"],""]
+7:I[3320,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","148","static/chunks/148-7caa5d4606632bad.js","177","static/chunks/app/layout-cc9bb439db195741.js"],"default"]
+8:I[9039,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","148","static/chunks/148-7caa5d4606632bad.js","177","static/chunks/app/layout-cc9bb439db195741.js"],"default"]
+a:I[9665,[],"OutletBoundary"]
+c:I[4911,[],"AsyncMetadataOutlet"]
+e:I[9665,[],"ViewportBoundary"]
+10:I[9665,[],"MetadataBoundary"]
+11:"$Sreact.suspense"
+13:I[8393,[],""]
+:HL["/_next/static/media/4c9affa5bc8f420e-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/fb75ce67fe671751.css","style"]
+0:{"P":null,"b":"RZY3k2D7vQE4EEdvFRYid","p":"","c":["","blogs","Investing-in-Indian-Mutual-Funds--A-Comprehensive-Guide"],"i":false,"f":[[["",{"children":["blogs",{"children":[["slug","Investing-in-Indian-Mutual-Funds--A-Comprehensive-Guide","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fb75ce67fe671751.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"__variable_e8ce0c __variable_73ee6c font-mr bg-light dark:bg-dark","children":[["$","$L2",null,{"id":"theme-switcher","strategy":"beforeInteractive","children":"if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {\n    document.documentElement.classList.add('dark')\n  } else {\n    document.documentElement.classList.remove('dark')\n  }"}],["$","$L3",null,{}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","main",null,{"className":"my-32 w-full dark:bg-dark flex justify-center font-mr","children":["$","div",null,{"className":"relative flex flex-col items-center justify-center","children":[["$","h1",null,{"className":"inline-block text-dark dark:text-light\n      text-6xl font-bold w-full capitalize xl:text-8xl text-center","children":"404"}],["$","h2",null,{"className":"inline-block text-dark dark:text-light\n      text-5xl font-bold w-full capitalize xl:text-6xl text-center mt-4 tracking-wide leading-snug","children":"Page Not Found!"}],["$","$L6",null,{"href":"/","className":"self-center mt-8 inline-block rounded-lg border-2 border-solid bg-dark px-4 py-2 font-semibold text-light hover:border-dark hover:bg-light hover:text-dark  dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light ","children":"Go To Home"}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L7",null,{}],["$","$L8",null,{}]," "]}]}]]}],{"children":["blogs",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","Investing-in-Indian-Mutual-Funds--A-Comprehensive-Guide","d"],["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L9",null,["$","$La",null,{"children":["$Lb",["$","$Lc",null,{"promise":"$@d"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Le",null,{"children":"$Lf"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$L10",null,{"children":["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"children":"$L12"}]}]}]]}],false]],"m":"$undefined","G":["$13",[]],"s":false,"S":true}
+14:I[3063,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","744","static/chunks/app/blogs/%5Bslug%5D/page-bf2f560f8e63c394.js"],"Image"]
+9:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"NewsArticle\",\"headline\":\"Investing in Indian Mutual Funds: A Comprehensive Guide\",\"description\":\"A detailed guide on investing in Indian mutual funds, covering types, benefits, risks, and strategies.\",\"image\":[\"https://www.radii.in/blogs/josh-appel-NeTPASr-bmQ-unsplash.jpg\"],\"datePublished\":\"2024-07-01T00:00:00.000Z\",\"dateModified\":\"2024-07-01T00:00:00.000Z\",\"author\":[{\"@type\":\"Person\",\"name\":[\"Radii Lab\"],\"url\":\"https://twitter.com/LabRadii\"}]}"}}],["$","article",null,{"children":[["$","div",null,{"className":"mb-8 text-center relative w-full h-[70vh] bg-dark","children":[["$","div",null,{"className":"w-full z-10 flex flex-col items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2","children":[["$","$L6",null,{"href":"/categories/mutual-funds","className":"inline-block py-2 sm:py-3 px-6 sm:px-10  bg-dark text-light rounded-full capitalize font-semibold border-2 border-solid border-light hover:scale-105 transition-all ease duration-200 text-sm sm:text-base px-6 text-sm py-2 hero-tag-animated","children":"mutual funds"}],["$","h1",null,{"className":"inline-block mt-6 font-semibold capitalize text-2xl md:text-3xl lg:text-5xl !leading-normal relative w-5/6","children":["$","span",null,{"className":"hero-title-underline","children":"Investing in Indian Mutual Funds: A Comprehensive Guide"}]}]]}],["$","div",null,{"className":"absolute top-0 left-0 right-0 bottom-0 h-full bg-dark/60 dark:bg-dark/40"}],["$","$L14",null,{"src":"/blogs/josh-appel-NeTPASr-bmQ-unsplash.jpg","placeholder":"blur","blurDataURL":"data:image/jpeg;base64,/9j/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAAIAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAP/xAAdEAACAgIDAQAAAAAAAAAAAAABAgARAwQFEiEx/8QAFAEBAAAAAAAAAAAAAAAAAAAABP/EABcRAQEBAQAAAAAAAAAAAAAAAAEAQRH/2gAMAwEAAhEDEQA/AI8zsry2ModcnA6nu3lqG9s2KHyxERAnTZwDl//Z","alt":"Investing in Indian Mutual Funds: A Comprehensive Guide","width":1920,"height":1442,"className":"aspect-square w-full h-full object-cover object-center","priority":true,"sizes":"100vw"}]]}],["$","div",null,{"className":"px-2  md:px-10 bg-accent dark:bg-accentDark text-light dark:text-dark py-2 flex items-center justify-around flex-wrap text-lg sm:text-xl font-medium mx-5  md:mx-10 rounded-lg","children":[["$","time",null,{"className":"m-3","children":"July 1, 2024"}],["$","div",null,{"className":"m-3","children":"3 min read"}],["$","$L6",null,{"href":"/categories/mutual-funds","className":"m-3","children":["#","mutual funds"]}]]}],["$","div",null,{"className":"grid grid-cols-12  gap-y-8 lg:gap-8 sxl:gap-16 mt-8 px-5 md:px-10","children":[["$","div",null,{"className":"col-span-12  lg:col-span-4","children":["$","details",null,{"className":"border-[1px] border-solid border-dark dark:border-light text-dark dark:text-light rounded-lg p-4 sticky top-6 max-h-[80vh] overflow-hidden overflow-y-auto","open":true,"children":[["$","summary",null,{"className":"text-lg font-semibold capitalize cursor-pointer","children":"Table Of Content"}],["$","ul",null,{"className":"mt-4 font-in text-base","children":[["$","li","#investing-in-indian-mutual-funds-a-comprehensive-guide",{"className":"py-1","children":["$","a",null,{"href":"#investing-in-indian-mutual-funds-a-comprehensive-guide","data-level":"two","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[null,"$L15"]}]}],"$L16","$L17","$L18","$L19","$L1a","$L1b","$L1c","$L1d","$L1e","$L1f","$L20","$L21","$L22","$L23","$L24","$L25","$L26","$L27","$L28","$L29","$L2a","$L2b","$L2c","$L2d","$L2e","$L2f"]}]]}]}],"$L30"]}]]}]]
+31:I[3391,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","744","static/chunks/app/blogs/%5Bslug%5D/page-bf2f560f8e63c394.js"],"default"]
+15:["$","span",null,{"className":"hover:underline","children":"Investing in Indian Mutual Funds: A Comprehensive Guide"}]
+16:["$","li","#introduction",{"className":"py-1","children":["$","a",null,{"href":"#introduction","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Introduction"}]]}]}]
+17:["$","li","#what-are-mutual-funds",{"className":"py-1","children":["$","a",null,{"href":"#what-are-mutual-funds","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"What are Mutual Funds?"}]]}]}]
+18:["$","li","#definition",{"className":"py-1","children":["$","a",null,{"href":"#definition","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Definition"}]]}]}]
+19:["$","li","#importance",{"className":"py-1","children":["$","a",null,{"href":"#importance","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Importance"}]]}]}]
+1a:["$","li","#types-of-mutual-funds",{"className":"py-1","children":["$","a",null,{"href":"#types-of-mutual-funds","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Types of Mutual Funds"}]]}]}]
+1b:["$","li","#equity-mutual-funds",{"className":"py-1","children":["$","a",null,{"href":"#equity-mutual-funds","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Equity Mutual Funds"}]]}]}]
+1c:["$","li","#debt-mutual-funds",{"className":"py-1","children":["$","a",null,{"href":"#debt-mutual-funds","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Debt Mutual Funds"}]]}]}]
+1d:["$","li","#hybrid-mutual-funds",{"className":"py-1","children":["$","a",null,{"href":"#hybrid-mutual-funds","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Hybrid Mutual Funds"}]]}]}]
+1e:["$","li","#benefits-of-investing-in-mutual-funds",{"className":"py-1","children":["$","a",null,{"href":"#benefits-of-investing-in-mutual-funds","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Benefits of Investing in Mutual Funds"}]]}]}]
+1f:["$","li","#diversification",{"className":"py-1","children":["$","a",null,{"href":"#diversification","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Diversification"}]]}]}]
+20:["$","li","#liquidity",{"className":"py-1","children":["$","a",null,{"href":"#liquidity","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Liquidity"}]]}]}]
+21:["$","li","#risks-of-investing-in-mutual-funds",{"className":"py-1","children":["$","a",null,{"href":"#risks-of-investing-in-mutual-funds","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Risks of Investing in Mutual Funds"}]]}]}]
+22:["$","li","#market-risk",{"className":"py-1","children":["$","a",null,{"href":"#market-risk","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Market Risk"}]]}]}]
+23:["$","li","#management-risk",{"className":"py-1","children":["$","a",null,{"href":"#management-risk","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Management Risk"}]]}]}]
+24:["$","li","#how-to-choose-the-right-mutual-fund",{"className":"py-1","children":["$","a",null,{"href":"#how-to-choose-the-right-mutual-fund","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"How to Choose the Right Mutual Fund"}]]}]}]
+25:["$","li","#research-and-analysis",{"className":"py-1","children":["$","a",null,{"href":"#research-and-analysis","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Research and Analysis"}]]}]}]
+26:["$","li","#investment-goals",{"className":"py-1","children":["$","a",null,{"href":"#investment-goals","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Investment Goals"}]]}]}]
+27:["$","li","#how-to-invest-in-mutual-funds",{"className":"py-1","children":["$","a",null,{"href":"#how-to-invest-in-mutual-funds","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"How to Invest in Mutual Funds"}]]}]}]
+28:["$","li","#online-platforms",{"className":"py-1","children":["$","a",null,{"href":"#online-platforms","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Online Platforms"}]]}]}]
+29:["$","li","#direct-plans",{"className":"py-1","children":["$","a",null,{"href":"#direct-plans","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Direct Plans"}]]}]}]
+2a:["$","li","#taxation-of-mutual-funds",{"className":"py-1","children":["$","a",null,{"href":"#taxation-of-mutual-funds","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Taxation of Mutual Funds"}]]}]}]
+2b:["$","li","#equity-funds",{"className":"py-1","children":["$","a",null,{"href":"#equity-funds","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Equity Funds"}]]}]}]
+2c:["$","li","#debt-funds",{"className":"py-1","children":["$","a",null,{"href":"#debt-funds","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Debt Funds"}]]}]}]
+2d:["$","li","#real-life-examples",{"className":"py-1","children":["$","a",null,{"href":"#real-life-examples","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Real-life Examples"}]]}]}]
+2e:["$","li","#conclusion",{"className":"py-1","children":["$","a",null,{"href":"#conclusion","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"Conclusion"}]]}]}]
+2f:["$","li","#references",{"className":"py-1","children":["$","a",null,{"href":"#references","data-level":"three","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[["$","span",null,{"className":"flex w-1 h-1 rounded-full bg-dark mr-2","children":" "}],["$","span",null,{"className":"hover:underline","children":"References"}]]}]}]
+32:Tf5e,
+## Investing in Indian Mutual Funds: A Comprehensive Guide
+
+### Introduction
+
+Mutual funds offer a diversified and professionally managed investment option for Indian investors. This comprehensive guide covers everything you need to know about investing in Indian mutual funds.
+
+![Mutual Funds](../../public/blogs/carlos-muza-hpjSkU2UYSU-unsplash.jpg)
+
+### What are Mutual Funds?
+
+#### Definition
+
+A mutual fund pools money from multiple investors to invest in a diversified portfolio of assets.
+
+<Image
+  src="/blogs/c-d-x-PDX_a_82obo-unsplash.jpg"
+  width="718"
+  height="404"
+  alt="Image"
+  sizes="100vw"
+/>
+
+#### Importance
+
+1. **Diversification**: Spreads risk across various assets.
+2. **Professional Management**: Managed by experienced fund managers.
+
+### Types of Mutual Funds
+
+#### Equity Mutual Funds
+
+- **Overview**: Invest primarily in stocks.
+- **Types**: Large-cap, mid-cap, small-cap. Refer to [MoneyControl Equity Funds](https://www.moneycontrol.com/mutual-funds/equity) for details.
+
+#### Debt Mutual Funds
+
+- **Overview**: Invest in fixed income securities.
+- **Types**: Short-term, long-term, liquid funds. See [MoneyControl Debt Funds](https://www.moneycontrol.com/mutual-funds/debt) for more information.
+
+#### Hybrid Mutual Funds
+
+- **Overview**: Combine equity and debt investments.
+- **Types**: Balanced funds, aggressive hybrid funds.
+
+### Benefits of Investing in Mutual Funds
+
+#### Diversification
+
+- **Risk Management**: Reduces risk by spreading investments across various assets.
+
+#### Liquidity
+
+- **Easy Access**: Mutual funds can be bought and sold easily. Check [NSE Mutual Funds](https://www.nseindia.com/products-services/mutual-funds) for trading information.
+
+### Risks of Investing in Mutual Funds
+
+#### Market Risk
+
+- **Volatility**: Mutual funds are subject to market fluctuations.
+
+#### Management Risk
+
+- **Fund Manager Performance**: Returns depend on the manager’s expertise.
+
+### How to Choose the Right Mutual Fund
+
+#### Research and Analysis
+
+- **Historical Performance**: Review past performance using [Morningstar India](https://www.morningstar.in).
+- **Expense Ratio**: Lower expense ratios often lead to higher net returns.
+
+#### Investment Goals
+
+- **Risk Tolerance**: Choose funds that match your risk profile.
+- **Time Horizon**: Align with your investment timeline.
+
+### How to Invest in Mutual Funds
+
+#### Online Platforms
+
+- **Investment Portals**: Use platforms like [Groww](https://groww.in) or [Zerodha](https://zerodha.com) for easy investment.
+
+#### Direct Plans
+
+- **Benefits**: Lower expense ratios compared to regular plans. See [Direct Mutual Funds](https://www.mutualfundssahihai.com/en/why-direct) for more details.
+
+### Taxation of Mutual Funds
+
+#### Equity Funds
+
+- **Short-term Capital Gains (STCG)**: Taxed at 15%.
+- **Long-term Capital Gains (LTCG)**: Tax-free up to ₹1 lakh; 10% beyond that.
+
+#### Debt Funds
+
+- **Short-term Capital Gains (STCG)**: Taxed as per the investor’s income slab.
+- **Long-term Capital Gains (LTCG)**: Taxed at 20% with indexation benefits.
+
+### Real-life Examples
+
+- **Investor Stories**: Interviews with successful mutual fund investors.
+- **Case Studies**: Detailed analysis of high-performing mutual funds.
+
+### Conclusion
+
+Investing in Indian mutual funds can provide a balanced and diversified investment portfolio. Stay updated with [Economic Times Mutual Funds](https://economictimes.indiatimes.com/mutual-funds) for the latest news and trends.
+
+### References
+
+1. **[MoneyControl Equity Funds](https://www.moneycontrol.com/mutual-funds/equity)**
+2. **[MoneyControl Debt Funds](https://www.moneycontrol.com/mutual-funds/debt)**
+3. **[NSE Mutual Funds](https://www.nseindia.com/products-services/mutual-funds)**
+4. **[Morningstar India](https://www.morningstar.in)**
+5. **[Groww](https://groww.in)**
+6. **[Zerodha](https://zerodha.com)**
+7. **[Direct Mutual Funds](https://www.mutualfundssahihai.com/en/why-direct)**
+33:T366a,var Component=(()=>{var u=Object.create;var t=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var b=(i,n)=>()=>(n||i((n={exports:{}}).exports,n),n.exports),w=(i,n)=>{for(var r in n)t(i,r,{get:n[r],enumerable:!0})},s=(i,n,r,d)=>{if(n&&typeof n=="object"||typeof n=="function")for(let a of f(n))!g.call(i,a)&&a!==r&&t(i,a,{get:()=>n[a],enumerable:!(d=m(n,a))||d.enumerable});return i};var v=(i,n,r)=>(r=i!=null?u(p(i)):{},s(n||!i||!i.__esModule?t(r,"default",{value:i,enumerable:!0}):r,i)),y=i=>s(t({},"__esModule",{value:!0}),i);var o=b((N,l)=>{l.exports=_jsx_runtime});var I={};w(I,{default:()=>h,frontmatter:()=>x});var e=v(o()),x={title:"Investing in Indian Mutual Funds: A Comprehensive Guide",description:"A detailed guide on investing in Indian mutual funds, covering types, benefits, risks, and strategies.",image:"../../public/blogs/josh-appel-NeTPASr-bmQ-unsplash.jpg",publishedAt:"2024-07-01",updatedAt:"2024-07-01",author:"Radii Lab",isPublished:!0,tags:["mutual funds","investment guide","market wrap","Indian market"]};function c(i){let n={a:"a",h2:"h2",h3:"h3",h4:"h4",img:"img",li:"li",ol:"ol",p:"p",span:"span",strong:"strong",ul:"ul",...i.components},{Image:r}=n;return r||k("Image",!0),(0,e.jsxs)(e.Fragment,{children:[(0,e.jsxs)(n.h2,{id:"investing-in-indian-mutual-funds-a-comprehensive-guide",children:["Investing in Indian Mutual Funds: A Comprehensive Guide",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#investing-in-indian-mutual-funds-a-comprehensive-guide",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.h3,{id:"introduction",children:["Introduction",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#introduction",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsx)(n.p,{children:"Mutual funds offer a diversified and professionally managed investment option for Indian investors. This comprehensive guide covers everything you need to know about investing in Indian mutual funds."}),`
+`,(0,e.jsx)(n.p,{children:(0,e.jsx)(n.img,{src:"../../public/blogs/carlos-muza-hpjSkU2UYSU-unsplash.jpg",alt:"Mutual Funds"})}),`
+`,(0,e.jsxs)(n.h3,{id:"what-are-mutual-funds",children:["What are Mutual Funds?",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#what-are-mutual-funds",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.h4,{id:"definition",children:["Definition",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#definition",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsx)(n.p,{children:"A mutual fund pools money from multiple investors to invest in a diversified portfolio of assets."}),`
+`,(0,e.jsx)(r,{src:"/blogs/c-d-x-PDX_a_82obo-unsplash.jpg",width:"718",height:"404",alt:"Image",sizes:"100vw"}),`
+`,(0,e.jsxs)(n.h4,{id:"importance",children:["Importance",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#importance",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.ol,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Diversification"}),": Spreads risk across various assets."]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Professional Management"}),": Managed by experienced fund managers."]}),`
+`]}),`
+`,(0,e.jsxs)(n.h3,{id:"types-of-mutual-funds",children:["Types of Mutual Funds",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#types-of-mutual-funds",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.h4,{id:"equity-mutual-funds",children:["Equity Mutual Funds",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#equity-mutual-funds",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Overview"}),": Invest primarily in stocks."]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Types"}),": Large-cap, mid-cap, small-cap. Refer to ",(0,e.jsx)(n.a,{href:"https://www.moneycontrol.com/mutual-funds/equity",children:"MoneyControl Equity Funds"})," for details."]}),`
+`]}),`
+`,(0,e.jsxs)(n.h4,{id:"debt-mutual-funds",children:["Debt Mutual Funds",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#debt-mutual-funds",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Overview"}),": Invest in fixed income securities."]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Types"}),": Short-term, long-term, liquid funds. See ",(0,e.jsx)(n.a,{href:"https://www.moneycontrol.com/mutual-funds/debt",children:"MoneyControl Debt Funds"})," for more information."]}),`
+`]}),`
+`,(0,e.jsxs)(n.h4,{id:"hybrid-mutual-funds",children:["Hybrid Mutual Funds",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#hybrid-mutual-funds",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Overview"}),": Combine equity and debt investments."]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Types"}),": Balanced funds, aggressive hybrid funds."]}),`
+`]}),`
+`,(0,e.jsxs)(n.h3,{id:"benefits-of-investing-in-mutual-funds",children:["Benefits of Investing in Mutual Funds",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#benefits-of-investing-in-mutual-funds",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.h4,{id:"diversification",children:["Diversification",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#diversification",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Risk Management"}),": Reduces risk by spreading investments across various assets."]}),`
+`]}),`
+`,(0,e.jsxs)(n.h4,{id:"liquidity",children:["Liquidity",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#liquidity",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Easy Access"}),": Mutual funds can be bought and sold easily. Check ",(0,e.jsx)(n.a,{href:"https://www.nseindia.com/products-services/mutual-funds",children:"NSE Mutual Funds"})," for trading information."]}),`
+`]}),`
+`,(0,e.jsxs)(n.h3,{id:"risks-of-investing-in-mutual-funds",children:["Risks of Investing in Mutual Funds",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#risks-of-investing-in-mutual-funds",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.h4,{id:"market-risk",children:["Market Risk",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#market-risk",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Volatility"}),": Mutual funds are subject to market fluctuations."]}),`
+`]}),`
+`,(0,e.jsxs)(n.h4,{id:"management-risk",children:["Management Risk",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#management-risk",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Fund Manager Performance"}),": Returns depend on the manager\u2019s expertise."]}),`
+`]}),`
+`,(0,e.jsxs)(n.h3,{id:"how-to-choose-the-right-mutual-fund",children:["How to Choose the Right Mutual Fund",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#how-to-choose-the-right-mutual-fund",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.h4,{id:"research-and-analysis",children:["Research and Analysis",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#research-and-analysis",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Historical Performance"}),": Review past performance using ",(0,e.jsx)(n.a,{href:"https://www.morningstar.in",children:"Morningstar India"}),"."]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Expense Ratio"}),": Lower expense ratios often lead to higher net returns."]}),`
+`]}),`
+`,(0,e.jsxs)(n.h4,{id:"investment-goals",children:["Investment Goals",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#investment-goals",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Risk Tolerance"}),": Choose funds that match your risk profile."]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Time Horizon"}),": Align with your investment timeline."]}),`
+`]}),`
+`,(0,e.jsxs)(n.h3,{id:"how-to-invest-in-mutual-funds",children:["How to Invest in Mutual Funds",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#how-to-invest-in-mutual-funds",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.h4,{id:"online-platforms",children:["Online Platforms",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#online-platforms",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Investment Portals"}),": Use platforms like ",(0,e.jsx)(n.a,{href:"https://groww.in",children:"Groww"})," or ",(0,e.jsx)(n.a,{href:"https://zerodha.com",children:"Zerodha"})," for easy investment."]}),`
+`]}),`
+`,(0,e.jsxs)(n.h4,{id:"direct-plans",children:["Direct Plans",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#direct-plans",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Benefits"}),": Lower expense ratios compared to regular plans. See ",(0,e.jsx)(n.a,{href:"https://www.mutualfundssahihai.com/en/why-direct",children:"Direct Mutual Funds"})," for more details."]}),`
+`]}),`
+`,(0,e.jsxs)(n.h3,{id:"taxation-of-mutual-funds",children:["Taxation of Mutual Funds",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#taxation-of-mutual-funds",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.h4,{id:"equity-funds",children:["Equity Funds",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#equity-funds",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Short-term Capital Gains (STCG)"}),": Taxed at 15%."]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Long-term Capital Gains (LTCG)"}),": Tax-free up to \u20B91 lakh; 10% beyond that."]}),`
+`]}),`
+`,(0,e.jsxs)(n.h4,{id:"debt-funds",children:["Debt Funds",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#debt-funds",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Short-term Capital Gains (STCG)"}),": Taxed as per the investor\u2019s income slab."]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Long-term Capital Gains (LTCG)"}),": Taxed at 20% with indexation benefits."]}),`
+`]}),`
+`,(0,e.jsxs)(n.h3,{id:"real-life-examples",children:["Real-life Examples",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#real-life-examples",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Investor Stories"}),": Interviews with successful mutual fund investors."]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Case Studies"}),": Detailed analysis of high-performing mutual funds."]}),`
+`]}),`
+`,(0,e.jsxs)(n.h3,{id:"conclusion",children:["Conclusion",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#conclusion",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.p,{children:["Investing in Indian mutual funds can provide a balanced and diversified investment portfolio. Stay updated with ",(0,e.jsx)(n.a,{href:"https://economictimes.indiatimes.com/mutual-funds",children:"Economic Times Mutual Funds"})," for the latest news and trends."]}),`
+`,(0,e.jsxs)(n.h3,{id:"references",children:["References",(0,e.jsx)(n.a,{"aria-hidden":"true",tabIndex:"-1",href:"#references",children:(0,e.jsx)(n.span,{className:"icon icon-link"})})]}),`
+`,(0,e.jsxs)(n.ol,{children:[`
+`,(0,e.jsx)(n.li,{children:(0,e.jsx)(n.strong,{children:(0,e.jsx)(n.a,{href:"https://www.moneycontrol.com/mutual-funds/equity",children:"MoneyControl Equity Funds"})})}),`
+`,(0,e.jsx)(n.li,{children:(0,e.jsx)(n.strong,{children:(0,e.jsx)(n.a,{href:"https://www.moneycontrol.com/mutual-funds/debt",children:"MoneyControl Debt Funds"})})}),`
+`,(0,e.jsx)(n.li,{children:(0,e.jsx)(n.strong,{children:(0,e.jsx)(n.a,{href:"https://www.nseindia.com/products-services/mutual-funds",children:"NSE Mutual Funds"})})}),`
+`,(0,e.jsx)(n.li,{children:(0,e.jsx)(n.strong,{children:(0,e.jsx)(n.a,{href:"https://www.morningstar.in",children:"Morningstar India"})})}),`
+`,(0,e.jsx)(n.li,{children:(0,e.jsx)(n.strong,{children:(0,e.jsx)(n.a,{href:"https://groww.in",children:"Groww"})})}),`
+`,(0,e.jsx)(n.li,{children:(0,e.jsx)(n.strong,{children:(0,e.jsx)(n.a,{href:"https://zerodha.com",children:"Zerodha"})})}),`
+`,(0,e.jsx)(n.li,{children:(0,e.jsx)(n.strong,{children:(0,e.jsx)(n.a,{href:"https://www.mutualfundssahihai.com/en/why-direct",children:"Direct Mutual Funds"})})}),`
+`]})]})}function h(i={}){let{wrapper:n}=i.components||{};return n?(0,e.jsx)(n,{...i,children:(0,e.jsx)(c,{...i})}):c(i)}function k(i,n){throw new Error("Expected "+(n?"component":"object")+" `"+i+"` to be defined: you likely forgot to import, pass, or provide it.")}return y(I);})();
+;return Component;30:["$","$L31",null,{"blog":{"title":"Investing in Indian Mutual Funds: A Comprehensive Guide","publishedAt":"2024-07-01T00:00:00.000Z","updatedAt":"2024-07-01T00:00:00.000Z","description":"A detailed guide on investing in Indian mutual funds, covering types, benefits, risks, and strategies.","image":{"filePath":"../public/blogs/josh-appel-NeTPASr-bmQ-unsplash.jpg","relativeFilePath":"../../public/blogs/josh-appel-NeTPASr-bmQ-unsplash.jpg","format":"jpeg","height":1442,"width":1920,"aspectRatio":1.331484049930652,"blurhashDataUrl":"data:image/jpeg;base64,/9j/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAAIAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAP/xAAdEAACAgIDAQAAAAAAAAAAAAABAgARAwQFEiEx/8QAFAEBAAAAAAAAAAAAAAAAAAAABP/EABcRAQEBAQAAAAAAAAAAAAAAAAEAQRH/2gAMAwEAAhEDEQA/AI8zsry2ModcnA6nu3lqG9s2KHyxERAnTZwDl//Z"},"isPublished":true,"author":"Radii Lab","tags":["mutual funds","investment guide","market wrap","Indian market"],"body":{"raw":"$32","code":"$33"},"_id":"Investing-in-Indian-Mutual-Funds--A-Comprehensive-Guide/index.mdx","_raw":{"sourceFilePath":"Investing-in-Indian-Mutual-Funds--A-Comprehensive-Guide/index.mdx","sourceFileName":"index.mdx","sourceFileDir":"Investing-in-Indian-Mutual-Funds--A-Comprehensive-Guide","contentType":"mdx","flattenedPath":"Investing-in-Indian-Mutual-Funds--A-Comprehensive-Guide"},"type":"Blog","url":"/blogs/Investing-in-Indian-Mutual-Funds--A-Comprehensive-Guide","readingTime":{"text":"3 min read","minutes":2.265,"time":135900,"words":453},"toc":[{"level":"two","text":"Investing in Indian Mutual Funds: A Comprehensive Guide","slug":"investing-in-indian-mutual-funds-a-comprehensive-guide"},{"level":"three","text":"Introduction","slug":"introduction"},{"level":"three","text":"What are Mutual Funds?","slug":"what-are-mutual-funds"},{"level":"three","text":"Definition","slug":"definition"},{"level":"three","text":"Importance","slug":"importance"},{"level":"three","text":"Types of Mutual Funds","slug":"types-of-mutual-funds"},{"level":"three","text":"Equity Mutual Funds","slug":"equity-mutual-funds"},{"level":"three","text":"Debt Mutual Funds","slug":"debt-mutual-funds"},{"level":"three","text":"Hybrid Mutual Funds","slug":"hybrid-mutual-funds"},{"level":"three","text":"Benefits of Investing in Mutual Funds","slug":"benefits-of-investing-in-mutual-funds"},{"level":"three","text":"Diversification","slug":"diversification"},{"level":"three","text":"Liquidity","slug":"liquidity"},{"level":"three","text":"Risks of Investing in Mutual Funds","slug":"risks-of-investing-in-mutual-funds"},{"level":"three","text":"Market Risk","slug":"market-risk"},{"level":"three","text":"Management Risk","slug":"management-risk"},{"level":"three","text":"How to Choose the Right Mutual Fund","slug":"how-to-choose-the-right-mutual-fund"},{"level":"three","text":"Research and Analysis","slug":"research-and-analysis"},{"level":"three","text":"Investment Goals","slug":"investment-goals"},{"level":"three","text":"How to Invest in Mutual Funds","slug":"how-to-invest-in-mutual-funds"},{"level":"three","text":"Online Platforms","slug":"online-platforms"},{"level":"three","text":"Direct Plans","slug":"direct-plans"},{"level":"three","text":"Taxation of Mutual Funds","slug":"taxation-of-mutual-funds"},{"level":"three","text":"Equity Funds","slug":"equity-funds"},{"level":"three","text":"Debt Funds","slug":"debt-funds"},{"level":"three","text":"Real-life Examples","slug":"real-life-examples"},{"level":"three","text":"Conclusion","slug":"conclusion"},{"level":"three","text":"References","slug":"references"}]}}]
+f:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+b:null
+34:I[8175,[],"IconMark"]
+d:{"metadata":[["$","title","0",{"children":"Investing in Indian Mutual Funds: A Comprehensive Guide | Radii Labs | Quantitative Research Holding Firm with actionable insights"}],["$","meta","1",{"name":"description","content":"A detailed guide on investing in Indian mutual funds, covering types, benefits, risks, and strategies."}],["$","link","2",{"rel":"manifest","href":"/manifest.webmanifest","crossOrigin":"$undefined"}],["$","meta","3",{"name":"robots","content":"index, follow"}],["$","meta","4",{"name":"googlebot","content":"index, follow, noimageindex, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","meta","5",{"property":"og:title","content":"Investing in Indian Mutual Funds: A Comprehensive Guide"}],["$","meta","6",{"property":"og:description","content":"A detailed guide on investing in Indian mutual funds, covering types, benefits, risks, and strategies."}],["$","meta","7",{"property":"og:url","content":"https://www.radii.in/blogs/Investing-in-Indian-Mutual-Funds--A-Comprehensive-Guide"}],["$","meta","8",{"property":"og:site_name","content":"Radii Labs | Quantitative Research Holding Firm with actionable insights"}],["$","meta","9",{"property":"og:locale","content":"en_US"}],["$","meta","10",{"property":"og:image","content":"https://www.radii.in/blogs/josh-appel-NeTPASr-bmQ-unsplash.jpg"}],["$","meta","11",{"property":"og:type","content":"article"}],["$","meta","12",{"property":"article:published_time","content":"2024-07-01T00:00:00.000Z"}],["$","meta","13",{"property":"article:modified_time","content":"2024-07-01T00:00:00.000Z"}],["$","meta","14",{"property":"article:author","content":"Radii Lab"}],["$","meta","15",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","16",{"name":"twitter:title","content":"Investing in Indian Mutual Funds: A Comprehensive Guide"}],["$","meta","17",{"name":"twitter:description","content":"A detailed guide on investing in Indian mutual funds, covering types, benefits, risks, and strategies."}],["$","meta","18",{"name":"twitter:image","content":"https://www.radii.in/blogs/josh-appel-NeTPASr-bmQ-unsplash.jpg"}],["$","link","19",{"rel":"apple-touch-icon","href":"/apple-icon.png?2c33ea0c67d23d40","type":"image/png","sizes":"180x180"}],["$","$L34","20",{}]],"error":null,"digest":"$undefined"}
+12:"$d:metadata"

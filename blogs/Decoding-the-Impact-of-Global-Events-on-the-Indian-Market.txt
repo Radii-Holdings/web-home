@@ -1,0 +1,174 @@
+1:"$Sreact.fragment"
+2:I[9243,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","148","static/chunks/148-7caa5d4606632bad.js","177","static/chunks/app/layout-cc9bb439db195741.js"],""]
+3:I[854,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","148","static/chunks/148-7caa5d4606632bad.js","177","static/chunks/app/layout-cc9bb439db195741.js"],"default"]
+4:I[7555,[],""]
+5:I[1295,[],""]
+6:I[6874,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","744","static/chunks/app/blogs/%5Bslug%5D/page-bf2f560f8e63c394.js"],""]
+7:I[3320,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","148","static/chunks/148-7caa5d4606632bad.js","177","static/chunks/app/layout-cc9bb439db195741.js"],"default"]
+8:I[9039,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","148","static/chunks/148-7caa5d4606632bad.js","177","static/chunks/app/layout-cc9bb439db195741.js"],"default"]
+a:I[9665,[],"OutletBoundary"]
+c:I[4911,[],"AsyncMetadataOutlet"]
+e:I[9665,[],"ViewportBoundary"]
+10:I[9665,[],"MetadataBoundary"]
+11:"$Sreact.suspense"
+13:I[8393,[],""]
+:HL["/_next/static/media/4c9affa5bc8f420e-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/fb75ce67fe671751.css","style"]
+0:{"P":null,"b":"RZY3k2D7vQE4EEdvFRYid","p":"","c":["","blogs","Decoding-the-Impact-of-Global-Events-on-the-Indian-Market"],"i":false,"f":[[["",{"children":["blogs",{"children":[["slug","Decoding-the-Impact-of-Global-Events-on-the-Indian-Market","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fb75ce67fe671751.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"__variable_e8ce0c __variable_73ee6c font-mr bg-light dark:bg-dark","children":[["$","$L2",null,{"id":"theme-switcher","strategy":"beforeInteractive","children":"if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {\n    document.documentElement.classList.add('dark')\n  } else {\n    document.documentElement.classList.remove('dark')\n  }"}],["$","$L3",null,{}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","main",null,{"className":"my-32 w-full dark:bg-dark flex justify-center font-mr","children":["$","div",null,{"className":"relative flex flex-col items-center justify-center","children":[["$","h1",null,{"className":"inline-block text-dark dark:text-light\n      text-6xl font-bold w-full capitalize xl:text-8xl text-center","children":"404"}],["$","h2",null,{"className":"inline-block text-dark dark:text-light\n      text-5xl font-bold w-full capitalize xl:text-6xl text-center mt-4 tracking-wide leading-snug","children":"Page Not Found!"}],["$","$L6",null,{"href":"/","className":"self-center mt-8 inline-block rounded-lg border-2 border-solid bg-dark px-4 py-2 font-semibold text-light hover:border-dark hover:bg-light hover:text-dark  dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light ","children":"Go To Home"}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L7",null,{}],["$","$L8",null,{}]," "]}]}]]}],{"children":["blogs",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","Decoding-the-Impact-of-Global-Events-on-the-Indian-Market","d"],["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L9",null,["$","$La",null,{"children":["$Lb",["$","$Lc",null,{"promise":"$@d"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Le",null,{"children":"$Lf"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$L10",null,{"children":["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"children":"$L12"}]}]}]]}],false]],"m":"$undefined","G":["$13",[]],"s":false,"S":true}
+14:I[3063,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","744","static/chunks/app/blogs/%5Bslug%5D/page-bf2f560f8e63c394.js"],"Image"]
+9:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"NewsArticle\",\"headline\":\"Trump’s Tariffs on India — Real Threat or Hype?\",\"description\":\"Analyzing the impact of U.S. tariffs on Indian exports under the Trump administration.\",\"image\":[\"https://www.radii.in/blogs/marketsBSE.jpg\"],\"datePublished\":\"2025-04-05T00:00:00.000Z\",\"dateModified\":\"2025-04-05T00:00:00.000Z\",\"author\":[{\"@type\":\"Person\",\"name\":[\"Radii Lab\"],\"url\":\"https://twitter.com/LabRadii\"}]}"}}],["$","article",null,{"children":[["$","div",null,{"className":"mb-8 text-center relative w-full h-[70vh] bg-dark","children":[["$","div",null,{"className":"w-full z-10 flex flex-col items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2","children":[["$","$L6",null,{"href":"/categories/international-trade","className":"inline-block py-2 sm:py-3 px-6 sm:px-10  bg-dark text-light rounded-full capitalize font-semibold border-2 border-solid border-light hover:scale-105 transition-all ease duration-200 text-sm sm:text-base px-6 text-sm py-2 hero-tag-animated","children":"international trade"}],["$","h1",null,{"className":"inline-block mt-6 font-semibold capitalize text-2xl md:text-3xl lg:text-5xl !leading-normal relative w-5/6","children":["$","span",null,{"className":"hero-title-underline","children":"Trump’s Tariffs on India — Real Threat or Hype?"}]}]]}],["$","div",null,{"className":"absolute top-0 left-0 right-0 bottom-0 h-full bg-dark/60 dark:bg-dark/40"}],["$","$L14",null,{"src":"/blogs/marketsBSE.jpg","placeholder":"blur","blurDataURL":"data:image/jpeg;base64,/9j/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAAIAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAP/xAAdEAABBAIDAAAAAAAAAAAAAAABAAIDBAUhEhNh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAXEQEBAQEAAAAAAAAAAAAAAAABAAIS/9oADAMBAAIRAxEAPwCVrP4a+Tct4abiwGNoEgj62jWgCPdoiJ6Sk5L/2Q==","alt":"Trump’s Tariffs on India — Real Threat or Hype?","width":600,"height":337,"className":"aspect-square w-full h-full object-cover object-center","priority":true,"sizes":"100vw"}]]}],["$","div",null,{"className":"px-2  md:px-10 bg-accent dark:bg-accentDark text-light dark:text-dark py-2 flex items-center justify-around flex-wrap text-lg sm:text-xl font-medium mx-5  md:mx-10 rounded-lg","children":[["$","time",null,{"className":"m-3","children":"April 5, 2025"}],["$","div",null,{"className":"m-3","children":"4 min read"}],["$","$L6",null,{"href":"/categories/international-trade","className":"m-3","children":["#","international trade"]}]]}],["$","div",null,{"className":"grid grid-cols-12  gap-y-8 lg:gap-8 sxl:gap-16 mt-8 px-5 md:px-10","children":[["$","div",null,{"className":"col-span-12  lg:col-span-4","children":["$","details",null,{"className":"border-[1px] border-solid border-dark dark:border-light text-dark dark:text-light rounded-lg p-4 sticky top-6 max-h-[80vh] overflow-hidden overflow-y-auto","open":true,"children":[["$","summary",null,{"className":"text-lg font-semibold capitalize cursor-pointer","children":"Table Of Content"}],["$","ul",null,{"className":"mt-4 font-in text-base","children":[["$","li","#trumps-tariffs-on-india--real-threat-or-hype-",{"className":"py-1","children":["$","a",null,{"href":"#trumps-tariffs-on-india--real-threat-or-hype-","data-level":"one","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[null,["$","span",null,{"className":"hover:underline","children":"Trump’s Tariffs on India — Real Threat or Hype? 🇺🇸🇮🇳"}]]}]}],"$L15","$L16","$L17","$L18","$L19","$L1a","$L1b","$L1c"]}]]}]}],"$L1d"]}]]}]]
+1e:I[3391,["874","static/chunks/874-8edb22cc7428423c.js","63","static/chunks/63-d245e42a784ca56d.js","744","static/chunks/app/blogs/%5Bslug%5D/page-bf2f560f8e63c394.js"],"default"]
+15:["$","li","#what-happened-",{"className":"py-1","children":["$","a",null,{"href":"#what-happened-","data-level":"two","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[null,["$","span",null,{"className":"hover:underline","children":"What Happened? 📉"}]]}]}]
+16:["$","li","#the-economic-impact-",{"className":"py-1","children":["$","a",null,{"href":"#the-economic-impact-","data-level":"two","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[null,["$","span",null,{"className":"hover:underline","children":"The Economic Impact 💰"}]]}]}]
+17:["$","li","#political-messaging-over-market-disruption-",{"className":"py-1","children":["$","a",null,{"href":"#political-messaging-over-market-disruption-","data-level":"two","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[null,["$","span",null,{"className":"hover:underline","children":"Political Messaging Over Market Disruption 🎯"}]]}]}]
+18:["$","li","#insights-from-industry-leaders-️",{"className":"py-1","children":["$","a",null,{"href":"#insights-from-industry-leaders-️","data-level":"two","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[null,["$","span",null,{"className":"hover:underline","children":"Insights from Industry Leaders 🏛️"}]]}]}]
+19:["$","li","#the-bigger-picture-",{"className":"py-1","children":["$","a",null,{"href":"#the-bigger-picture-","data-level":"two","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[null,["$","span",null,{"className":"hover:underline","children":"The Bigger Picture 🌏"}]]}]}]
+1a:["$","li","#dow-jones-industrial-average-performance-",{"className":"py-1","children":["$","a",null,{"href":"#dow-jones-industrial-average-performance-","data-level":"two","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[null,["$","span",null,{"className":"hover:underline","children":"Dow Jones Industrial Average Performance 📈"}]]}]}]
+1b:["$","li","#final-take-",{"className":"py-1","children":["$","a",null,{"href":"#final-take-","data-level":"two","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[null,["$","span",null,{"className":"hover:underline","children":"Final Take 🧠"}]]}]}]
+1c:["$","li","#summary-",{"className":"py-1","children":["$","a",null,{"href":"#summary-","data-level":"two","className":"data-[level=two]:pl-0  data-[level=two]:pt-2 data-[level=two]:border-t border-solid border-dark/40 data-[level=three]:pl-4 sm:data-[level=three]:pl-6 flex items-center justify-start ","children":[null,["$","span",null,{"className":"hover:underline","children":"Summary 📌"}]]}]}]
+1f:T134f,
+# Trump’s Tariffs on India — Real Threat or Hype? 🇺🇸🇮🇳
+
+In 2018 and 2019, the Trump administration ramped up its use of tariffs as a tool for foreign policy and economic leverage. India, traditionally seen as a strategic partner of the U.S., found itself in the crosshairs. The U.S. ended India's preferential trade status under the Generalized System of Preferences (GSP), affecting $5.6 billion in Indian exports. In response, India slapped retaliatory tariffs on U.S. goods like almonds and apples. 🍎🥜
+
+So, was this a real threat to India’s economy, or mostly political theater?
+
+## What Happened? 📉
+
+- **GSP Withdrawal**: The U.S. claimed India was not providing equitable access to its markets, especially in areas like medical devices and agriculture.
+- **Retaliation**: India imposed tariffs on 28 U.S. products, signaling it wouldn’t back down easily.
+- **Tense Talks**: Trade negotiations stalled. Both countries exchanged accusations over trade imbalances and protectionism.
+
+**[USTR Report on GSP Removal](https://ustr.gov/about-us/policy-offices/press-office/press-releases/2019/june/ustr-announces-gsp-eligibility)**: Official statement on why India lost GSP status.
+
+## The Economic Impact 💰
+
+On paper, the numbers seemed big. But the actual hit to India’s economy was limited:
+
+- The $5.6 billion in GSP exports made up a small slice of India’s total exports.
+- The Indian economy is more diversified now, less dependent on U.S. trade perks.
+- U.S. agricultural producers, especially almond growers in California, arguably felt more pain.
+
+India also used this moment to reflect on its broader trade relationships and pivot to alternative markets. The reduction in dependency on a single trade partner brought new opportunities and encouraged resilience.
+
+**[Indian Ministry of Commerce](https://commerce.gov.in/)**: Data on India's export diversification and response to tariff changes.
+
+## Political Messaging Over Market Disruption 🎯
+
+The tariff drama was loud but not deeply damaging. For Trump, tariffs were a lever to push allies and rivals alike. For India, the move was a wake-up call to reduce dependency and double down on trade with other partners like the EU and ASEAN.
+
+Both sides wanted to look tough. Neither wanted a full-blown trade war. It was more about signaling than serious disruption.
+
+**[ICICI Bank](https://www.researchgate.net/publication/342892514_ICICI_Bank_Annual_Report)**: Strong financial performance amidst global uncertainties.
+
+## Insights from Industry Leaders 🏛️
+
+- **JPMorgan** raised the probability of a U.S. recession to 60%, citing tariff uncertainties and supply chain strain.  
+  ➤ [Source](https://www.barrons.com/articles/recession-tariffs-jpmorgan-china-0be79774?utm_source=chatgpt.com)
+
+- **Goldman Sachs** noted that market shocks from trade disputes are leading investors to take a more cautious stance, though long-term confidence remains.  
+  ➤ [Source](https://www.businessinsider.com/stock-market-crash-outlook-us-equities-goldman-sachs-investing-strategy-2025-4?utm_source=chatgpt.com)
+
+- **S&P Global** announced a review of its macroeconomic forecasts after the unexpected tariff moves, warning of higher inflation and slower GDP growth.  
+  ➤ [Source](https://www.reuters.com/markets/ratings-agency-sp-review-all-global-forecasts-after-us-tariff-shock-2025-04-04/?utm_source=chatgpt.com)
+
+## The Bigger Picture 🌏
+
+- Highlighted the fragility of preferential trade deals.
+- Pushed India to reassess its global trade strategy.
+- Reinforced how economic diplomacy can turn combative quickly under political pressure.
+
+**[World Bank India Trade Overview](https://www.worldbank.org/en/country/india/overview)**: Summary of India's evolving trade strategy and macroeconomic resilience.
+
+## Dow Jones Industrial Average Performance 📈
+
+The Dow Jones Industrial Average experienced notable volatility during the tariff standoff. For a real-time and historical view:
+
+➡️ [**Dow Jones Chart (MarketWatch)**](https://www.marketwatch.com/investing/index/djia/charts)
+
+## Final Take 🧠
+
+Trump's tariffs on India weren’t game-changers. They were more bark than bite. The impact was real, but contained. They exposed weaknesses in the relationship but didn’t break it. In the end, it was hype with just enough heat to matter — but not enough to burn.
+
+Both nations walked away with a clearer sense of economic limits, leverage, and lessons.
+
+---
+
+## Summary 📌
+
+- Tariffs affected $5.6B in Indian exports but didn’t destabilize its economy.
+- India retaliated smartly and diversified trade partners.
+- Analysts flagged broader risks like recession, inflation, and market volatility.
+- India strengthened its global positioning post-crisis.
+- Long-term damage: minimal. Strategic awareness: increased.
+
+---
+*For more trade insights, visit [NASSCOM](https://www.nasscom.in/) and [MeitY](https://www.meity.gov.in/).*20:T28d4,var Component=(()=>{var p=Object.create;var t=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var w=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),b=(i,e)=>{for(var a in e)t(i,a,{get:e[a],enumerable:!0})},o=(i,e,a,s)=>{if(e&&typeof e=="object"||typeof e=="function")for(let r of u(e))!g.call(i,r)&&r!==a&&t(i,r,{get:()=>e[r],enumerable:!(s=m(e,r))||s.enumerable});return i};var y=(i,e,a)=>(a=i!=null?p(f(i)):{},o(e||!i||!i.__esModule?t(a,"default",{value:i,enumerable:!0}):a,i)),I=i=>o(t({},"__esModule",{value:!0}),i);var l=w((x,d)=>{d.exports=_jsx_runtime});var v={};b(v,{default:()=>h,frontmatter:()=>k});var n=y(l()),k={title:"Trump\u2019s Tariffs on India \u2014 Real Threat or Hype?",description:"Analyzing the impact of U.S. tariffs on Indian exports under the Trump administration.",image:"../../public/blogs/marketsBSE.jpg",publishedAt:"2025-04-05",updatedAt:"2025-04-05",author:"Radii Lab",isPublished:!0,tags:["international trade","India-US relations","economic policy"]};function c(i){let e={a:"a",br:"br",em:"em",h1:"h1",h2:"h2",hr:"hr",li:"li",p:"p",span:"span",strong:"strong",ul:"ul",...i.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsxs)(e.h1,{id:"trumps-tariffs-on-india--real-threat-or-hype-",children:["Trump\u2019s Tariffs on India \u2014 Real Threat or Hype? \u{1F1FA}\u{1F1F8}\u{1F1EE}\u{1F1F3}",(0,n.jsx)(e.a,{"aria-hidden":"true",tabIndex:"-1",href:"#trumps-tariffs-on-india--real-threat-or-hype-",children:(0,n.jsx)(e.span,{className:"icon icon-link"})})]}),`
+`,(0,n.jsx)(e.p,{children:"In 2018 and 2019, the Trump administration ramped up its use of tariffs as a tool for foreign policy and economic leverage. India, traditionally seen as a strategic partner of the U.S., found itself in the crosshairs. The U.S. ended India's preferential trade status under the Generalized System of Preferences (GSP), affecting $5.6 billion in Indian exports. In response, India slapped retaliatory tariffs on U.S. goods like almonds and apples. \u{1F34E}\u{1F95C}"}),`
+`,(0,n.jsx)(e.p,{children:"So, was this a real threat to India\u2019s economy, or mostly political theater?"}),`
+`,(0,n.jsxs)(e.h2,{id:"what-happened-",children:["What Happened? \u{1F4C9}",(0,n.jsx)(e.a,{"aria-hidden":"true",tabIndex:"-1",href:"#what-happened-",children:(0,n.jsx)(e.span,{className:"icon icon-link"})})]}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"GSP Withdrawal"}),": The U.S. claimed India was not providing equitable access to its markets, especially in areas like medical devices and agriculture."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Retaliation"}),": India imposed tariffs on 28 U.S. products, signaling it wouldn\u2019t back down easily."]}),`
+`,(0,n.jsxs)(e.li,{children:[(0,n.jsx)(e.strong,{children:"Tense Talks"}),": Trade negotiations stalled. Both countries exchanged accusations over trade imbalances and protectionism."]}),`
+`]}),`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.a,{href:"https://ustr.gov/about-us/policy-offices/press-office/press-releases/2019/june/ustr-announces-gsp-eligibility",children:"USTR Report on GSP Removal"})}),": Official statement on why India lost GSP status."]}),`
+`,(0,n.jsxs)(e.h2,{id:"the-economic-impact-",children:["The Economic Impact \u{1F4B0}",(0,n.jsx)(e.a,{"aria-hidden":"true",tabIndex:"-1",href:"#the-economic-impact-",children:(0,n.jsx)(e.span,{className:"icon icon-link"})})]}),`
+`,(0,n.jsx)(e.p,{children:"On paper, the numbers seemed big. But the actual hit to India\u2019s economy was limited:"}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsx)(e.li,{children:"The $5.6 billion in GSP exports made up a small slice of India\u2019s total exports."}),`
+`,(0,n.jsx)(e.li,{children:"The Indian economy is more diversified now, less dependent on U.S. trade perks."}),`
+`,(0,n.jsx)(e.li,{children:"U.S. agricultural producers, especially almond growers in California, arguably felt more pain."}),`
+`]}),`
+`,(0,n.jsx)(e.p,{children:"India also used this moment to reflect on its broader trade relationships and pivot to alternative markets. The reduction in dependency on a single trade partner brought new opportunities and encouraged resilience."}),`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.a,{href:"https://commerce.gov.in/",children:"Indian Ministry of Commerce"})}),": Data on India's export diversification and response to tariff changes."]}),`
+`,(0,n.jsxs)(e.h2,{id:"political-messaging-over-market-disruption-",children:["Political Messaging Over Market Disruption \u{1F3AF}",(0,n.jsx)(e.a,{"aria-hidden":"true",tabIndex:"-1",href:"#political-messaging-over-market-disruption-",children:(0,n.jsx)(e.span,{className:"icon icon-link"})})]}),`
+`,(0,n.jsx)(e.p,{children:"The tariff drama was loud but not deeply damaging. For Trump, tariffs were a lever to push allies and rivals alike. For India, the move was a wake-up call to reduce dependency and double down on trade with other partners like the EU and ASEAN."}),`
+`,(0,n.jsx)(e.p,{children:"Both sides wanted to look tough. Neither wanted a full-blown trade war. It was more about signaling than serious disruption."}),`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.a,{href:"https://www.researchgate.net/publication/342892514_ICICI_Bank_Annual_Report",children:"ICICI Bank"})}),": Strong financial performance amidst global uncertainties."]}),`
+`,(0,n.jsxs)(e.h2,{id:"insights-from-industry-leaders-\uFE0F",children:["Insights from Industry Leaders \u{1F3DB}\uFE0F",(0,n.jsx)(e.a,{"aria-hidden":"true",tabIndex:"-1",href:"#insights-from-industry-leaders-\uFE0F",children:(0,n.jsx)(e.span,{className:"icon icon-link"})})]}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"JPMorgan"})," raised the probability of a U.S. recession to 60%, citing tariff uncertainties and supply chain strain.",(0,n.jsx)(e.br,{}),`
+`,"\u27A4 ",(0,n.jsx)(e.a,{href:"https://www.barrons.com/articles/recession-tariffs-jpmorgan-china-0be79774?utm_source=chatgpt.com",children:"Source"})]}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"Goldman Sachs"})," noted that market shocks from trade disputes are leading investors to take a more cautious stance, though long-term confidence remains.",(0,n.jsx)(e.br,{}),`
+`,"\u27A4 ",(0,n.jsx)(e.a,{href:"https://www.businessinsider.com/stock-market-crash-outlook-us-equities-goldman-sachs-investing-strategy-2025-4?utm_source=chatgpt.com",children:"Source"})]}),`
+`]}),`
+`,(0,n.jsxs)(e.li,{children:[`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:"S&P Global"})," announced a review of its macroeconomic forecasts after the unexpected tariff moves, warning of higher inflation and slower GDP growth.",(0,n.jsx)(e.br,{}),`
+`,"\u27A4 ",(0,n.jsx)(e.a,{href:"https://www.reuters.com/markets/ratings-agency-sp-review-all-global-forecasts-after-us-tariff-shock-2025-04-04/?utm_source=chatgpt.com",children:"Source"})]}),`
+`]}),`
+`]}),`
+`,(0,n.jsxs)(e.h2,{id:"the-bigger-picture-",children:["The Bigger Picture \u{1F30F}",(0,n.jsx)(e.a,{"aria-hidden":"true",tabIndex:"-1",href:"#the-bigger-picture-",children:(0,n.jsx)(e.span,{className:"icon icon-link"})})]}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsx)(e.li,{children:"Highlighted the fragility of preferential trade deals."}),`
+`,(0,n.jsx)(e.li,{children:"Pushed India to reassess its global trade strategy."}),`
+`,(0,n.jsx)(e.li,{children:"Reinforced how economic diplomacy can turn combative quickly under political pressure."}),`
+`]}),`
+`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:(0,n.jsx)(e.a,{href:"https://www.worldbank.org/en/country/india/overview",children:"World Bank India Trade Overview"})}),": Summary of India's evolving trade strategy and macroeconomic resilience."]}),`
+`,(0,n.jsxs)(e.h2,{id:"dow-jones-industrial-average-performance-",children:["Dow Jones Industrial Average Performance \u{1F4C8}",(0,n.jsx)(e.a,{"aria-hidden":"true",tabIndex:"-1",href:"#dow-jones-industrial-average-performance-",children:(0,n.jsx)(e.span,{className:"icon icon-link"})})]}),`
+`,(0,n.jsx)(e.p,{children:"The Dow Jones Industrial Average experienced notable volatility during the tariff standoff. For a real-time and historical view:"}),`
+`,(0,n.jsxs)(e.p,{children:["\u27A1\uFE0F ",(0,n.jsx)(e.a,{href:"https://www.marketwatch.com/investing/index/djia/charts",children:(0,n.jsx)(e.strong,{children:"Dow Jones Chart (MarketWatch)"})})]}),`
+`,(0,n.jsxs)(e.h2,{id:"final-take-",children:["Final Take \u{1F9E0}",(0,n.jsx)(e.a,{"aria-hidden":"true",tabIndex:"-1",href:"#final-take-",children:(0,n.jsx)(e.span,{className:"icon icon-link"})})]}),`
+`,(0,n.jsx)(e.p,{children:"Trump's tariffs on India weren\u2019t game-changers. They were more bark than bite. The impact was real, but contained. They exposed weaknesses in the relationship but didn\u2019t break it. In the end, it was hype with just enough heat to matter \u2014 but not enough to burn."}),`
+`,(0,n.jsx)(e.p,{children:"Both nations walked away with a clearer sense of economic limits, leverage, and lessons."}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsxs)(e.h2,{id:"summary-",children:["Summary \u{1F4CC}",(0,n.jsx)(e.a,{"aria-hidden":"true",tabIndex:"-1",href:"#summary-",children:(0,n.jsx)(e.span,{className:"icon icon-link"})})]}),`
+`,(0,n.jsxs)(e.ul,{children:[`
+`,(0,n.jsx)(e.li,{children:"Tariffs affected $5.6B in Indian exports but didn\u2019t destabilize its economy."}),`
+`,(0,n.jsx)(e.li,{children:"India retaliated smartly and diversified trade partners."}),`
+`,(0,n.jsx)(e.li,{children:"Analysts flagged broader risks like recession, inflation, and market volatility."}),`
+`,(0,n.jsx)(e.li,{children:"India strengthened its global positioning post-crisis."}),`
+`,(0,n.jsx)(e.li,{children:"Long-term damage: minimal. Strategic awareness: increased."}),`
+`]}),`
+`,(0,n.jsx)(e.hr,{}),`
+`,(0,n.jsx)(e.p,{children:(0,n.jsxs)(e.em,{children:["For more trade insights, visit ",(0,n.jsx)(e.a,{href:"https://www.nasscom.in/",children:"NASSCOM"})," and ",(0,n.jsx)(e.a,{href:"https://www.meity.gov.in/",children:"MeitY"}),"."]})})]})}function h(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(c,{...i})}):c(i)}return I(v);})();
+;return Component;1d:["$","$L1e",null,{"blog":{"title":"Trump’s Tariffs on India — Real Threat or Hype?","publishedAt":"2025-04-05T00:00:00.000Z","updatedAt":"2025-04-05T00:00:00.000Z","description":"Analyzing the impact of U.S. tariffs on Indian exports under the Trump administration.","image":{"filePath":"../public/blogs/marketsBSE.jpg","relativeFilePath":"../../public/blogs/marketsBSE.jpg","format":"jpeg","height":337,"width":600,"aspectRatio":1.7804154302670623,"blurhashDataUrl":"data:image/jpeg;base64,/9j/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAAIAAgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAP/xAAdEAABBAIDAAAAAAAAAAAAAAABAAIDBAUhEhNh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAXEQEBAQEAAAAAAAAAAAAAAAABAAIS/9oADAMBAAIRAxEAPwCVrP4a+Tct4abiwGNoEgj62jWgCPdoiJ6Sk5L/2Q=="},"isPublished":true,"author":"Radii Lab","tags":["international trade","India-US relations","economic policy"],"body":{"raw":"$1f","code":"$20"},"_id":"Decoding-the-Impact-of-Global-Events-on-the-Indian-Market/index.mdx","_raw":{"sourceFilePath":"Decoding-the-Impact-of-Global-Events-on-the-Indian-Market/index.mdx","sourceFileName":"index.mdx","sourceFileDir":"Decoding-the-Impact-of-Global-Events-on-the-Indian-Market","contentType":"mdx","flattenedPath":"Decoding-the-Impact-of-Global-Events-on-the-Indian-Market"},"type":"Blog","url":"/blogs/Decoding-the-Impact-of-Global-Events-on-the-Indian-Market","readingTime":{"text":"4 min read","minutes":3.15,"time":189000,"words":630},"toc":[{"level":"one","text":"Trump’s Tariffs on India — Real Threat or Hype? 🇺🇸🇮🇳","slug":"trumps-tariffs-on-india--real-threat-or-hype-"},{"level":"two","text":"What Happened? 📉","slug":"what-happened-"},{"level":"two","text":"The Economic Impact 💰","slug":"the-economic-impact-"},{"level":"two","text":"Political Messaging Over Market Disruption 🎯","slug":"political-messaging-over-market-disruption-"},{"level":"two","text":"Insights from Industry Leaders 🏛️","slug":"insights-from-industry-leaders-️"},{"level":"two","text":"The Bigger Picture 🌏","slug":"the-bigger-picture-"},{"level":"two","text":"Dow Jones Industrial Average Performance 📈","slug":"dow-jones-industrial-average-performance-"},{"level":"two","text":"Final Take 🧠","slug":"final-take-"},{"level":"two","text":"Summary 📌","slug":"summary-"}]}}]
+f:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+b:null
+21:I[8175,[],"IconMark"]
+d:{"metadata":[["$","title","0",{"children":"Trump’s Tariffs on India — Real Threat or Hype? | Radii Labs | Quantitative Research Holding Firm with actionable insights"}],["$","meta","1",{"name":"description","content":"Analyzing the impact of U.S. tariffs on Indian exports under the Trump administration."}],["$","link","2",{"rel":"manifest","href":"/manifest.webmanifest","crossOrigin":"$undefined"}],["$","meta","3",{"name":"robots","content":"index, follow"}],["$","meta","4",{"name":"googlebot","content":"index, follow, noimageindex, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","meta","5",{"property":"og:title","content":"Trump’s Tariffs on India — Real Threat or Hype?"}],["$","meta","6",{"property":"og:description","content":"Analyzing the impact of U.S. tariffs on Indian exports under the Trump administration."}],["$","meta","7",{"property":"og:url","content":"https://www.radii.in/blogs/Decoding-the-Impact-of-Global-Events-on-the-Indian-Market"}],["$","meta","8",{"property":"og:site_name","content":"Radii Labs | Quantitative Research Holding Firm with actionable insights"}],["$","meta","9",{"property":"og:locale","content":"en_US"}],["$","meta","10",{"property":"og:image","content":"https://www.radii.in/blogs/marketsBSE.jpg"}],["$","meta","11",{"property":"og:type","content":"article"}],["$","meta","12",{"property":"article:published_time","content":"2025-04-05T00:00:00.000Z"}],["$","meta","13",{"property":"article:modified_time","content":"2025-04-05T00:00:00.000Z"}],["$","meta","14",{"property":"article:author","content":"Radii Lab"}],["$","meta","15",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","16",{"name":"twitter:title","content":"Trump’s Tariffs on India — Real Threat or Hype?"}],["$","meta","17",{"name":"twitter:description","content":"Analyzing the impact of U.S. tariffs on Indian exports under the Trump administration."}],["$","meta","18",{"name":"twitter:image","content":"https://www.radii.in/blogs/marketsBSE.jpg"}],["$","link","19",{"rel":"apple-touch-icon","href":"/apple-icon.png?2c33ea0c67d23d40","type":"image/png","sizes":"180x180"}],["$","$L21","20",{}]],"error":null,"digest":"$undefined"}
+12:"$d:metadata"
