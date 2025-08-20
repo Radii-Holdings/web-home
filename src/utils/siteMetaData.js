@@ -10,7 +10,7 @@ const siteMetadata = {
     siteUrl: 'https://www.radii.in', // your website URL
     siteLogo: '/logo.png',
     socialBanner: '/social-banner2.jpg', // add social banner in the public folder
-    email: 'sales4radii@gmail.com', 
+    email: 'info@radii.in',
     github: 'https://github.com/radiilab',
     twitter: 'https://twitter.com/LabRadii',
     facebook: 'https://www.facebook.com/radiilab',

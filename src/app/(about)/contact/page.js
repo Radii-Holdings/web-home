@@ -1,4 +1,4 @@
-import ContactForm from "@/src/components/Contact/ContactForm";
+import ContactButton from "@/src/components/Contact/ContactButton";
 import LottieAnimation from "@/src/components/Contact/LottieAnimation";
 
 import siteMetadata from "@/src/utils/siteMetaData";
@@ -6,7 +6,7 @@ import siteMetadata from "@/src/utils/siteMetaData";
 
 export const metadata = {
   title: "Contact Me",
-  description: `Contact me through the form available on this page or email me at ${siteMetadata.email}`,
+  description: `Contact us via email at ${siteMetadata.email}`,
 };
 
 
@@ -18,7 +18,7 @@ export default function Contact() {
       
       <div className="w-full  md:w-3/5 flex flex-col items-start justify-center px-5 xs:px-10 md:px-16 pb-8">
         <h2 className="font-bold capitalize  text-2xl xs:text-3xl sm:text-4xl">Let&apos;s Connect!</h2>
-        <ContactForm />
+        <ContactButton />
       </div>
     </section>
   );

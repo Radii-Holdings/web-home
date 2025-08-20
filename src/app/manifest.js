@@ -1,3 +1,5 @@
+export const dynamic = "force-static";
+
 export default function manifest() {
     return {
       name: 'Radii Lab | Quantitative Research Holding Firm with actionable insights',
@@ -29,6 +31,6 @@ export default function manifest() {
           sizes: '512x512',
           type: 'image/png',
         },
-      ],
+        ],
+      }
     }
-  }

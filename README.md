@@ -7,6 +7,8 @@
 For Demo checkout following links👇: <br />
 [Nextjs Personal Blog Website](https://create-blog-with-nextjs.vercel.app/) <br />
 
+This fork statically generates the site and deploys the output to GitHub Pages. The contact page now contains a button that opens your mail client to [info@radii.in](mailto:info@radii.in).
+
 Starter Code Files👇: <br />
 [Nextjs Personal Blog Website Starter Code](https://github.com/codebucks27/Nextjs-contentlayer-blog) <br />
 
@@ -29,6 +31,8 @@ Checkout My Personal blog: [DevDreaming](https://devdreaming.com/)<br />
 
 #### Contact
 ![Next.js Personal Blog Website Contact Page](https://github.com/codebucks27/Nextjs-contentlayer-blog/blob/main/project%20images/Cotnact-Big.png?raw=true)
+
+The contact page now provides a simple button that launches your email client to send a message to [info@radii.in](mailto:info@radii.in).
 
 For more Images please check the [project images](https://github.com/codebucks27/Nextjs-contentlayer-blog/tree/main/project%20images) folder from this repo or check the demo link. 
 
@@ -82,8 +86,6 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Static Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is built as a static site. A GitHub Actions workflow exports the site and pushes the generated files to the `gh-pages` branch, which can be served directly from GitHub Pages.

@@ -6,7 +6,6 @@ import Footer from "../components/Footer";
 import siteMetadata from "../utils/siteMetaData";
 import Script from "next/script";
 import TelegramButton from "@/src/components/TelegramButton";
-import { Toaster } from "react-hot-toast";
 
 
 const inter = Inter({
@@ -77,7 +76,6 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <TelegramButton /> {/* Add the Telegram button here */}
-        <Toaster />
       </body>
     </html>
   );
