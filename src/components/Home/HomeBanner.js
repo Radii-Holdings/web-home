@@ -24,14 +24,21 @@ const HomeBanner = () => {
             </Link>
           </div>
           <div className="w-full">
-            <Image
-              alt="banner image"
-              src="/svgs/cli_mainframe_logo_blue.svg"
-              width={800}
-              height={420}
-              className="mx-auto"
-              priority
-            />
+            <Link
+              href="/console"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Console in new tab"
+            >
+              <Image
+                alt="banner image"
+                src="/svgs/cli_mainframe_logo_blue.svg"
+                width={800}
+                height={420}
+                className="mx-auto cursor-pointer"
+                priority
+              />
+            </Link>
           </div>
         </div>
       </div>
@@ -40,4 +47,3 @@ const HomeBanner = () => {
 };
 
 export default HomeBanner;
-
