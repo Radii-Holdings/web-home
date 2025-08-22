@@ -14,13 +14,13 @@ const HomeBanner = () => {
               Nextplate is a free starter template built with Next and TailwindCSS, providing everything you need to jumpstart your Next project and save valuable time.
             </p>
             <Link
-              href="https://github.com/zeon-studio/nextplate"
+              href="/console"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 rounded-full text-white font-semibold shadow"
               style={{ backgroundColor: "var(--brand-blue)" }}
             >
-              Get Started For Free
+              GGo To Console
             </Link>
           </div>
           <div className="w-full">
