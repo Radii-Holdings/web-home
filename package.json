@@ -12,7 +12,7 @@
   "dependencies": {
     "@lottiefiles/dotlottie-react": "^0.14.4",
     "@tailwindcss/forms": "^0.5.10",
-    "@tailwindcss/postcss": "^4.1.11",
+    "@tailwindcss/postcss": "^4.1.13",
     "@tailwindcss/typography": "^0.5.16",
     "autoprefixer": "10.4.21",
     "bufferutil": "^4.0.9",
