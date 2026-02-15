@@ -37,6 +37,7 @@
     "resend": "^6.6.0",
     "shiki": "^3.20.0",
     "tailwindcss": "4.1.18",
+    "unist-util-visit": "^5.1.0",
     "utf-8-validate": "^6.0.6"
   },
   "devDependencies": {

@@ -75,21 +75,37 @@ const Blog = defineDocumentType(() => ({
   },
 }));
 
+import { visit } from 'unist-util-visit'
+
+const remarkMermaid = () => (tree) => {
+  visit(tree, 'code', (node) => {
+    if (node.lang === 'mermaid' || node.lang === 'graph') {
+      // Convert code block to custom Mermaid component
+      node.type = 'mdxJsxFlowElement'
+      node.name = 'Mermaid'
+      node.attributes = [
+        { type: 'mdxJsxAttribute', name: 'chart', value: node.value }
+      ]
+      node.children = []
+      // Clear lang so other plugins don't process it (though type change should be enough)
+      delete node.lang
+      delete node.meta
+      delete node.value
+    }
+  })
+}
+
 const codeOptions = {
   theme: 'github-dark',
   grid: false,
-  filter: (node) => {
-    // Check if the code block has language-mermaid class
-    if (node.properties.className && node.properties.className.includes('language-mermaid')) {
-      return false
-    }
-    return true
-  }
 }
 
 export default makeSource({
   /* options */
   contentDirPath: "content",
   documentTypes: [Blog],
-  mdx: { remarkPlugins: [remarkGfm], rehypePlugins: [rehypeSlug, [rehypeAutolinkHeadings, { behavior: "append" }], [rehypePrettyCode, codeOptions]] }
+  mdx: {
+    remarkPlugins: [remarkGfm, remarkMermaid],
+    rehypePlugins: [rehypeSlug, [rehypeAutolinkHeadings, { behavior: "append" }], [rehypePrettyCode, codeOptions]]
+  }
 });

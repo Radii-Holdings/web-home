@@ -56,28 +56,19 @@ const MdxP = (props) => {
   return <p {...rest}>{children}</p>
 }
 
-import Mermaid from '../Mermaid'
-
-// Handle Mermaid diagrams by intercepting pre > code.language-mermaid
-const MdxPre = ({ children, ...props }) => {
-  // Check if children is a code element with language-mermaid class
-  if (React.isValidElement(children) &&
-    children.props.className &&
-    children.props.className.includes('language-mermaid')) {
-    // The content of the code block is the diagram definition
-    const chart = children.props.children
-    console.log("Mermaid Chart Detected:", chart)
-    return <Mermaid chart={chart} />
-  }
-  console.log("Standard Pre Block:", children?.props?.className)
-  return <pre {...props}>{children}</pre>
-}
+// Dynamically import Mermaid to ensure it only runs on client
+// Dynamically import Mermaid to ensure it only runs on client
+import dynamic from 'next/dynamic'
+const MermaidComponent = dynamic(() => import('../Mermaid'), {
+  ssr: false,
+  loading: () => <div className="animate-pulse bg-gray-200 h-24 w-full rounded">Loading Diagram...</div>
+})
 
 const mdxComponents = {
   Image,
   img: MdxImg,
   p: MdxP,
-  pre: MdxPre,
+  Mermaid: MermaidComponent, // Explicit mapping
 }
 
 const RenderMdx = ({ blog }) => {

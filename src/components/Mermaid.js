@@ -16,11 +16,13 @@ const Mermaid = ({ chart }) => {
 
     useEffect(() => {
         if (chart) {
+            console.log("Attempting to render Mermaid ID:", id)
             mermaid.render(id, chart).then(({ svg }) => {
+                console.log("Mermaid Render Success")
                 setSvg(svg)
             }).catch((e) => {
-                console.error("Mermaid error:", e)
-                setSvg(`<div class="text-red-500 p-2 border border-red-500 rounded">Failed to render diagram. Check console for details.</div>`)
+                console.error("Mermaid Render Error:", e)
+                setSvg(`<div class="text-red-500 p-2 border border-red-500 rounded">Failed to render diagram. Error: ${e.message}</div>`)
             })
         }
     }, [chart, id])
