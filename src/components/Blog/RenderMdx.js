@@ -62,9 +62,9 @@ const mdxComponents = {
   p: MdxP,
 }
 
-const RenderMdx = ({blog}) => {
+const RenderMdx = ({ blog }) => {
 
-    const MDXContent = useMDXComponent(blog.body.code)
+  const MDXContent = useMDXComponent(blog.body.code)
 
   return (
     <div className='col-span-12  lg:col-span-8 font-in prose sm:prose-base md:prose-lg max-w-max
@@ -76,8 +76,21 @@ const RenderMdx = ({blog}) => {
     prose-blockquote:rounded-r-lg
 
     prose-li:marker:text-accent
+    prose-li:marker:text-accent
+
+    prose-headings:text-dark
+    prose-p:text-dark
+    prose-li:text-dark
+    prose-strong:text-dark
+    prose-a:text-dark
 
     dark:prose-invert
+    dark:prose-headings:text-light
+    dark:prose-p:text-light
+    dark:prose-li:text-light
+    dark:prose-strong:text-light
+    dark:prose-a:text-light
+    
     dark:prose-blockquote:border-accentDark
     dark:prose-blockquote:bg-accentDark/20
     dark:prose-li:marker:text-accentDark
@@ -87,8 +100,8 @@ const RenderMdx = ({blog}) => {
     
 
 
-    '> 
-        <MDXContent components={mdxComponents}/>
+    '>
+      <MDXContent components={mdxComponents} />
     </div>
   )
 }

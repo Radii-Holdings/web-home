@@ -36,7 +36,7 @@ const BlogLayoutThree = ({ blog }) => {
           </h2>
         </Link>
 
-        <span className="capitalize text-gray dark:text-light/50 font-semibold text-sm  sm:text-base">
+        <span className="capitalize text-mediumGray dark:text-light/50 font-semibold text-sm  sm:text-base">
           {format(new Date(blog.publishedAt), "MMMM dd, yyyy")}
         </span>
       </div>
