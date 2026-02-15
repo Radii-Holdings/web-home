@@ -50,13 +50,13 @@ const Blog = defineDocumentType(() => ({
       type: "json",
       resolve: (doc) => readingTime(doc.body.raw)
     },
-    toc:{
+    toc: {
       type: "json",
       resolve: async (doc) => {
 
         const regulrExp = /\n(?<flag>#{1,6})\s+(?<content>.+)/g;
         const slugger = new GithubSlugger();
-        const headings = Array.from(doc.body.raw.matchAll(regulrExp)).map(({groups}) => {
+        const headings = Array.from(doc.body.raw.matchAll(regulrExp)).map(({ groups }) => {
           const flag = groups?.flag;
           const content = groups?.content;
 
@@ -78,11 +78,18 @@ const Blog = defineDocumentType(() => ({
 const codeOptions = {
   theme: 'github-dark',
   grid: false,
+  filter: (node) => {
+    // Check if the code block has language-mermaid class
+    if (node.properties.className && node.properties.className.includes('language-mermaid')) {
+      return false
+    }
+    return true
+  }
 }
 
 export default makeSource({
   /* options */
   contentDirPath: "content",
   documentTypes: [Blog],
-  mdx: { remarkPlugins: [remarkGfm], rehypePlugins: [rehypeSlug, [rehypeAutolinkHeadings, {behavior: "append"}], [rehypePrettyCode, codeOptions] ] }
+  mdx: { remarkPlugins: [remarkGfm], rehypePlugins: [rehypeSlug, [rehypeAutolinkHeadings, { behavior: "append" }], [rehypePrettyCode, codeOptions]] }
 });
