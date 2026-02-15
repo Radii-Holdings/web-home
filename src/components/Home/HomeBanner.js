@@ -8,19 +8,19 @@ const HomeBanner = () => {
         <div className="flex flex-col items-center justify-center">
           <div className="mb-8 text-center max-w-3xl lg:max-w-4xl">
             <h1 className="mb-4 font-semibold text-2xl md:text-4xl lg:text-5xl">
-              The Ultimate Starter Template You Need To Start Your Next Project
+              Quantitative Intelligence & Layr0 Execution
             </h1>
             <p className="mb-8 text-base md:text-lg text-dark/80 dark:text-light/80">
-              Nextplate is a free starter template built with Next and TailwindCSS, providing everything you need to jumpstart your Next project and save valuable time.
+              <span className="font-bold text-lg md:text-xl text-dark dark:text-light">Radii Labs</span> provides quantitative market intelligence, while <span className="font-bold text-lg md:text-xl text-dark dark:text-light">Layr0</span> offers advanced algorithmic trading execution. Together, we empower investors with actionable insights for Forex and Indian Markets.
             </p>
             <Link
               href="/console"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-full text-white font-semibold shadow"
+              className="inline-flex items-center justify-center px-6 py-3 rounded-full text-white font-semibold shadow hover:scale-105 transition-transform"
               style={{ backgroundColor: "var(--brand-blue)" }}
             >
-              GGo To Console
+              Explore Console
             </Link>
           </div>
           <div className="w-full">
