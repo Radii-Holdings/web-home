@@ -226,7 +226,12 @@ code[data-line-numbers-max-digits='3']>[data-line]::before {
 .prose strong,
 .prose b,
 .prose li,
-.prose a {
+.prose a,
+.prose blockquote,
+.prose blockquote p,
+.prose figcaption,
+.prose th,
+.prose td {
   color: #1b1b1b !important;
 }
 
@@ -246,6 +251,11 @@ code[data-line-numbers-max-digits='3']>[data-line]::before {
 .invert .prose b,
 .invert .prose li,
 .invert .prose a,
+.invert .prose blockquote,
+.invert .prose blockquote p,
+.invert .prose figcaption,
+.invert .prose th,
+.invert .prose td,
 .dark .prose h1,
 .dark .prose h2,
 .dark .prose h3,
@@ -255,6 +265,11 @@ code[data-line-numbers-max-digits='3']>[data-line]::before {
 .dark .prose strong,
 .dark .prose b,
 .dark .prose li,
-.dark .prose a {
+.dark .prose a,
+.dark .prose blockquote,
+.dark .prose blockquote p,
+.dark .prose figcaption,
+.dark .prose th,
+.dark .prose td {
   color: #fff !important;
 }
