@@ -76,21 +76,8 @@ const RenderMdx = ({ blog }) => {
     prose-blockquote:rounded-r-lg
 
     prose-li:marker:text-accent
-    prose-li:marker:text-accent
-
-    prose-headings:text-dark
-    prose-p:text-dark
-    prose-li:text-dark
-    prose-strong:text-dark
-    prose-a:text-dark
 
     dark:prose-invert
-    dark:prose-headings:text-light
-    dark:prose-p:text-light
-    dark:prose-li:text-light
-    dark:prose-strong:text-light
-    dark:prose-a:text-light
-    
     dark:prose-blockquote:border-accentDark
     dark:prose-blockquote:bg-accentDark/20
     dark:prose-li:marker:text-accentDark
