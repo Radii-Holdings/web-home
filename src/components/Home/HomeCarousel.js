@@ -16,9 +16,9 @@ const defaultSlides = [
     text: "Explore Our Cross Broker Trading Platform",
   },
   {
-    image: "/character.png",
-    link: "https://example.com/three",
-    text: "Design. Develop. Deliver.",
+    image: "/layr0_mobile_app_showcase.png",
+    link: "https://aitrade.ing/",
+    text: "Layr0 Mobile: Execution on Android & iOS",
   },
 ];
 
