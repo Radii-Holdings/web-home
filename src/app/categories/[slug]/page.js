@@ -15,12 +15,13 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug: s } = await params;
   const normalized = s.replace(/-\d+$/, "");
+  const title = `${normalized.replaceAll("-", " ")} Insights for Global & Indian Traders | Radii Labs`.replace(/\b\w/g, l => l.toUpperCase());
+
   return {
-    title: `${normalized.replaceAll("-"," ")} Blogs`,
-    description: `Learn more about ${normalized === "all" ? "web development" : normalized} through our collection of expert blogs and tutorials`,
+    title: title,
+    description: `Explore ${normalized.replaceAll("-", " ")} research, strategy explainers, and actionable market insights for Global and Indian traders from Radii Labs.`,
   };
 }
-
 
 const CategoryPage = async ({ params }) => {
   const { slug: current } = await params;
@@ -36,12 +37,19 @@ const CategoryPage = async ({ params }) => {
     return blog.isPublished && (tagSlugs.includes(current) || tagSlugs.includes(normalized));
   });
 
+  const categoryIntros = {
+    "algo-trading": "Explore practical algorithmic trading frameworks, execution logic, and risk controls for Global & Indian market participants. Built for traders who want process over prediction.",
+    "all": "A comprehensive collection of insights covering quantitative analysis, algorithmic execution, and market intelligence for modern traders.",
+  };
+
+  const defaultIntro = `Deep dive into ${normalized.replaceAll("-", " ")} with data-backed research and execution strategies designed for disciplined trading.`;
+
   return (
     <article className="mt-12 flex flex-col text-dark dark:text-light">
       <div className=" px-5 sm:px-10  md:px-24  sxl:px-32 flex flex-col">
         <h1 className="mt-6 font-semibold text-2xl md:text-4xl lg:text-5xl">#{normalized}</h1>
-        <span className="mt-2 inline-block">
-          Discover more categories and expand your knowledge!
+        <span className="mt-2 inline-block font-medium text-lg">
+          {categoryIntros[normalized] || defaultIntro}
         </span>
       </div>
       <Categories categories={Array.from(allCategories)} currentSlug={normalized} />

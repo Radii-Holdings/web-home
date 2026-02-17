@@ -8,20 +8,34 @@ const HomeBanner = () => {
         <div className="flex flex-col items-center justify-center">
           <div className="mb-8 text-center max-w-3xl lg:max-w-4xl">
             <h1 className="mb-4 font-semibold text-2xl md:text-4xl lg:text-5xl">
-              Quantitative Intelligence & Layr0 Execution
+              Quantitative Market Intelligence + Algorithmic Execution for Global & Indian Traders
             </h1>
             <p className="mb-8 text-base md:text-lg text-dark/80 dark:text-light/80">
-              <span className="font-bold text-lg md:text-xl text-dark dark:text-light">Radii Labs</span> provides quantitative market intelligence, while <span className="font-bold text-lg md:text-xl text-dark dark:text-light">Layr0</span> offers advanced algorithmic trading execution. Together, we empower investors with actionable insights for Forex and Indian Markets.
+              <span className="font-bold text-lg md:text-xl text-dark dark:text-light">Radii Labs</span> helps traders and investors convert market complexity into actionable signals. With <span className="font-bold text-lg md:text-xl text-dark dark:text-light">Layr0</span>, those insights become disciplined execution across Global Forex and Indian markets—without emotional decision-making.
             </p>
-            <Link
-              href="/console"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-full text-white font-semibold shadow hover:scale-105 transition-transform"
-              style={{ backgroundColor: "var(--brand-blue)" }}
-            >
-              Explore Console
-            </Link>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-full text-dark font-semibold shadow hover:scale-105 transition-transform bg-accent dark:bg-accentDark"
+              >
+                Book a Demo
+              </Link>
+              <Link
+                href="/categories/algo-trading"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-full text-dark dark:text-light font-semibold border border-dark dark:border-light hover:scale-105 transition-transform"
+              >
+                Explore Strategies
+              </Link>
+              <Link
+                href="/console"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-full text-white font-semibold shadow hover:scale-105 transition-transform"
+                style={{ backgroundColor: "var(--brand-blue)" }}
+              >
+                Start Trading Now
+              </Link>
+            </div>
           </div>
           <div className="w-full">
             <Link
