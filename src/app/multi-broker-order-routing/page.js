@@ -18,12 +18,7 @@ export default function MultiBrokerOrderRouting() {
                     <p className="text-xl md:text-2xl mb-8 text-light/80">
                         Route orders intelligently across Zerodha, Angel One, Interactive Brokers, and more from one central engine.
                     </p>
-                    <Link
-                        href="/contact"
-                        className="inline-block px-8 py-4 bg-accent dark:bg-accentDark text-light font-bold rounded-full hover:scale-105 transition-transform"
-                    >
-                        Integrate Now
-                    </Link>
+
                 </div>
                 <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-0"></div>
                 <Image
@@ -76,6 +71,14 @@ export default function MultiBrokerOrderRouting() {
                             <p className="mt-4">Yes, you can use our hybrid terminal to place manual orders that are routed through the same smart infrastructure.</p>
                         </details>
                     </div>
+                    <div className="mt-10 text-center">
+                        <Link
+                            href="/contact"
+                            className="inline-block px-6 py-3 bg-accent dark:bg-accentDark text-light font-bold rounded-full border border-dark dark:border-light hover:scale-105 transition-transform"
+                        >
+                            Integrate Now
+                        </Link>
+                    </div>
                 </div>
             </section>
 
@@ -85,7 +88,7 @@ export default function MultiBrokerOrderRouting() {
                 <div className="flex flex-col sm:flex-row gap-4">
                     <Link
                         href="/contact"
-                        className="px-8 py-4 bg-dark text-light dark:bg-light dark:text-dark font-bold rounded-full hover:opacity-90 transition-opacity"
+                        className="px-6 py-3 bg-dark text-light dark:bg-light dark:text-dark font-bold rounded-full border border-dark dark:border-light hover:scale-105 transition-transform"
                     >
                         Discuss Integration
                     </Link>
