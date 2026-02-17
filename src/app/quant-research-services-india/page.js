@@ -18,12 +18,7 @@ export default function QuantResearchServicesIndia() {
                     <p className="text-xl md:text-2xl mb-8 text-light/80">
                         Leverage our quantitative research team to build, validate, and optimize your trading hypotheses.
                     </p>
-                    <Link
-                        href="/contact"
-                        className="inline-block px-8 py-4 bg-accent dark:bg-accentDark text-light font-bold rounded-full hover:scale-105 transition-transform"
-                    >
-                        Consult a Quant
-                    </Link>
+
                 </div>
                 <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-0"></div>
                 <Image
@@ -66,6 +61,14 @@ export default function QuantResearchServicesIndia() {
             <section className="py-20 bg-accent/5 dark:bg-accentDark/5 w-full">
                 <div className="max-w-4xl mx-auto px-5">
                     <h2 className="text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
+                    <div className="mb-10 text-center">
+                        <Link
+                            href="/contact"
+                            className="inline-block px-6 py-3 bg-accent dark:bg-accentDark text-light font-bold rounded-full border border-dark dark:border-light hover:scale-105 transition-transform"
+                        >
+                            Consult a Quant
+                        </Link>
+                    </div>
                     <div className="space-y-6">
                         <details className="p-6 bg-light dark:bg-dark rounded-lg shadow-sm">
                             <summary className="font-semibold text-xl cursor-pointer">Who owns the IP?</summary>
@@ -85,7 +88,7 @@ export default function QuantResearchServicesIndia() {
                 <div className="flex flex-col sm:flex-row gap-4">
                     <Link
                         href="/contact"
-                        className="px-8 py-4 bg-dark text-light dark:bg-light dark:text-dark font-bold rounded-full hover:opacity-90 transition-opacity"
+                        className="px-6 py-3 bg-dark text-light dark:bg-light dark:text-dark font-bold rounded-full border border-dark dark:border-light hover:scale-105 transition-transform"
                     >
                         Schedule Consultation
                     </Link>
