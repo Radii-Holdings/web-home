@@ -6,11 +6,15 @@ import yaml
 import glob
 
 CONTENT_DIR = r"c:\Users\adyse\Documents\github\radii-holdings\web-home\content"
-PUBLIC_DIR = r"c:\Users\adyse\Documents\github\radii-holdings\web-home\public\blogs"
-ARTIFACTS_DIR = r"C:\Users\adyse\.gemini\antigravity\brain\87473f30-33cc-4136-b3ef-e39ec2bfbb8b"
+APP_DIR = r"c:\Users\adyse\Documents\github\radii-holdings\web-home\src\app"
+PUBLIC_BLOGS_DIR = r"c:\Users\adyse\Documents\github\radii-holdings\web-home\public\blogs"
+PUBLIC_IMAGES_DIR = r"c:\Users\adyse\Documents\github\radii-holdings\web-home\public\images"
+ARTIFACTS_DIR = r"C:\Users\adyse\.gemini\antigravity\brain\91f42727-38a9-4b18-ac55-c3293163512d"
 
 def get_expected_images():
-    expected = {} # filename -> mdx_path
+    expected = {} # filename -> (target_dir, source_file)
+    
+    # 1. Scan Content (Blogs)
     for root, dirs, files in os.walk(CONTENT_DIR):
         for file in files:
             if file.endswith(".mdx"):
@@ -20,8 +24,24 @@ def get_expected_images():
                 match = re.search(r'image:\s*["\']?(.*?)["\']?\n', content)
                 if match:
                     img_path = match.group(1)
+                    # Expected format in MDX: "../../public/blogs/image.png" or just "image.png"
+                    # We assume filenames are unique enough or just take basename
                     basename = os.path.basename(img_path)
-                    expected[basename] = filepath
+                    expected[basename] = (PUBLIC_BLOGS_DIR, filepath)
+
+    # 2. Scan App (Landing Pages)
+    for root, dirs, files in os.walk(APP_DIR):
+        for file in files:
+            if file.endswith(".js"):
+                filepath = os.path.join(root, file)
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                # Look for src="/images/..."
+                matches = re.finditer(r'src=["\'](/images/(.*?))["\']', content)
+                for match in matches:
+                    basename = match.group(2) # "algo-trading.png"
+                    expected[basename] = (PUBLIC_IMAGES_DIR, filepath)
+                    
     return expected
 
 def find_best_artifact(target_name):
@@ -30,14 +50,15 @@ def find_best_artifact(target_name):
     
     base_target = os.path.splitext(target_name)[0] # forex_trading_layr0
     
-    # Search for files starting with base_target in artifacts
-    pattern = os.path.join(ARTIFACTS_DIR, f"{base_target}*.png")
-    candidates = glob.glob(pattern)
+    # Generate variations (original, hyphens->underscores, underscores->hyphens)
+    variations = {base_target, base_target.replace('-', '_'), base_target.replace('_', '-')}
     
-    # Also try jpg
-    if not candidates:
-        pattern = os.path.join(ARTIFACTS_DIR, f"{base_target}*.jpg")
-        candidates = glob.glob(pattern)
+    candidates = []
+    for var in variations:
+        pattern = os.path.join(ARTIFACTS_DIR, f"{var}*.png")
+        candidates.extend(glob.glob(pattern))
+        pattern_jpg = os.path.join(ARTIFACTS_DIR, f"{var}*.jpg")
+        candidates.extend(glob.glob(pattern_jpg))
 
     if not candidates:
         return None
@@ -47,8 +68,10 @@ def find_best_artifact(target_name):
     return candidates[0]
 
 def main():
-    if not os.path.exists(PUBLIC_DIR):
-        os.makedirs(PUBLIC_DIR)
+    if not os.path.exists(PUBLIC_BLOGS_DIR):
+        os.makedirs(PUBLIC_BLOGS_DIR)
+    if not os.path.exists(PUBLIC_IMAGES_DIR):
+        os.makedirs(PUBLIC_IMAGES_DIR)
         
     expected_images = get_expected_images()
     print(f"\nScanning for {len(expected_images)} expected images...")
@@ -56,8 +79,8 @@ def main():
     recovered_count = 0
     missing_images = []
     
-    for target_name, mdx_path in expected_images.items():
-        target_path = os.path.join(PUBLIC_DIR, target_name)
+    for target_name, (target_dir, source_file) in expected_images.items():
+        target_path = os.path.join(target_dir, target_name)
         
         # Check if already exists in public dir
         if os.path.exists(target_path):

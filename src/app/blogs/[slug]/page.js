@@ -181,11 +181,11 @@ export default async function BlogPage({ params }) {
                 Don&apos;t just read about market edges—execute them.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://layr0.org" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-accent dark:bg-accentDark text-light font-semibold rounded-full hover:scale-105 transition-transform">
+                <a href="/forex-algo-execution-india" className="inline-block px-6 py-3 bg-accent dark:bg-accentDark text-light font-semibold rounded-full hover:scale-105 transition-transform">
                   Explore Layr0 Execution
                 </a>
-                <a href="/contact" className="inline-block px-6 py-3 border border-dark dark:border-light font-semibold rounded-full hover:scale-105 transition-transform">
-                  Usage Intelligence
+                <a href="/quant-research-services-india" className="inline-block px-6 py-3 border border-dark dark:border-light font-semibold rounded-full hover:scale-105 transition-transform">
+                  Quant Research Services
                 </a>
               </div>
             </div>

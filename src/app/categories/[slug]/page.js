@@ -38,7 +38,11 @@ const CategoryPage = async ({ params }) => {
   });
 
   const categoryIntros = {
-    "algo-trading": "Explore practical algorithmic trading frameworks, execution logic, and risk controls for Global & Indian market participants. Built for traders who want process over prediction.",
+    "algo-trading": (
+      <>
+        Explore practical algorithmic trading frameworks, execution logic, and risk controls for Global & Indian market participants. Built for traders who want process over prediction. For enterprise-grade infrastructure, check our <a href="/algo-trading-platform-india" className="underline hover:text-accent dark:hover:text-accentDark">Algo Trading Platform</a>.
+      </>
+    ),
     "all": "A comprehensive collection of insights covering quantitative analysis, algorithmic execution, and market intelligence for modern traders.",
   };
 
