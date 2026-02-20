@@ -10,7 +10,6 @@ import { Toaster } from "react-hot-toast";
 import GTMInit from "../components/GTM/GTMInit";
 import CookieConsent from "../components/GTM/CookieConsent";
 
-
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
@@ -27,7 +26,7 @@ export const metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
   title: {
     template: `%s | ${siteMetadata.title}`,
-    default: siteMetadata.title, // a default is required when creating a template
+    default: siteMetadata.title,
   },
   description: siteMetadata.description,
   keywords: siteMetadata.keywords,
@@ -58,7 +57,6 @@ export const metadata = {
   },
 };
 
-// Ensure proper mobile scaling and typography rendering
 export const viewport = {
   width: "device-width",
   initialScale: 1,
@@ -91,15 +89,15 @@ export default function RootLayout({ children }) {
         )}
         <Script id="theme-switcher" strategy="beforeInteractive">
           {`if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    document.documentElement.classList.add('dark')
-  } else {
-    document.documentElement.classList.remove('dark')
-  }`}
+            document.documentElement.classList.add('dark')
+          } else {
+            document.documentElement.classList.remove('dark')
+          }`}
         </Script>
         <Header />
         {children}
         <Footer />
-        <TelegramButton /> {/* Add the Telegram button here */}
+        <TelegramButton />
         <Toaster />
         <CookieConsent />
       </body>
