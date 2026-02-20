@@ -73,10 +73,10 @@ export default function MultiBrokerOrderRouting() {
                     </div>
                     <div className="mt-10 text-center">
                         <Link
-                            href="/contact"
+                            href="/console"
                             className="inline-block px-6 py-3 bg-accent dark:bg-accentDark text-light font-bold rounded-full border border-dark dark:border-light hover:scale-105 transition-transform"
                         >
-                            Integrate Now
+                            Start Trading Now
                         </Link>
                     </div>
                 </div>

@@ -10,13 +10,17 @@ const HomeBanner = () => {
             <h1 className="mb-4 font-semibold text-2xl md:text-4xl lg:text-5xl">
               AI Trading Intelligence + Algorithmic Execution for Global & Indian Traders
             </h1>
-            <p className="mb-8 text-base md:text-lg text-dark/80 dark:text-light/80">
+            <p className="mb-6 text-base md:text-lg text-dark/80 dark:text-light/80">
               <span className="font-bold text-lg md:text-xl text-dark dark:text-light">Radii Labs</span> empowers traders with <span className="font-bold text-lg md:text-xl text-dark dark:text-light">AI-driven trading system</span>. With <span className="font-bold text-lg md:text-xl text-dark dark:text-light">Layr0</span>, those AI insights become disciplined execution across Global Forex and Indian markets—removing emotional bias from every trade.
-              <br />
-              <Link href="/multi-broker-order-routing" className="text-sm underline hover:text-accent dark:hover:text-accentDark mt-2 inline-block">
+            </p>
+            <div className="mb-10">
+              <Link
+                href="/multi-broker-order-routing"
+                className="inline-block px-5 py-2 text-sm md:text-base font-bold uppercase tracking-wider border-2 border-dark dark:border-light text-dark dark:text-light hover:bg-dark hover:text-light dark:hover:bg-light dark:hover:text-dark transition-all duration-300 rounded-none shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] active:shadow-none active:translate-x-[2px] active:translate-y-[2px]"
+              >
                 Discover our AI-Enhanced Multi-Broker Order Routing Engine &rarr;
               </Link>
-            </p>
+            </div>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/contact"
