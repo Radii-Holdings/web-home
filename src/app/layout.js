@@ -7,6 +7,8 @@ import siteMetadata from "../utils/siteMetaData";
 import Script from "next/script";
 import TelegramButton from "@/src/components/TelegramButton";
 import { Toaster } from "react-hot-toast";
+import GTMInit from "../components/GTM/GTMInit";
+import CookieConsent from "../components/GTM/CookieConsent";
 
 
 const inter = Inter({
@@ -63,8 +65,13 @@ export const viewport = {
 };
 
 export default function RootLayout({ children }) {
+  const GTM_ID = siteMetadata.gtmId;
+
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <GTMInit />
+      </head>
       <body
         className={cx(
           inter.variable,
@@ -72,6 +79,16 @@ export default function RootLayout({ children }) {
           "font-mr bg-light dark:bg-dark"
         )}
       >
+        {GTM_ID && GTM_ID !== 'GTM-XXXXXXX' && (
+          <noscript>
+            <iframe
+              src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+              height="0"
+              width="0"
+              style={{ display: "none", visibility: "hidden" }}
+            ></iframe>
+          </noscript>
+        )}
         <Script id="theme-switcher" strategy="beforeInteractive">
           {`if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     document.documentElement.classList.add('dark')
@@ -84,6 +101,7 @@ export default function RootLayout({ children }) {
         <Footer />
         <TelegramButton /> {/* Add the Telegram button here */}
         <Toaster />
+        <CookieConsent />
       </body>
     </html>
   );
