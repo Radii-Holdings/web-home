@@ -11,7 +11,7 @@ const HomeBanner = () => {
               AI Trading Intelligence + Algorithmic Execution for Global & Indian Traders
             </h1>
             <p className="mb-8 text-base md:text-lg text-dark/80 dark:text-light/80">
-              <span className="font-bold text-lg md:text-xl text-dark dark:text-light">Radii Labs</span> empowers traders with AI-driven market intelligence to convert complexity into actionable signals. With <span className="font-bold text-lg md:text-xl text-dark dark:text-light">Layr0</span>, those AI insights become disciplined execution across Global Forex and Indian markets—removing emotional bias from every trade.
+              <span className="font-bold text-lg md:text-xl text-dark dark:text-light">Radii Labs</span> empowers traders with <span className="font-bold text-lg md:text-xl text-dark dark:text-light">AI-driven trading system</span>. With <span className="font-bold text-lg md:text-xl text-dark dark:text-light">Layr0</span>, those AI insights become disciplined execution across Global Forex and Indian markets—removing emotional bias from every trade.
               <br />
               <Link href="/multi-broker-order-routing" className="text-sm underline hover:text-accent dark:hover:text-accentDark mt-2 inline-block">
                 Discover our AI-Enhanced Multi-Broker Order Routing Engine &rarr;
