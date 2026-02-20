@@ -5,8 +5,8 @@ import FeaturedPosts from "../components/Home/FeaturedPosts";
 import RecentPosts from "../components/Home/RecentPosts";
 
 export const metadata = {
-  title: "Radii Labs: Quant Intelligence + Layr0 Algo Execution",
-  description: "Radii Labs delivers quantitative market intelligence and Layr0 enables fast algorithmic execution for Global Forex and Indian markets. Build smarter, data-driven trading decisions.",
+  title: "Radii Labs: AI Trading Intelligence + Layr0 Algo Execution",
+  description: "Radii Labs delivers AI-driven quantitative market intelligence and Layr0 enables fast algorithmic execution for Global Forex and Indian markets. Master the markets with AI-powered trading decisions.",
 };
 
 export default function Home() {

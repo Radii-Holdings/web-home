@@ -8,13 +8,13 @@ const HomeBanner = () => {
         <div className="flex flex-col items-center justify-center">
           <div className="mb-8 text-center max-w-3xl lg:max-w-4xl">
             <h1 className="mb-4 font-semibold text-2xl md:text-4xl lg:text-5xl">
-              Quantitative Market Intelligence + Algorithmic Execution for Global & Indian Traders
+              AI Trading Intelligence + Algorithmic Execution for Global & Indian Traders
             </h1>
             <p className="mb-8 text-base md:text-lg text-dark/80 dark:text-light/80">
-              <span className="font-bold text-lg md:text-xl text-dark dark:text-light">Radii Labs</span> helps traders and investors convert market complexity into actionable signals. With <span className="font-bold text-lg md:text-xl text-dark dark:text-light">Layr0</span>, those insights become disciplined execution across Global Forex and Indian markets—without emotional decision-making.
+              <span className="font-bold text-lg md:text-xl text-dark dark:text-light">Radii Labs</span> empowers traders with AI-driven market intelligence to convert complexity into actionable signals. With <span className="font-bold text-lg md:text-xl text-dark dark:text-light">Layr0</span>, those AI insights become disciplined execution across Global Forex and Indian markets—removing emotional bias from every trade.
               <br />
               <Link href="/multi-broker-order-routing" className="text-sm underline hover:text-accent dark:hover:text-accentDark mt-2 inline-block">
-                Discover our Multi-Broker Order Routing Engine &rarr;
+                Discover our AI-Enhanced Multi-Broker Order Routing Engine &rarr;
               </Link>
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

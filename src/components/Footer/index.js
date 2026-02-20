@@ -12,20 +12,20 @@ const Footer = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
-  try {
-    const res = await fetch('/api/subscribe', {
-      method: 'POST',
-  
-      body: JSON.stringify(data),
-    });
-    if (res.status === 200) {
-      toast.success('You have successfully subscribed to our newsletters')
+    try {
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+
+        body: JSON.stringify(data),
+      });
+      if (res.status === 200) {
+        toast.success('You have successfully subscribed to our newsletters')
+      }
+    }
+    catch (error) {
+      console.log(error);
     }
   }
- catch (error) {
-    console.log(error);
-  }
-}
 
   return (
     <footer className="mt-16 rounded-2xl bg-dark dark:bg-accentDark/90 m-2 sm:m-10 flex flex-col items-center text-light dark:text-dark">
@@ -40,33 +40,33 @@ const Footer = () => {
         </h4>
         <div id="substack-feed-embed" className="space-y-4">
           {React.useEffect(() => {
-        const script1 = document.createElement("script");
-        script1.innerHTML = `
+            const script1 = document.createElement("script");
+            script1.innerHTML = `
           window.SubstackFeedWidget = {
             substackUrl: "radiilab.substack.com",
             posts: 3,
           };
         `;
-        document.body.appendChild(script1);
+            document.body.appendChild(script1);
 
-        const script2 = document.createElement("script");
-        script2.src = "https://substackapi.com/embeds/feed.js";
-        script2.async = true;
-        document.body.appendChild(script2);
+            const script2 = document.createElement("script");
+            script2.src = "https://substackapi.com/embeds/feed.js";
+            script2.async = true;
+            document.body.appendChild(script2);
 
-        return () => {
-          document.body.removeChild(script1);
-          document.body.removeChild(script2);
-        };
+            return () => {
+              document.body.removeChild(script1);
+              document.body.removeChild(script2);
+            };
           }, [])}
         </div>
-      </div>      
-          <p className="mt-5 px-4 text-center w-full sm:w-3/5 font-light dark:font-medium text-sm sm:text-base">
-            Subscribe to learn about new developments and updates. Join us as one of our
-            <span className="font-medium dark:font-bold"> 100+ </span>
-            subscribers and get the latest updates in your inbox.
-            <br /> It&apos;s FREE ...
-          </p>
+      </div>
+      <p className="mt-5 px-4 text-center w-full sm:w-3/5 font-light dark:font-medium text-sm sm:text-base">
+        Subscribe to learn about new developments and updates. Join us as one of our
+        <span className="font-medium dark:font-bold"> 100+ </span>
+        subscribers and get the latest updates in your inbox.
+        <br /> It&apos;s FREE ...
+      </p>
       <div className="mt-6 w-fit sm:min-w-[384px] flex items-stretch bg-light dark:bg-dark p-1 sm:p-2 rounded mx04">
         <iframe
           src="https://radiilab.substack.com/embed"
@@ -113,7 +113,7 @@ const Footer = () => {
 
       <div className="w-full  mt-16 md:mt-24 relative font-medium border-t border-solid border-light py-6 px-8 flex  flex-col md:flex-row items-center justify-between">
         <span className="text-center">
-          &copy;2025 Radii Lab. All rights reserved.
+          &copy;2026 Radii Lab. All rights reserved.
         </span>
         <Link
           href="/sitemap.xml"
@@ -124,7 +124,7 @@ const Footer = () => {
         <div className="text-center">
           Made with &hearts; by{" "}
           <a href="https://github.com/Radii-Holdings" className="underline" target="_blank">
-          Radii Lab
+            Radii Lab
           </a>
         </div>
       </div>
