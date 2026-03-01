@@ -9,7 +9,8 @@ CONTENT_DIR = r"c:\Users\adyse\Documents\github\radii-holdings\web-home\content"
 APP_DIR = r"c:\Users\adyse\Documents\github\radii-holdings\web-home\src\app"
 PUBLIC_BLOGS_DIR = r"c:\Users\adyse\Documents\github\radii-holdings\web-home\public\blogs"
 PUBLIC_IMAGES_DIR = r"c:\Users\adyse\Documents\github\radii-holdings\web-home\public\images"
-ARTIFACTS_DIR = r"C:\Users\adyse\.gemini\antigravity\brain\91f42727-38a9-4b18-ac55-c3293163512d"
+ARTIFACTS_DIR = r"C:\Users\adyse\.gemini\antigravity\brain\8342f489-07ab-4a7b-aba1-3e4d3ab5fc68"
+
 
 def get_expected_images():
     expected = {} # filename -> (target_dir, source_file)
