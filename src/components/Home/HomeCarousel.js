@@ -6,9 +6,9 @@ import Link from "next/link";
 // Dummy slides; can be overridden by passing `slides` prop
 const defaultSlides = [
   {
-    image: "/blogs/blog backdrop.png",
+    image: "/images/ai-trading-hero.png",
     link: "/categories/all",
-    text: "Explore Our Latest Insights",
+    text: "Explore Our AI-Powered Trading Intelligence",
   },
   {
     image: "/social-banner2.jpg",
