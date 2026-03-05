@@ -109,7 +109,7 @@ const TutorialPage = () => {
                             <iframe
                                 width="100%"
                                 height="100%"
-                                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                                src="https://youtube.com/playlist?list=PLtzex4luYqGZvhkuZDXH2k5uL8SbgeCkU&si=mY2Hnhg7GLFs8X30"
                                 title="AI Trading Tutorial Video"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

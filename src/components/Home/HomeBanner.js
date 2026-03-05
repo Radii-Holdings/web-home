@@ -23,16 +23,10 @@ const HomeBanner = () => {
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
-                href="/contact"
+                href="/tutorial"
                 className="inline-flex items-center justify-center px-6 py-3 rounded-full text-dark font-semibold shadow hover:scale-105 transition-transform bg-accent dark:bg-accentDark"
               >
-                Book a Demo
-              </Link>
-              <Link
-                href="/categories/algo-trading"
-                className="inline-flex items-center justify-center px-6 py-3 rounded-full text-dark dark:text-light font-semibold border border-dark dark:border-light hover:scale-105 transition-transform"
-              >
-                Explore Strategies
+                Tutorial
               </Link>
               <Link
                 href="/console"
@@ -42,6 +36,12 @@ const HomeBanner = () => {
                 style={{ backgroundColor: "var(--brand-blue)" }}
               >
                 Start Trading Now
+              </Link>
+              <Link
+                href="/categories/algo-trading"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-full text-dark dark:text-light font-semibold border border-dark dark:border-light hover:scale-105 transition-transform"
+              >
+                Explore Strategies
               </Link>
             </div>
           </div>
