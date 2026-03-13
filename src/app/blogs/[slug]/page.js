@@ -181,7 +181,7 @@ export default async function BlogPage({ params }) {
                 Transition from emotional trading to disciplined, data-backed execution with our AI tools.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="/console" className="inline-block px-6 py-3 bg-accent dark:bg-accentDark text-light font-semibold rounded-full hover:scale-105 transition-transform">
+                <a href="https://console.radii.in/" className="inline-block px-6 py-3 bg-accent dark:bg-accentDark text-light font-semibold rounded-full hover:scale-105 transition-transform">
                   Explore The Console
                 </a>
                 <a href="/tutorial" className="inline-block px-6 py-3 border border-dark dark:border-light font-semibold rounded-full hover:scale-105 transition-transform">

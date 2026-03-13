@@ -33,7 +33,7 @@ const TutorialPage = () => {
                                     All software downloads and deployment tools are hosted on our secure console subdomain. Use the CLI mainframe interface to download the latest version of the trading core.
                                 </p>
                                 <Link
-                                    href="/console"
+                                    href="https://console.radii.in/"
                                     className="inline-flex items-center gap-2 px-6 py-2 bg-dark dark:bg-light text-light dark:text-dark rounded-full font-semibold hover:bg-accent dark:hover:bg-accentDark hover:text-light dark:hover:text-dark transition-colors"
                                 >
                                     Go to Console

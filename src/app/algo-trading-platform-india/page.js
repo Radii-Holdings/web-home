@@ -95,7 +95,7 @@ export default function AlgoTradingPlatformIndia() {
                         Talk to our Team
                     </Link>
                     <Link
-                        href="/console"
+                        href="https://console.radii.in/"
                         target="_blank"
                         className="px-8 py-4 border border-dark dark:border-light font-bold rounded-full hover:bg-dark/10 dark:hover:bg-light/10 transition-colors"
                     >

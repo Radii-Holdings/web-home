@@ -29,7 +29,7 @@ const HomeBanner = () => {
                 Tutorial
               </Link>
               <Link
-                href="/console"
+                href="https://console.radii.in/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-6 py-3 rounded-full text-white font-semibold shadow hover:scale-105 transition-transform"
@@ -47,7 +47,7 @@ const HomeBanner = () => {
           </div>
           <div className="w-full">
             <Link
-              href="/console"
+              href="https://console.radii.in/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Open Console in new tab"
