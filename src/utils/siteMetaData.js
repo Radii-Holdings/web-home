@@ -19,6 +19,7 @@ const siteMetadata = {
   keywords: ['AI Trading', 'AI Trading Software', 'Radii Labs', 'Layr0', 'Algo Trading', 'Quantitative Research', 'Indian Stock Market', 'Forex Trading', 'Market Intelligence', 'Automated Trading', 'Fintech India', 'Machine Learning Trading', 'AI Trading Strategies'],
   locale: 'en-US',
   gtmId: process.env.NEXT_PUBLIC_GTM_ID,
+  subdomains: ['https://console.radii.in'],
 }
 
 module.exports = siteMetadata;
