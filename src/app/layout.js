@@ -9,6 +9,7 @@ import TelegramButton from "@/src/components/TelegramButton";
 import { Toaster } from "react-hot-toast";
 import GTMInit from "../components/GTM/GTMInit";
 import CookieConsent from "../components/GTM/CookieConsent";
+import SiteNavigationSchema from "../components/StructuredData/SiteNavigationSchema";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -69,6 +70,7 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <head>
         <GTMInit />
+        <SiteNavigationSchema />
       </head>
       <body
         className={cx(
