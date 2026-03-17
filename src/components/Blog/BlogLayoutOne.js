@@ -4,13 +4,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { slug } from "github-slugger";
 
-const BlogLayoutOne = ({ blog, highlight = false }) => {
+const BlogLayoutOne = ({ blog, highlight = false, fullWidth = false }) => {
   return (
-    <div className="group inline-block overflow-hidden rounded-xl">
+    <div className={`group inline-block overflow-hidden ${fullWidth ? "w-full" : "rounded-xl"}`}>
       <div
-        className="absolute top-0 left-0 bottom-0 right-0 h-full
-            bg-gradient-to-b from-transparent from-0% to-dark/90 rounded-xl z-10
-            "
+        className={`absolute top-0 left-0 bottom-0 right-0 h-full
+            bg-gradient-to-b from-transparent from-0% to-dark/90 z-10
+            ${fullWidth ? "" : "rounded-xl"}`}
       />
       <Image
         src={blog.image.filePath.replace("../public", "")}
@@ -19,11 +19,11 @@ const BlogLayoutOne = ({ blog, highlight = false }) => {
         alt={blog.title}
         width={blog.image.width}
         height={blog.image.height}
-        className="w-full h-full object-center object-cover rounded-xl group-hover:scale-105 transition-all ease duration-300"
-        sizes="(max-width: 1180px) 100vw, 50vw"
+        className={`w-full h-full object-center object-cover group-hover:scale-105 transition-all ease duration-300 ${fullWidth ? "" : "rounded-xl"}`}
+        sizes={fullWidth ? "100vw" : "(max-width: 1180px) 100vw, 50vw"}
       />
 
-      <div className="w-full absolute bottom-0 p-4 xs:p-6 sm:p-10 z-20">
+      <div className={`w-full absolute bottom-0 p-4 xs:p-6 sm:p-10 z-20 ${fullWidth ? "px-8 sm:px-16 md:px-32 sxl:px-48" : ""}`}>
         <Tag link={`/categories/${slug(blog.tags[0])}`} name={blog.tags[0]}
         className={highlight ? "hero-tag-animated px-6 text-xs sm:text-sm py-1 sm:py-2" : "px-6 text-xs  sm:text-sm py-1 sm:py-2 !border"}
         />

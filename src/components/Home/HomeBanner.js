@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const HomeBanner = () => {
@@ -23,12 +22,6 @@ const HomeBanner = () => {
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
-                href="/tutorial"
-                className="inline-flex items-center justify-center px-6 py-3 rounded-full text-dark font-semibold shadow hover:scale-105 transition-transform bg-accent dark:bg-accentDark"
-              >
-                Tutorial
-              </Link>
-              <Link
                 href="https://console.radii.in/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -45,22 +38,25 @@ const HomeBanner = () => {
               </Link>
             </div>
           </div>
-          <div className="w-full">
-            <Link
-              href="https://console.radii.in/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Open Console in new tab"
-            >
-              <Image
-                alt="banner image"
-                src="/svgs/cli_mainframe_logo_blue.svg"
-                width={800}
-                height={420}
-                className="mx-auto cursor-pointer"
-                priority
-              />
-            </Link>
+          <div className="w-full max-w-4xl mx-auto">
+            <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl border-4 border-dark/10 dark:border-light/10">
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/TSMkPJVfs_I"
+                title="Radii Labs AI Trading Bot"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className="mt-12 flex justify-center">
+              <Link
+                href="/tutorial"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-full text-white font-semibold shadow hover:scale-105 transition-transform"
+                style={{ backgroundColor: "var(--brand-blue)" }}
+              >
+                Tutorial
+              </Link>
+            </div>
           </div>
         </div>
       </div>
