@@ -51,7 +51,7 @@ const Header = () => {
         <Link href="/about" className="mx-2">About</Link>
         <Link href="/contact" className="mx-2">Contact</Link>
         <Link href="https://console.radii.in/" className="ml-3 inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-black btn-bezel">
-          <span>Console</span>
+          <span>Get Started</span>
           <Image src="/svgs/cli_mainframe_logo_blue.svg" alt="CLI Mainframe" width={16} height={16} />
         </Link>
       </nav>
