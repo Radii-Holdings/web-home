@@ -10,6 +10,7 @@ import { Toaster } from "react-hot-toast";
 import GTMInit from "../components/GTM/GTMInit";
 import CookieConsent from "../components/GTM/CookieConsent";
 import SiteNavigationSchema from "../components/StructuredData/SiteNavigationSchema";
+import LeadCaptureModal from "../components/LeadCaptureModal";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -104,6 +105,7 @@ export default function RootLayout({ children }) {
         <TelegramButton />
         <Toaster />
         <CookieConsent />
+        <LeadCaptureModal />
       </body>
     </html>
   );

@@ -7,7 +7,8 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "setup:hubspot": "node scripts/setup-hubspot.cjs"
   },
   "dependencies": {
     "@lottiefiles/dotlottie-react": "^0.17.10",
