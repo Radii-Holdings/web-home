@@ -66,6 +66,19 @@ export default function LeadCaptureModal() {
   }, []);
 
   useEffect(() => {
+    const handleEscape = (e) => {
+      if (e.key === "Escape") {
+        closeForNow();
+      }
+    };
+
+    if (isVisible) {
+      window.addEventListener("keydown", handleEscape);
+    }
+    return () => window.removeEventListener("keydown", handleEscape);
+  }, [isVisible]);
+
+  useEffect(() => {
     if (!isMounted) {
       return undefined;
     }
@@ -132,14 +145,20 @@ export default function LeadCaptureModal() {
   }
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-dark/70 px-4 py-8 backdrop-blur-sm">
-      <div className="w-full max-w-md">
-        <div className="relative overflow-hidden rounded-3xl border border-white/15 bg-white p-6 shadow-[0_30px_80px_rgba(0,0,0,0.35)] dark:bg-dark">
+    <div
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-dark/70 px-4 py-8 backdrop-blur-sm"
+      onClick={closeForNow}
+    >
+      <div
+        className="w-full max-w-md"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="relative max-h-[calc(100vh-4rem)] overflow-y-auto rounded-3xl border border-white/15 bg-white p-6 shadow-[0_30px_80px_rgba(0,0,0,0.35)] dark:bg-dark scrollbar-hide">
           <button
             type="button"
             onClick={closeForNow}
             aria-label="Close lead capture form"
-            className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full border border-mediumGray/30 text-xl leading-none text-mediumGray transition hover:border-accent hover:text-accent"
+            className="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-mediumGray/30 bg-white/80 text-xl leading-none text-mediumGray backdrop-blur-sm transition hover:border-accent hover:text-accent dark:bg-dark/80"
           >
             &times;
           </button>
@@ -250,13 +269,11 @@ export default function LeadCaptureModal() {
               {isSubmitting ? "Submitting..." : "Submit details"}
             </button>
           </form>
-        </div>
 
-        <div className="mt-4 text-center">
           <button
             type="button"
             onClick={disableFor48Hours}
-            className="text-sm font-medium text-light underline underline-offset-4 transition hover:text-accentDark"
+            className="mt-6 w-full text-center text-sm font-medium text-mediumGray underline underline-offset-4 transition hover:text-accentDark"
           >
             Disable this popup for 48 hours
           </button>
