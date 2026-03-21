@@ -1,1 +1,31 @@
-{"animations":[{"id":"bdc0a971-2cde-4978-a674-d97462428387","mode":"normal","direction":1}],"author":"LottieFiles","description":"","generator":"dotLottie-js","keywords":"","version":"1.0"}
+{
+  "name": "Radii Lab | Quantitative Research Holding Firm",
+  "short_name": "Radii Lab",
+  "description": "Semi Automated Quantitative Research for the Digital Age",
+  "theme_color": "#fff",
+  "background_color": "#fff",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
