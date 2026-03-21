@@ -1,11 +1,8 @@
 import { NextResponse } from 'next/server';
-import { Resend } from 'resend';
 
 export const dynamic = 'force-dynamic';
-export const runtime = 'edge';
+export const runtime = 'nodejs'; // Use Node.js runtime for Resend and HubSpot compatibility
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-const hubspotAccessToken = process.env.HUBSPOT_ACCESS_TOKEN;
 const hubspotBaseUrl = 'https://api.hubapi.com';
 
 function splitFullName(fullName) {
@@ -27,6 +24,7 @@ async function syncHubSpotContact({
   name,
   email,
   phoneNumber,
+  hubspotAccessToken,
 }) {
   if (!hubspotAccessToken) {
     throw new Error('HUBSPOT_ACCESS_TOKEN is not configured.');
@@ -73,6 +71,18 @@ async function syncHubSpotContact({
 
 export async function POST(req) {
   try {
+    // Lazy-load environment variables to avoid build-time initialization issues
+    const resendApiKey = process.env.RESEND_API_KEY;
+    const hubspotAccessToken = process.env.HUBSPOT_ACCESS_TOKEN;
+
+    if (!resendApiKey) {
+      console.error('RESEND_API_KEY is missing.');
+      return NextResponse.json({ error: 'Mail service configuration error.' }, { status: 500 });
+    }
+
+    const { Resend } = await import('resend');
+    const resend = new Resend(resendApiKey);
+
     const body = await req.json();
     const projectDetails =
       typeof body.project_details === 'string' ? body.project_details.trim() : '';
@@ -111,11 +121,18 @@ export async function POST(req) {
         <p><strong>Lead Source:</strong> Timed website modal</p>
       `;
 
-    const hubspotResult = await syncHubSpotContact({
-      name: body.name,
-      email: body.email,
-      phoneNumber: body.phone_number,
-    });
+    // Sync to HubSpot
+    let hubspotResult = null;
+    if (hubspotAccessToken) {
+      hubspotResult = await syncHubSpotContact({
+        name: body.name,
+        email: body.email,
+        phoneNumber: body.phone_number,
+        hubspotAccessToken,
+      });
+    } else {
+      console.warn('HUBSPOT_ACCESS_TOKEN is missing, skipping HubSpot sync.');
+    }
 
     // Send email using Resend
     const response = await resend.emails.send({
