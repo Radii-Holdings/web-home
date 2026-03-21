@@ -10,7 +10,7 @@ const Header = () => {
 
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
-  const [click, setClick] = useState(false);
+  const [click, setClick] = useState(true);
 
   const toggle = () => {
     setClick(!click)
