@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { usePathname } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
@@ -54,6 +55,7 @@ export default function LeadCaptureModal() {
   const pathname = usePathname();
   const [isVisible, setIsVisible] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
+  const [portalRoot, setPortalRoot] = useState(null);
   const {
     register,
     handleSubmit,
@@ -63,6 +65,16 @@ export default function LeadCaptureModal() {
 
   useEffect(() => {
     setIsMounted(true);
+    // Create a dedicated DOM node detached from the Next.js component tree.
+    // This is the key fix: the modal's events are isolated from any page-level
+    // React hydration issues that exist on blog pages but not the home page.
+    const el = document.createElement("div");
+    el.setAttribute("id", "lead-capture-portal");
+    document.body.appendChild(el);
+    setPortalRoot(el);
+    return () => {
+      document.body.removeChild(el);
+    };
   }, []);
 
   useEffect(() => {
@@ -140,11 +152,11 @@ export default function LeadCaptureModal() {
     }
   };
 
-  if (!isMounted || !isVisible) {
+  if (!isMounted || !isVisible || !portalRoot) {
     return null;
   }
 
-  return (
+  return createPortal(
     <div
       className="fixed inset-0 z-[100] flex items-center justify-center bg-dark/70 px-4 py-8 backdrop-blur-sm"
       onClick={closeForNow}
@@ -280,5 +292,5 @@ export default function LeadCaptureModal() {
         </div>
       </div>
     </div>
-  );
+  , portalRoot);
 }
