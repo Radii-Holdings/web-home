@@ -7,13 +7,13 @@ import Link from "next/link";
 const defaultSlides = [
   {
     image: "/images/ai-trading-hero.png",
-    link: "/categories/all",
+    link: "https://console.radii.in/",
     text: "Explore Our AI-Powered Trading Intelligence",
   },
   {
     image: "/social-banner2.jpg",
-    link: "https://layr0.org",
-    text: "Explore Our Cross Broker Trading Platform",
+    link: "/categories/all",
+    text: "Explore Our Featured Stories",
   },
   {
     image: "/layr0_mobile_app_showcase.png",
