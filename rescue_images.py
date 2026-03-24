@@ -10,7 +10,7 @@ APP_DIR = r"c:\Users\adyse\Documents\github\radii-holdings\web-home\src\app"
 COMPONENTS_DIR = r"c:\Users\adyse\Documents\github\radii-holdings\web-home\src\components"
 PUBLIC_BLOGS_DIR = r"c:\Users\adyse\Documents\github\radii-holdings\web-home\public\blogs"
 PUBLIC_IMAGES_DIR = r"c:\Users\adyse\Documents\github\radii-holdings\web-home\public\images"
-ARTIFACTS_DIR = r"C:\Users\adyse\.gemini\antigravity\brain\f6165e06-6c5a-45d8-917a-20fc9142db09"
+ARTIFACTS_DIR = r"C:\Users\adyse\.gemini\antigravity\brain\6b84bca6-8cc3-450e-9f28-10ac0ded228d"
 
 
 def get_expected_images():
@@ -23,11 +23,17 @@ def get_expected_images():
                 filepath = os.path.join(root, file)
                 with open(filepath, 'r', encoding='utf-8') as f:
                     content = f.read()
+                # 1a. Frontmatter image
                 match = re.search(r'image:\s*["\']?(.*?)["\']?\n', content)
                 if match:
                     img_path = match.group(1)
-                    # Expected format in MDX: "../../public/blogs/image.png" or just "image.png"
-                    # We assume filenames are unique enough or just take basename
+                    basename = os.path.basename(img_path)
+                    expected[basename] = (PUBLIC_BLOGS_DIR, filepath)
+                
+                # 1b. Markdown body images
+                body_matches = re.finditer(r'!\[.*?\]\((.*?(?:png|jpg|jpeg|gif|webp|svg))\)', content)
+                for bmatch in body_matches:
+                    img_path = bmatch.group(1)
                     basename = os.path.basename(img_path)
                     expected[basename] = (PUBLIC_BLOGS_DIR, filepath)
 
