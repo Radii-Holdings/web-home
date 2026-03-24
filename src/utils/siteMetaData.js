@@ -1,8 +1,8 @@
 // please update required information
 const siteMetadata = {
-  title: 'Radii Labs | AI Trading Intelligence & Layr0 Execution',
+  title: 'Radii Labs | AI Auto Trading Robots for Global & Indian Markets',
   author: 'Radii Labs',
-  headerTitle: 'AI Trading Intelligence & Layr0 Execution',
+  headerTitle: 'AI Auto Trading Robots for Global & Indian Markets',
   description: 'Radii Labs provides AI-driven quantitative market intelligence, while Layr0 offers advanced algorithmic trading execution. Together, we empower investors with AI-powered insights and automated strategies.',
   about: 'Radii Labs is an AI-driven quantitative research firm delivering actionable market intelligence. In partnership with Layr0, we offer seamless algorithmic trading execution, bridging the gap between AI data analysis and market action globally.',
   language: 'en-us',

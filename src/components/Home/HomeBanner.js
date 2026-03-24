@@ -7,7 +7,7 @@ const HomeBanner = () => {
         <div className="flex flex-col items-center justify-center">
           <div className="mb-8 text-center max-w-3xl lg:max-w-4xl">
             <h1 className="mb-4 font-semibold text-2xl md:text-4xl lg:text-5xl">
-              AI-Driven Automated Trading for Global & Indian Markets
+              AI-Driven Trading Bots for Global & Indian Markets
             </h1>
             <p className="mb-6 text-base md:text-lg text-dark/80 dark:text-light/80">
               <span className="font-bold text-lg md:text-xl text-dark dark:text-light">Radii Labs</span> empowers traders with <span className="font-bold text-lg md:text-xl text-dark dark:text-light">AI-driven trading system</span>. With <span className="font-bold text-lg md:text-xl text-dark dark:text-light">Layr0</span>, those AI insights become disciplined execution across Global Forex and Indian markets—removing emotional bias from every trade.
