@@ -40,7 +40,7 @@ const CategoryPage = async ({ params }) => {
   const categoryIntros = {
     "algo-trading": (
       <>
-        Explore practical algorithmic trading frameworks, execution logic, and risk controls for Global & Indian market participants. Built for traders who want process over prediction. For enterprise-grade infrastructure, check our <a href="/algo-trading-platform-india" className="underline hover:text-accent dark:hover:text-accentDark">Algo Trading Platform</a>.
+        Explore practical algorithmic trading frameworks, execution logic, and risk controls for Global & Indian market participants. Built for traders who want process over prediction. For enterprise-grade infrastructure, check our <a href="/algo-trading-platform-india" className="underline hover:text-accent">Algo Trading Platform</a>.
       </>
     ),
     "all": "A comprehensive collection of insights covering quantitative analysis, algorithmic execution, and market intelligence for modern traders.",
@@ -49,7 +49,7 @@ const CategoryPage = async ({ params }) => {
   const defaultIntro = `Deep dive into ${normalized.replaceAll("-", " ")} with data-backed research and execution strategies designed for disciplined trading.`;
 
   return (
-    <article className="mt-12 flex flex-col text-dark dark:text-light">
+    <article className="mt-12 flex flex-col text-dark">
       <div className=" px-5 sm:px-10  md:px-24  sxl:px-32 flex flex-col">
         <h1 className="mt-6 font-semibold text-2xl md:text-4xl lg:text-5xl">#{normalized}</h1>
         <span className="mt-2 inline-block font-medium text-lg">

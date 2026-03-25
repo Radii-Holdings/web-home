@@ -20,7 +20,7 @@ export default function RiskManagedTradingAutomation() {
                     </p>
                     <Link
                         href="/contact"
-                        className="inline-block px-8 py-4 bg-accent dark:bg-accentDark text-light font-bold rounded-full hover:scale-105 transition-transform"
+                        className="inline-block px-8 py-4 bg-accent text-light font-bold rounded-full hover:scale-105 transition-transform"
                     >
                         Secure Your Capital
                     </Link>
@@ -63,15 +63,15 @@ export default function RiskManagedTradingAutomation() {
             </section>
 
             {/* FAQ Section */}
-            <section className="py-20 bg-accent/5 dark:bg-accentDark/5 w-full">
+            <section className="py-20 bg-accent/5 w-full">
                 <div className="max-w-4xl mx-auto px-5">
                     <h2 className="text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
                     <div className="space-y-6">
-                        <details className="p-6 bg-light dark:bg-dark rounded-lg shadow-sm">
+                        <details className="p-6 bg-light rounded-lg shadow-sm">
                             <summary className="font-semibold text-xl cursor-pointer">Can I override the system?</summary>
                             <p className="mt-4">You can set "Manager Approval" modes, but for maximum discipline, we recommend "Hard Lock" mode where rules cannot be bypassed intra-day.</p>
                         </details>
-                        <details className="p-6 bg-light dark:bg-dark rounded-lg shadow-sm">
+                        <details className="p-6 bg-light rounded-lg shadow-sm">
                             <summary className="font-semibold text-xl cursor-pointer">Does it work with existing strategies?</summary>
                             <p className="mt-4">Yes, our risk layer sits on top of any strategy, whether manual or automated, acting as a final gatekeeper.</p>
                         </details>
@@ -85,7 +85,7 @@ export default function RiskManagedTradingAutomation() {
                 <div className="flex flex-col sm:flex-row gap-4">
                     <Link
                         href="/contact"
-                        className="px-8 py-4 bg-dark text-light dark:bg-light dark:text-dark font-bold rounded-full hover:opacity-90 transition-opacity"
+                        className="px-8 py-4 bg-dark text-light font-bold rounded-full hover:opacity-90 transition-opacity"
                     >
                         Demo Risk Engine
                     </Link>

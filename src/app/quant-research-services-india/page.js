@@ -36,19 +36,19 @@ export default function QuantResearchServicesIndia() {
                     Research as a Service
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-                    <div className="p-8 border border-dark/20 dark:border-light/20 rounded-xl">
+                    <div className="p-8 border border-dark/20 rounded-xl">
                         <h3 className="text-2xl font-bold mb-4">Signal Generation</h3>
                         <p className="text-lg">
                             We develop custom signals based on alternative data, statistical arbitrage, and machine learning models tailored to your asset class.
                         </p>
                     </div>
-                    <div className="p-8 border border-dark/20 dark:border-light/20 rounded-xl">
+                    <div className="p-8 border border-dark/20 rounded-xl">
                         <h3 className="text-2xl font-bold mb-4">Rigorous Backtesting</h3>
                         <p className="text-lg">
                             Avoid overfitting. Our backtesting engines account for slippage, commission, and market impact to give you realistic performance expectations.
                         </p>
                     </div>
-                    <div className="p-8 border border-dark/20 dark:border-light/20 rounded-xl">
+                    <div className="p-8 border border-dark/20 rounded-xl">
                         <h3 className="text-2xl font-bold mb-4">Portfolio Optimization</h3>
                         <p className="text-lg">
                             Use Mean-Variance Optimization and Risk Parity logic to allocate capital efficiently across your strategies and assets.
@@ -58,23 +58,23 @@ export default function QuantResearchServicesIndia() {
             </section>
 
             {/* FAQ Section */}
-            <section className="py-20 bg-accent/5 dark:bg-accentDark/5 w-full">
+            <section className="py-20 bg-accent/5 w-full">
                 <div className="max-w-4xl mx-auto px-5">
                     <h2 className="text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
                     <div className="mb-10 text-center">
                         <Link
                             href="/contact"
-                            className="inline-block px-6 py-3 bg-accent dark:bg-accentDark text-light font-bold rounded-full border border-dark dark:border-light hover:scale-105 transition-transform"
+                            className="inline-block px-6 py-3 bg-accent text-light font-bold rounded-full border border-dark hover:scale-105 transition-transform"
                         >
                             Consult a Quant
                         </Link>
                     </div>
                     <div className="space-y-6">
-                        <details className="p-6 bg-light dark:bg-dark rounded-lg shadow-sm">
+                        <details className="p-6 bg-light rounded-lg shadow-sm">
                             <summary className="font-semibold text-xl cursor-pointer">Who owns the IP?</summary>
                             <p className="mt-4">For custom consulting engagements, the strategy intellectual property (IP) belongs to the client.</p>
                         </details>
-                        <details className="p-6 bg-light dark:bg-dark rounded-lg shadow-sm">
+                        <details className="p-6 bg-light rounded-lg shadow-sm">
                             <summary className="font-semibold text-xl cursor-pointer">What asset classes do you cover?</summary>
                             <p className="mt-4">We specialize in Equities, Futures, Options, and FX markets.</p>
                         </details>
@@ -88,7 +88,7 @@ export default function QuantResearchServicesIndia() {
                 <div className="flex flex-col sm:flex-row gap-4">
                     <Link
                         href="/contact"
-                        className="px-6 py-3 bg-dark text-light dark:bg-light dark:text-dark font-bold rounded-full border border-dark dark:border-light hover:scale-105 transition-transform"
+                        className="px-6 py-3 bg-dark text-light font-bold rounded-full border border-dark hover:scale-105 transition-transform"
                     >
                         Schedule Consultation
                     </Link>

@@ -21,7 +21,7 @@ export default function AlgoTradingPlatformIndia() {
                     </p>
                     <Link
                         href="/contact"
-                        className="inline-block px-8 py-4 bg-accent dark:bg-accentDark text-light font-bold rounded-full hover:scale-105 transition-transform"
+                        className="inline-block px-8 py-4 bg-accent text-light font-bold rounded-full hover:scale-105 transition-transform"
                     >
                         Book a Demo
                     </Link>
@@ -42,19 +42,19 @@ export default function AlgoTradingPlatformIndia() {
                     Why Automated Execution Wins
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-                    <div className="p-8 border border-dark/20 dark:border-light/20 rounded-xl">
+                    <div className="p-8 border border-dark/20 rounded-xl">
                         <h3 className="text-2xl font-bold mb-4">Zero Latency Drag</h3>
                         <p className="text-lg">
                             Execute orders in milliseconds. Our infrastructure is co-located to ensure your strategy hits the market price you want, not the one you get after delay.
                         </p>
                     </div>
-                    <div className="p-8 border border-dark/20 dark:border-light/20 rounded-xl">
+                    <div className="p-8 border border-dark/20 rounded-xl">
                         <h3 className="text-2xl font-bold mb-4">Risk-First Architecture</h3>
                         <p className="text-lg">
                             Embed hard stops, trailing losses, and position sizing rules directly into the code. Remove emotional overriding from the equation.
                         </p>
                     </div>
-                    <div className="p-8 border border-dark/20 dark:border-light/20 rounded-xl">
+                    <div className="p-8 border border-dark/20 rounded-xl">
                         <h3 className="text-2xl font-bold mb-4">Multi-Leg Strategy Support</h3>
                         <p className="text-lg">
                             Handle complex option spreads (Straddles, Strangles, Iron Condors) with automated adjustments and leg-by-leg execution monitoring.
@@ -64,19 +64,19 @@ export default function AlgoTradingPlatformIndia() {
             </section>
 
             {/* FAQ Section */}
-            <section className="py-20 bg-accent/5 dark:bg-accentDark/5 w-full">
+            <section className="py-20 bg-accent/5 w-full">
                 <div className="max-w-4xl mx-auto px-5">
                     <h2 className="text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
                     <div className="space-y-6">
-                        <details className="p-6 bg-light dark:bg-dark rounded-lg shadow-sm">
+                        <details className="p-6 bg-light rounded-lg shadow-sm">
                             <summary className="font-semibold text-xl cursor-pointer">What brokers do you support?</summary>
                             <p className="mt-4">We support major Indian brokers including Zerodha, Angel One, 5Paisa, and Interactive Brokers via API integration.</p>
                         </details>
-                        <details className="p-6 bg-light dark:bg-dark rounded-lg shadow-sm">
+                        <details className="p-6 bg-light rounded-lg shadow-sm">
                             <summary className="font-semibold text-xl cursor-pointer">Do I need to know Python?</summary>
                             <p className="mt-4">No. Our platform offers a no-code strategy builder, but we also provide full Python access for advanced quants.</p>
                         </details>
-                        <details className="p-6 bg-light dark:bg-dark rounded-lg shadow-sm">
+                        <details className="p-6 bg-light rounded-lg shadow-sm">
                             <summary className="font-semibold text-xl cursor-pointer">Is historical data included?</summary>
                             <p className="mt-4">Yes, we provide tick-by-tick historical data for backtesting your strategies before going live.</p>
                         </details>
@@ -90,14 +90,14 @@ export default function AlgoTradingPlatformIndia() {
                 <div className="flex flex-col sm:flex-row gap-4">
                     <Link
                         href="/contact"
-                        className="px-8 py-4 bg-dark text-light dark:bg-light dark:text-dark font-bold rounded-full hover:opacity-90 transition-opacity"
+                        className="px-8 py-4 bg-dark text-light font-bold rounded-full hover:opacity-90 transition-opacity"
                     >
                         Talk to our Team
                     </Link>
                     <Link
                         href="https://console.radii.in/"
                         target="_blank"
-                        className="px-8 py-4 border border-dark dark:border-light font-bold rounded-full hover:bg-dark/10 dark:hover:bg-light/10 transition-colors"
+                        className="px-8 py-4 border border-dark font-bold rounded-full hover:bg-dark/10 transition-colors"
                     >
                         Launch Console
                     </Link>

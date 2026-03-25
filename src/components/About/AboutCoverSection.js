@@ -5,8 +5,8 @@ import Link from 'next/link'
 
 const AboutCoverSection = () => {
   return (
-    <section className='w-full md:h-[75vh] border-b-2 border-solid border-dark dark:border-light flex flex-col md:flex-row items-center justify-center text-dark dark:text-light'>
-      <div className='w-full md:w-1/2 h-full border-r-2 border-solid border-dark dark:border-light flex justify-center'>
+    <section className='w-full md:h-[75vh] border-b-2 border-solid border-dark flex flex-col md:flex-row items-center justify-center text-dark'>
+      <div className='w-full md:w-1/2 h-full border-r-2 border-solid border-dark flex justify-center'>
         <Image src={profileCharacter} alt="Radii Lab"
           className='w-4/5  xs:w-3/4 md:w-full h-full object-contain object-center'
           priority
@@ -25,7 +25,7 @@ const AboutCoverSection = () => {
           What We Solve
         </h2>
         <p className='font-medium capitalize mt-2 text-base'>
-          AI BASED automated trading with Patent Pending algorithms and Proven success rates of above 80 percent success rate. We help you move from emotional trading to disciplined, data-backed execution. Learn more in our <Link href="/tutorial" className='font-bold underline underline-offset-2 text-accent dark:text-accentDark'>AI Trading Platform</Link>.
+          AI BASED automated trading with Patent Pending algorithms and Proven success rates of above 80 percent success rate. We help you move from emotional trading to disciplined, data-backed execution. Learn more in our <Link href="/tutorial" className='font-bold underline underline-offset-2 text-accent'>AI Trading Platform</Link>.
         </p>
       </div>
     </section>

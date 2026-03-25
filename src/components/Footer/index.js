@@ -28,14 +28,14 @@ const Footer = () => {
   }
 
   return (
-    <footer className="mt-16 rounded-2xl bg-dark dark:bg-accentDark/90 m-2 sm:m-10 flex flex-col items-center text-light dark:text-dark">
-      <h3 className="mt-16 font-medium dark:font-bold text-center capitalize text-2xl sm:text-3xl lg:text-4xl px-4">
+    <footer className="mt-16 rounded-2xl bg-dark m-2 sm:m-10 flex flex-col items-center text-light">
+      <h3 className="mt-16 font-medium text-center capitalize text-2xl sm:text-3xl lg:text-4xl px-4">
         Interesting Stories | Updates | Guides
       </h3>
 
 
-      <div className="mt-6 w-full sm:w-3/5 px-4 py-6 bg-light dark:bg-dark rounded-lg shadow-lg">
-        <h4 className="text-lg font-medium text-dark dark:text-light mb-4">
+      <div className="mt-6 w-full sm:w-3/5 px-4 py-6 bg-light rounded-lg shadow-lg">
+        <h4 className="text-lg font-medium text-dark mb-4">
           Latest Posts
         </h4>
         <div id="substack-feed-embed" className="space-y-4">
@@ -61,13 +61,13 @@ const Footer = () => {
           }, [])}
         </div>
       </div>
-      <p className="mt-5 px-4 text-center w-full sm:w-3/5 font-light dark:font-medium text-sm sm:text-base">
+      <p className="mt-5 px-4 text-center w-full sm:w-3/5 font-light text-sm sm:text-base">
         Subscribe to learn about new developments and updates. Join us as one of our
-        <span className="font-medium dark:font-bold"> 100+ </span>
+        <span className="font-medium"> 100+ </span>
         subscribers and get the latest updates in your inbox.
         <br /> It&apos;s FREE ...
       </p>
-      <div className="mt-6 w-fit sm:min-w-[384px] flex items-stretch bg-light dark:bg-dark p-1 sm:p-2 rounded mx04">
+      <div className="mt-6 w-fit sm:min-w-[384px] flex items-stretch bg-light p-1 sm:p-2 rounded mx04">
         <iframe
           src="https://radiilab.substack.com/embed"
           style={{
@@ -107,7 +107,7 @@ const Footer = () => {
           aria-label="Check my profile on Github"
           target="_blank"
         >
-          <GithubIcon className="fill-light dark:fill-dark  hover:scale-125 transition-all ease duration-200" />
+          <GithubIcon className="fill-light  hover:scale-125 transition-all ease duration-200" />
         </a>
       </div>
 

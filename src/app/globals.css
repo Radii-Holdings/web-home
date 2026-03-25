@@ -4,8 +4,6 @@
 @plugin "@tailwindcss/typography";
 @plugin "@tailwindcss/forms";
 
-/* Tell Tailwind v4 to use .dark class (not media query) for dark: utilities */
-@variant dark (&:where(.dark, .dark *));
 
 html {
   scroll-behavior: smooth;
@@ -238,65 +236,4 @@ code[data-line-numbers-max-digits='3']>[data-line]::before {
   color: #1b1b1b !important;
 }
 
-/* Dark mode: .dark class (set by JS theme-switcher) */
-.dark .prose,
-.invert .prose {
-  color: #e5e5e5 !important;
-}
-
-.dark .prose h1,
-.dark .prose h2,
-.dark .prose h3,
-.dark .prose h4,
-.dark .prose h5,
-.dark .prose h6,
-.dark .prose strong,
-.dark .prose b,
-.dark .prose li,
-.dark .prose a,
-.dark .prose blockquote,
-.dark .prose blockquote p,
-.dark .prose figcaption,
-.dark .prose th,
-.dark .prose td,
-.invert .prose h1,
-.invert .prose h2,
-.invert .prose h3,
-.invert .prose h4,
-.invert .prose h5,
-.invert .prose h6,
-.invert .prose strong,
-.invert .prose b,
-.invert .prose li,
-.invert .prose a,
-.invert .prose blockquote,
-.invert .prose blockquote p,
-.invert .prose figcaption,
-.invert .prose th,
-.invert .prose td {
-  color: #e5e5e5 !important;
-}
-
-/* Fallback: OS-level dark mode preference (in case JS hasn't run yet) */
-@media (prefers-color-scheme: dark) {
-  html:not(.light) .prose {
-    color: #e5e5e5 !important;
-  }
-  html:not(.light) .prose h1,
-  html:not(.light) .prose h2,
-  html:not(.light) .prose h3,
-  html:not(.light) .prose h4,
-  html:not(.light) .prose h5,
-  html:not(.light) .prose h6,
-  html:not(.light) .prose strong,
-  html:not(.light) .prose b,
-  html:not(.light) .prose li,
-  html:not(.light) .prose a,
-  html:not(.light) .prose blockquote,
-  html:not(.light) .prose blockquote p,
-  html:not(.light) .prose figcaption,
-  html:not(.light) .prose th,
-  html:not(.light) .prose td {
-    color: #e5e5e5 !important;
-  }
-}
+

@@ -78,7 +78,7 @@ export default function RootLayout({ children }) {
         className={cx(
           inter.variable,
           manrope.variable,
-          "font-mr bg-light dark:bg-dark"
+          "font-mr bg-light"
         )}
       >
         {GTM_ID && (
@@ -91,15 +91,7 @@ export default function RootLayout({ children }) {
             ></iframe>
           </noscript>
         )}
-        <Script id="theme-switcher" strategy="beforeInteractive">
-          {`if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark')
-            document.documentElement.classList.remove('light')
-          } else {
-            document.documentElement.classList.remove('dark')
-            document.documentElement.classList.add('light')
-          }`}
-        </Script>
+
         <Header />
         {children}
         <Footer />

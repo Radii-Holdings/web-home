@@ -121,7 +121,7 @@ export default async function BlogPage({ params }) {
               <span className="hero-title-underline">{blog.title}</span>
             </h1>
           </div>
-          <div className="absolute top-0 left-0 right-0 bottom-0 h-full bg-dark/60 dark:bg-dark/40" />
+          <div className="absolute top-0 left-0 right-0 bottom-0 h-full bg-dark/60" />
           <Image
             src={blog.image.filePath.replace("../public", "")}
             placeholder="blur"
@@ -139,7 +139,7 @@ export default async function BlogPage({ params }) {
         <div className="grid grid-cols-12  gap-y-8 lg:gap-8 sxl:gap-16 mt-8 px-5 md:px-10">
           <div className="col-span-12  lg:col-span-4">
             <details
-              className="border border-solid border-dark dark:border-light text-dark dark:text-light rounded-lg p-4 sticky top-6 max-h-[80vh] overflow-hidden overflow-y-auto"
+              className="border border-solid border-dark text-dark rounded-lg p-4 sticky top-6 max-h-[80vh] overflow-hidden overflow-y-auto"
               open
             >
               <summary className="text-lg font-semibold capitalize cursor-pointer">
@@ -175,16 +175,16 @@ export default async function BlogPage({ params }) {
           </div>
           <div className="col-span-12 lg:col-span-8">
             <RenderMdx blog={blog} />
-            <div className="mt-16 p-8 bg-accent/10 dark:bg-accentDark/10 rounded-lg border border-accent dark:border-accentDark text-center">
+            <div className="mt-16 p-8 bg-accent/10 rounded-lg border border-accent text-center">
               <h3 className="text-xl font-bold mb-4">Ready to Automate Your Strategy?</h3>
               <p className="mb-6">
                 Transition from emotional trading to disciplined, data-backed execution with our AI tools.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://console.radii.in/" className="inline-block px-6 py-3 bg-accent dark:bg-accentDark text-light font-semibold rounded-full hover:scale-105 transition-transform">
+                <a href="https://console.radii.in/" className="inline-block px-6 py-3 bg-accent text-light font-semibold rounded-full hover:scale-105 transition-transform">
                   Explore The Console
                 </a>
-                <a href="/tutorial" className="inline-block px-6 py-3 border border-dark dark:border-light font-semibold rounded-full hover:scale-105 transition-transform">
+                <a href="/tutorial" className="inline-block px-6 py-3 border border-dark font-semibold rounded-full hover:scale-105 transition-transform">
                   AI Trading Tutorial
                 </a>
               </div>

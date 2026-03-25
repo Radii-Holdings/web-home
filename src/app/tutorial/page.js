@@ -10,11 +10,11 @@ const TutorialPage = () => {
     return (
         <main className="flex flex-col items-center justify-center py-20 px-5 sm:px-10 md:px-20 lg:px-32">
             <section className="w-full max-w-4xl">
-                <h1 className="text-4xl md:text-6xl font-bold text-dark dark:text-light mb-8 text-center">
-                    AI Trading <span className="text-accent dark:text-accentDark">Tutorial</span>
+                <h1 className="text-4xl md:text-6xl font-bold text-dark mb-8 text-center">
+                    AI Trading <span className="text-accent">Tutorial</span>
                 </h1>
 
-                <p className="text-lg md:text-xl text-dark/80 dark:text-light/80 mb-16 text-center max-w-2xl mx-auto">
+                <p className="text-lg md:text-xl text-dark/80 mb-16 text-center max-w-2xl mx-auto">
                     Welcome to the comprehensive guide for our AI-based automated trading system. Follow these steps to set up your environment and start trading with data-backed precision.
                 </p>
 
@@ -22,22 +22,22 @@ const TutorialPage = () => {
                     {/* Step 1: Download */}
                     <section id="download" className="group">
                         <div className="flex items-start gap-6">
-                            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent dark:bg-accentDark flex items-center justify-center text-light dark:text-dark font-bold text-xl group-hover:scale-110 transition-transform">
+                            <div className="shrink-0 w-12 h-12 rounded-full bg-accent flex items-center justify-center text-light font-bold text-xl group-hover:scale-110 transition-transform">
                                 1
                             </div>
                             <div>
-                                <h2 className="text-2xl md:text-3xl font-bold text-dark dark:text-light mb-4 capitalize">
+                                <h2 className="text-2xl md:text-3xl font-bold text-dark mb-4 capitalize">
                                     Access the Console {"&"} Download
                                 </h2>
-                                <p className="text-base md:text-lg text-dark/70 dark:text-light/70 mb-4">
+                                <p className="text-base md:text-lg text-dark/70 mb-4">
                                     All software downloads and deployment tools are hosted on our secure console subdomain. Use the CLI mainframe interface to download the latest version of the trading core.
                                 </p>
                                 <Link
                                     href="https://console.radii.in/"
-                                    className="inline-flex items-center gap-2 px-6 py-2 bg-dark dark:bg-light text-light dark:text-dark rounded-full font-semibold hover:bg-accent dark:hover:bg-accentDark hover:text-light dark:hover:text-dark transition-colors"
+                                    className="inline-flex items-center gap-2 px-6 py-2 bg-dark text-light rounded-full font-semibold hover:bg-accent hover:text-light transition-colors"
                                 >
                                     Go to Console
-                                    <Image src="/svgs/cli_mainframe_logo_blue.svg" alt="CLI" width={20} height={20} className="invert dark:invert-0" />
+                                    <Image src="/svgs/cli_mainframe_logo_blue.svg" alt="CLI" width={20} height={20} className="invert" />
                                 </Link>
                             </div>
                         </div>
@@ -46,14 +46,14 @@ const TutorialPage = () => {
                     {/* Step 2: Activation */}
                     <section id="activation" className="group">
                         <div className="flex items-start gap-6">
-                            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent dark:bg-accentDark flex items-center justify-center text-light dark:text-dark font-bold text-xl group-hover:scale-110 transition-transform">
+                            <div className="shrink-0 w-12 h-12 rounded-full bg-accent flex items-center justify-center text-light font-bold text-xl group-hover:scale-110 transition-transform">
                                 2
                             </div>
                             <div>
-                                <h2 className="text-2xl md:text-3xl font-bold text-dark dark:text-light mb-4 capitalize">
+                                <h2 className="text-2xl md:text-3xl font-bold text-dark mb-4 capitalize">
                                     Activate the Product
                                 </h2>
-                                <p className="text-base md:text-lg text-dark/70 dark:text-light/70">
+                                <p className="text-base md:text-lg text-dark/70">
                                     Once downloaded, run the installer. During the initial setup, you will be prompted to activate your product. Ensure you have a stable internet connection for the activation server handshake.
                                 </p>
                             </div>
@@ -63,19 +63,19 @@ const TutorialPage = () => {
                     {/* Step 3: Licensing */}
                     <section id="license" className="group">
                         <div className="flex items-start gap-6">
-                            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent dark:bg-accentDark flex items-center justify-center text-light dark:text-dark font-bold text-xl group-hover:scale-110 transition-transform">
+                            <div className="shrink-0 w-12 h-12 rounded-full bg-accent flex items-center justify-center text-light font-bold text-xl group-hover:scale-110 transition-transform">
                                 3
                             </div>
                             <div>
-                                <h2 className="text-2xl md:text-3xl font-bold text-dark dark:text-light mb-4 capitalize">
+                                <h2 className="text-2xl md:text-3xl font-bold text-dark mb-4 capitalize">
                                     Get Your Trading License
                                 </h2>
-                                <p className="text-base md:text-lg text-dark/70 dark:text-light/70 mb-4">
+                                <p className="text-base md:text-lg text-dark/70 mb-4">
                                     To execute live trades, you need a valid AI Trading license. You can manage and renew your licenses directly from your profile dashboard.
                                 </p>
                                 <Link
                                     href="/contact"
-                                    className="text-accent dark:text-accentDark font-semibold hover:underline"
+                                    className="text-accent font-semibold hover:underline"
                                 >
                                     Contact Support for Enterprise Licenses {"\u2192"}
                                 </Link>
@@ -86,14 +86,14 @@ const TutorialPage = () => {
                     {/* Step 4: AI Trading */}
                     <section id="usage" className="group">
                         <div className="flex items-start gap-6">
-                            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent dark:bg-accentDark flex items-center justify-center text-light dark:text-dark font-bold text-xl group-hover:scale-110 transition-transform">
+                            <div className="shrink-0 w-12 h-12 rounded-full bg-accent flex items-center justify-center text-light font-bold text-xl group-hover:scale-110 transition-transform">
                                 4
                             </div>
                             <div>
-                                <h2 className="text-2xl md:text-3xl font-bold text-dark dark:text-light mb-4 capitalize">
+                                <h2 className="text-2xl md:text-3xl font-bold text-dark mb-4 capitalize">
                                     Start AI Trading
                                 </h2>
-                                <p className="text-base md:text-lg text-dark/70 dark:text-light/70">
+                                <p className="text-base md:text-lg text-dark/70">
                                     Configure your risk parameters and select from our Patent Pending algorithms. Move from emotional trading to disciplined, data-backed execution with proven success rates of above 80%.
                                 </p>
                             </div>
@@ -102,10 +102,10 @@ const TutorialPage = () => {
 
                     {/* Video Guide */}
                     <section id="video" className="mt-20">
-                        <h2 className="text-3xl font-bold text-dark dark:text-light mb-8 text-center capitalize">
+                        <h2 className="text-3xl font-bold text-dark mb-8 text-center capitalize">
                             Video walkthrough
                         </h2>
-                        <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl border-2 border-dark/10 dark:border-light/10">
+                        <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl border-2 border-dark/10">
                             <iframe
                                 width="100%"
                                 height="100%"
@@ -120,16 +120,16 @@ const TutorialPage = () => {
                     </section>
                 </div>
 
-                <div className="mt-24 p-8 bg-accent/10 dark:bg-accentDark/10 rounded-2xl border border-accent/20 dark:border-accentDark/20 text-center">
-                    <h3 className="text-2xl font-bold text-dark dark:text-light mb-4">
+                <div className="mt-24 p-8 bg-accent/10 rounded-2xl border border-accent/20 text-center">
+                    <h3 className="text-2xl font-bold text-dark mb-4">
                         Still have questions?
                     </h3>
-                    <p className="text-dark/70 dark:text-light/70 mb-6">
+                    <p className="text-dark/70 mb-6">
                         Our support team is available 24/7 to help you with your setup and license queries.
                     </p>
                     <Link
                         href="/contact"
-                        className="inline-block px-8 py-3 bg-accent dark:bg-accentDark text-light dark:text-dark font-bold rounded-full hover:scale-105 transition-transform"
+                        className="inline-block px-8 py-3 bg-accent text-light font-bold rounded-full hover:scale-105 transition-transform"
                     >
                         Contact Support
                     </Link>

@@ -165,12 +165,12 @@ export default function LeadCaptureModal() {
         className="w-full max-w-md"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="relative max-h-[calc(100vh-4rem)] overflow-y-auto rounded-3xl border border-white/15 bg-white p-6 shadow-[0_30px_80px_rgba(0,0,0,0.35)] dark:bg-dark scrollbar-hide">
+        <div className="relative max-h-[calc(100vh-4rem)] overflow-y-auto rounded-3xl border border-white/15 bg-white p-6 shadow-[0_30px_80px_rgba(0,0,0,0.35)] scrollbar-hide">
           <button
             type="button"
             onClick={closeForNow}
             aria-label="Close lead capture form"
-            className="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-mediumGray/30 bg-white/80 text-xl leading-none text-mediumGray backdrop-blur-sm transition hover:border-accent hover:text-accent dark:bg-dark/80"
+            className="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-mediumGray/30 bg-white/80 text-xl leading-none text-mediumGray backdrop-blur-sm transition hover:border-accent hover:text-accent"
           >
             &times;
           </button>
@@ -179,7 +179,7 @@ export default function LeadCaptureModal() {
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-accent">
               Let&apos;s connect
             </p>
-            <h2 className="mt-3 font-in text-2xl font-semibold text-dark dark:text-light">
+            <h2 className="mt-3 font-in text-2xl font-semibold text-dark">
               Share your details and we&apos;ll get in touch.
             </h2>
             <p className="mt-2 text-sm leading-6 text-mediumGray">
@@ -192,7 +192,7 @@ export default function LeadCaptureModal() {
             <div>
               <label
                 htmlFor="lead-name"
-                className="mb-2 block text-sm font-medium text-dark dark:text-light"
+                className="mb-2 block text-sm font-medium text-dark"
               >
                 Name
               </label>
@@ -208,7 +208,7 @@ export default function LeadCaptureModal() {
                     message: "Name must be 80 characters or fewer.",
                   },
                 })}
-                className="w-full rounded-2xl border border-black/10 bg-light px-4 py-3 text-base text-dark outline-none transition focus:border-accent focus:ring-0 dark:border-white/15 dark:bg-white/5 dark:text-light"
+                className="w-full rounded-2xl border border-black/10 bg-light px-4 py-3 text-base text-dark outline-none transition focus:border-accent focus:ring-0"
               />
               {errors.name && (
                 <p className="mt-2 text-sm text-red-500">{errors.name.message}</p>
@@ -218,7 +218,7 @@ export default function LeadCaptureModal() {
             <div>
               <label
                 htmlFor="lead-email"
-                className="mb-2 block text-sm font-medium text-dark dark:text-light"
+                className="mb-2 block text-sm font-medium text-dark"
               >
                 Contact email
               </label>
@@ -234,7 +234,7 @@ export default function LeadCaptureModal() {
                     message: "Please enter a valid email address.",
                   },
                 })}
-                className="w-full rounded-2xl border border-black/10 bg-light px-4 py-3 text-base text-dark outline-none transition focus:border-accent focus:ring-0 dark:border-white/15 dark:bg-white/5 dark:text-light"
+                className="w-full rounded-2xl border border-black/10 bg-light px-4 py-3 text-base text-dark outline-none transition focus:border-accent focus:ring-0"
               />
               {errors.email && (
                 <p className="mt-2 text-sm text-red-500">
@@ -246,7 +246,7 @@ export default function LeadCaptureModal() {
             <div>
               <label
                 htmlFor="lead-phone"
-                className="mb-2 block text-sm font-medium text-dark dark:text-light"
+                className="mb-2 block text-sm font-medium text-dark"
               >
                 WhatsApp number with country code
               </label>
@@ -264,7 +264,7 @@ export default function LeadCaptureModal() {
                       "Use your country code, for example +91 98765 43210.",
                   },
                 })}
-                className="w-full rounded-2xl border border-black/10 bg-light px-4 py-3 text-base text-dark outline-none transition focus:border-accent focus:ring-0 dark:border-white/15 dark:bg-white/5 dark:text-light"
+                className="w-full rounded-2xl border border-black/10 bg-light px-4 py-3 text-base text-dark outline-none transition focus:border-accent focus:ring-0"
               />
               {errors.phone_number && (
                 <p className="mt-2 text-sm text-red-500">
