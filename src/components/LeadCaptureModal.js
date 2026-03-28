@@ -9,7 +9,7 @@ import { toast } from "react-hot-toast";
 
 const DISABLE_COOKIE_NAME = "radii-lead-capture-disabled";
 const SUBMITTED_COOKIE_NAME = "radii-lead-capture-submitted";
-const MODAL_DELAY_MS = 25 * 1000;
+const MODAL_DELAY_MS = 15 * 1000;
 const DISABLE_COOKIE_DURATION_MS = 48 * 60 * 60 * 1000;
 
 const defaultValues = {
@@ -309,5 +309,5 @@ export default function LeadCaptureModal() {
         </div>
       </div>
     </div>
-  , portalRoot);
+    , portalRoot);
 }
