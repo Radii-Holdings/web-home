@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
 
@@ -179,7 +180,23 @@ export default function LeadCaptureModal() {
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-accent">
               Let&apos;s connect
             </p>
-            <h2 className="mt-3 font-in text-2xl font-semibold text-dark">
+
+            <div className="mt-4 flex items-center gap-3">
+              <Link
+                href="https://console.radii.in/login"
+                className="flex-1 rounded-2xl border border-[#7B00D3]/20 bg-[#7B00D3]/5 px-4 py-3 text-center text-sm font-bold text-[#7B00D3] transition hover:bg-[#7B00D3]/10"
+              >
+                Login
+              </Link>
+              <Link
+                href="https://console.radii.in/register"
+                className="flex-1 rounded-2xl bg-[#7B00D3] px-4 py-3 text-center text-sm font-bold text-white shadow-lg shadow-[#7B00D3]/20 transition hover:bg-[#7B00D3]/90"
+              >
+                Sign Up
+              </Link>
+            </div>
+
+            <h2 className="mt-6 font-in text-2xl font-semibold text-dark">
               Share your details and we&apos;ll get in touch.
             </h2>
             <p className="mt-2 text-sm leading-6 text-mediumGray">
