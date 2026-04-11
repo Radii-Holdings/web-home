@@ -1,14 +1,38 @@
 import Image from "next/image";
 import Link from "next/link";
+import BreadcrumbSchema from "@/src/components/StructuredData/BreadcrumbSchema";
+import FAQSchema from "@/src/components/StructuredData/FAQSchema";
+
+const faqs = [
+    {
+        question: "Who owns the IP?",
+        answer: "For custom consulting engagements, the strategy intellectual property belongs to the client unless a different agreement is defined in writing.",
+    },
+    {
+        question: "What asset classes do you cover?",
+        answer: "Radii Labs works across equities, futures, options, and FX research workflows, including backtesting, signal analysis, and portfolio research.",
+    },
+];
 
 export const metadata = {
-    title: "Quant Research Services India | Radii Labs",
-    description: "Outsource your quantitative research requirements. We build mathematical models, backtest strategies, and provide data-driven market intelligence.",
+    title: "Quant Research Services for Indian Markets",
+    description: "Work with Radii Labs on quantitative models, backtesting, signal research, and portfolio analysis for equities, derivatives, and FX markets.",
+    alternates: {
+        canonical: "/quant-research-services-india",
+    },
 };
 
 export default function QuantResearchServicesIndia() {
     return (
-        <main className="w-full flex flex-col items-center justify-center">
+        <>
+            <BreadcrumbSchema
+                items={[
+                    { name: "Home", url: "/" },
+                    { name: "Quant Research Services", url: "/quant-research-services-india" },
+                ]}
+            />
+            <FAQSchema faqs={faqs} />
+            <main className="w-full flex flex-col items-center justify-center">
             {/* Hero Section */}
             <section className="w-full h-[80vh] flex flex-col items-center justify-center text-center bg-dark text-light relative overflow-hidden">
                 <div className="z-10 px-5 md:px-10">
@@ -70,14 +94,12 @@ export default function QuantResearchServicesIndia() {
                         </Link>
                     </div>
                     <div className="space-y-6">
-                        <details className="p-6 bg-light rounded-lg shadow-sm">
-                            <summary className="font-semibold text-xl cursor-pointer">Who owns the IP?</summary>
-                            <p className="mt-4">For custom consulting engagements, the strategy intellectual property (IP) belongs to the client.</p>
-                        </details>
-                        <details className="p-6 bg-light rounded-lg shadow-sm">
-                            <summary className="font-semibold text-xl cursor-pointer">What asset classes do you cover?</summary>
-                            <p className="mt-4">We specialize in Equities, Futures, Options, and FX markets.</p>
-                        </details>
+                        {faqs.map((faq) => (
+                            <details key={faq.question} className="p-6 bg-light rounded-lg shadow-sm">
+                                <summary className="font-semibold text-xl cursor-pointer">{faq.question}</summary>
+                                <p className="mt-4">{faq.answer}</p>
+                            </details>
+                        ))}
                     </div>
                 </div>
             </section>
@@ -94,6 +116,7 @@ export default function QuantResearchServicesIndia() {
                     </Link>
                 </div>
             </section>
-        </main>
+            </main>
+        </>
     );
 }

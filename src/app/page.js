@@ -5,8 +5,11 @@ import FeaturedPosts from "../components/Home/FeaturedPosts";
 import RecentPosts from "../components/Home/RecentPosts";
 
 export const metadata = {
-  title: "Radii Labs: AI Auto Trading Robots for Global & Indian Markets",
-  description: "Radii Labs delivers AI-driven quantitative market intelligence and Layr0 enables fast algorithmic execution for Global Forex and Indian markets. Master the markets with AI-powered trading decisions.",
+  title: "AI Trading Research and Algo Execution | Radii Labs",
+  description: "Use Radii Labs for quantitative market research, AI trading intelligence, and disciplined algorithmic execution workflows for Indian and global markets.",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function Home() {

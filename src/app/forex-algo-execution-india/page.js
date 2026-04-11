@@ -1,14 +1,38 @@
 import Image from "next/image";
 import Link from "next/link";
+import BreadcrumbSchema from "@/src/components/StructuredData/BreadcrumbSchema";
+import FAQSchema from "@/src/components/StructuredData/FAQSchema";
+
+const faqs = [
+    {
+        question: "Can I trade INR pairs?",
+        answer: "Yes. The platform supports INR currency pairs available through Indian exchanges, including USDINR, EURINR, GBPINR, and JPYINR.",
+    },
+    {
+        question: "What about international pairs?",
+        answer: "Eligible entities can discuss routing and execution workflows for major international currency pairs based on their broker access and compliance requirements.",
+    },
+];
 
 export const metadata = {
-    title: "Forex Algo Execution India | Radii Labs",
-    description: "Institutional-grade forex execution for Indian traders. Trade global currency pairs with low latency and automated risk management.",
+    title: "Forex Algo Execution for Indian Traders",
+    description: "Automate forex execution workflows for INR and global currency markets with broker-aware routing, latency controls, and risk management.",
+    alternates: {
+        canonical: "/forex-algo-execution-india",
+    },
 };
 
 export default function ForexAlgoExecutionIndia() {
     return (
-        <main className="w-full flex flex-col items-center justify-center">
+        <>
+            <BreadcrumbSchema
+                items={[
+                    { name: "Home", url: "/" },
+                    { name: "Forex Algo Execution", url: "/forex-algo-execution-india" },
+                ]}
+            />
+            <FAQSchema faqs={faqs} />
+            <main className="w-full flex flex-col items-center justify-center">
             {/* Hero Section */}
             <section className="w-full h-[80vh] flex flex-col items-center justify-center text-center bg-dark text-light relative overflow-hidden">
                 <div className="z-10 px-5 md:px-10">
@@ -67,14 +91,12 @@ export default function ForexAlgoExecutionIndia() {
                 <div className="max-w-4xl mx-auto px-5">
                     <h2 className="text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
                     <div className="space-y-6">
-                        <details className="p-6 bg-light rounded-lg shadow-sm">
-                            <summary className="font-semibold text-xl cursor-pointer">Can I trade INR pairs?</summary>
-                            <p className="mt-4">Yes, we support all USDINR, EURINR, GBPINR, and JPYINR pairs available on NSE/BSE exchanges.</p>
-                        </details>
-                        <details className="p-6 bg-light rounded-lg shadow-sm">
-                            <summary className="font-semibold text-xl cursor-pointer">What about international pairs?</summary>
-                            <p className="mt-4">For eligible entities, we offer routing to international brokers for trading major pairs like EURUSD and GBPUSD.</p>
-                        </details>
+                        {faqs.map((faq) => (
+                            <details key={faq.question} className="p-6 bg-light rounded-lg shadow-sm">
+                                <summary className="font-semibold text-xl cursor-pointer">{faq.question}</summary>
+                                <p className="mt-4">{faq.answer}</p>
+                            </details>
+                        ))}
                     </div>
                 </div>
             </section>
@@ -91,6 +113,7 @@ export default function ForexAlgoExecutionIndia() {
                     </Link>
                 </div>
             </section>
-        </main>
+            </main>
+        </>
     );
 }

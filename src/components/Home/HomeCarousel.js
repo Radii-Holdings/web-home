@@ -130,9 +130,9 @@ const HomeCarousel = ({ slides = defaultSlides, autoIntervalMs = 5000 }) => {
                   {/* Text overlay */}
                   <div className="absolute inset-0 z-[2] flex items-end">
                     <div className="w-full lg:w-3/4 p-6 sm:p-8 md:p-12 lg:p-16 text-light">
-                      <h1 className="font-bold capitalize text-lg sm:text-xl md:text-3xl lg:text-4xl text-center">
+                      <h2 className="font-bold capitalize text-lg sm:text-xl md:text-3xl lg:text-4xl text-center">
                         <span className="hero-title-underline brand-blue-text">{s.text}</span>
-                      </h1>
+                      </h2>
                     </div>
                   </div>
                 </Link>
@@ -190,4 +190,3 @@ const HomeCarousel = ({ slides = defaultSlides, autoIntervalMs = 5000 }) => {
 };
 
 export default HomeCarousel;
-

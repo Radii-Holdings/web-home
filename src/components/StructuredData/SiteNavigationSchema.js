@@ -68,8 +68,8 @@ const SiteNavigationSchema = () => {
           {
             "@type": "SiteNavigationElement",
             "position": 4,
-            "name": "Blogs",
-            "url": `${siteUrl}/blogs`
+            "name": "Research",
+            "url": `${siteUrl}/categories/all`
           },
           {
             "@type": "SiteNavigationElement",

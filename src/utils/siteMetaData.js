@@ -1,13 +1,13 @@
 // please update required information
 const siteMetadata = {
-  title: 'Radii Labs | AI Auto Trading Robots for Global & Indian Markets',
+  title: 'Radii Labs',
   author: 'Radii Labs',
-  headerTitle: 'AI Auto Trading Robots for Global & Indian Markets',
-  description: 'Radii Labs provides AI-driven quantitative market intelligence, while Layr0 offers advanced algorithmic trading execution. Together, we empower investors with AI-powered insights and automated strategies.',
-  about: 'Radii Labs is an AI-driven quantitative research firm delivering actionable market intelligence. In partnership with Layr0, we offer seamless algorithmic trading execution, bridging the gap between AI data analysis and market action globally.',
+  headerTitle: 'AI Trading Research and Algo Execution',
+  description: 'Radii Labs helps traders and teams use quantitative research, AI market intelligence, and disciplined algorithmic execution across Indian and global markets.',
+  about: 'Radii Labs is a quantitative research and trading technology firm helping market participants turn data-backed ideas into disciplined execution workflows.',
   language: 'en-us',
   siteUrl: 'https://www.radii.in', // your website URL
-  siteLogo: '/logo.png',
+  siteLogo: '/android-chrome-512x512.png',
   socialBanner: '/social-banner2.jpg', // add social banner in the public folder
   email: 'sales4radii@gmail.com',
   github: 'https://github.com/radiilab',
@@ -18,7 +18,7 @@ const siteMetadata = {
   keywords: ['AI Trading', 'AI Trading Software', 'Radii Labs', 'Layr0', 'Algo Trading', 'Quantitative Research', 'Indian Stock Market', 'Forex Trading', 'Market Intelligence', 'Automated Trading', 'Fintech India', 'Machine Learning Trading', 'AI Trading Strategies'],
   locale: 'en-US',
   gtmId: process.env.NEXT_PUBLIC_GTM_ID,
-  subdomains: ['https://console.radii.in'],
+  subdomains: [],
 }
 
 module.exports = siteMetadata;

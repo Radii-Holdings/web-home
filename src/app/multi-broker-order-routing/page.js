@@ -1,14 +1,38 @@
 import Image from "next/image";
 import Link from "next/link";
+import BreadcrumbSchema from "@/src/components/StructuredData/BreadcrumbSchema";
+import FAQSchema from "@/src/components/StructuredData/FAQSchema";
+
+const faqs = [
+    {
+        question: "Does this add latency?",
+        answer: "The routing layer is designed to keep additional latency low while improving reliability, broker redundancy, and execution control.",
+    },
+    {
+        question: "Is it compatible with manual trading?",
+        answer: "Yes. Teams can use a hybrid workflow where manual orders and automated strategies pass through the same broker-aware routing infrastructure.",
+    },
+];
 
 export const metadata = {
-    title: "Multi Broker Order Routing | Radii Labs",
-    description: "Seamlessly route orders across multiple brokers from a single interface. Optimize execution quality and diversify counterparty risk.",
+    title: "Multi-Broker Order Routing for Trading Teams",
+    description: "Route orders across multiple brokers from one execution layer to improve redundancy, reporting, and broker-aware trading operations.",
+    alternates: {
+        canonical: "/multi-broker-order-routing",
+    },
 };
 
 export default function MultiBrokerOrderRouting() {
     return (
-        <main className="w-full flex flex-col items-center justify-center">
+        <>
+            <BreadcrumbSchema
+                items={[
+                    { name: "Home", url: "/" },
+                    { name: "Multi-Broker Order Routing", url: "/multi-broker-order-routing" },
+                ]}
+            />
+            <FAQSchema faqs={faqs} />
+            <main className="w-full flex flex-col items-center justify-center">
             {/* Hero Section */}
             <section className="w-full h-[80vh] flex flex-col items-center justify-center text-center bg-dark text-light relative overflow-hidden">
                 <div className="z-10 px-5 md:px-10">
@@ -39,7 +63,7 @@ export default function MultiBrokerOrderRouting() {
                     <div className="p-8 border border-dark/20 rounded-xl">
                         <h3 className="text-2xl font-bold mb-4">Redundancy & Uptime</h3>
                         <p className="text-lg">
-                            If one broker's API goes down, our system automatically reroutes or halts orders based on your configuration, protecting you from technical failures.
+                            If one broker&apos;s API goes down, our system automatically reroutes or halts orders based on your configuration, protecting you from technical failures.
                         </p>
                     </div>
                     <div className="p-8 border border-dark/20 rounded-xl">
@@ -62,14 +86,12 @@ export default function MultiBrokerOrderRouting() {
                 <div className="max-w-4xl mx-auto px-5">
                     <h2 className="text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
                     <div className="space-y-6">
-                        <details className="p-6 bg-light rounded-lg shadow-sm">
-                            <summary className="font-semibold text-xl cursor-pointer">Does this add latency?</summary>
-                            <p className="mt-4">Our routing engine adds negligible microsecond latency, far outweighed by the benefits of reliability and optimization.</p>
-                        </details>
-                        <details className="p-6 bg-light rounded-lg shadow-sm">
-                            <summary className="font-semibold text-xl cursor-pointer">Is it compatible with manual trading?</summary>
-                            <p className="mt-4">Yes, you can use our hybrid terminal to place manual orders that are routed through the same smart infrastructure.</p>
-                        </details>
+                        {faqs.map((faq) => (
+                            <details key={faq.question} className="p-6 bg-light rounded-lg shadow-sm">
+                                <summary className="font-semibold text-xl cursor-pointer">{faq.question}</summary>
+                                <p className="mt-4">{faq.answer}</p>
+                            </details>
+                        ))}
                     </div>
                     <div className="mt-10 text-center">
                         <Link
@@ -94,6 +116,7 @@ export default function MultiBrokerOrderRouting() {
                     </Link>
                 </div>
             </section>
-        </main>
+            </main>
+        </>
     );
 }

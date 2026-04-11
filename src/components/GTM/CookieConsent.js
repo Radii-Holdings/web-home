@@ -28,7 +28,7 @@ const CookieConsent = () => {
         <div className="fixed bottom-0 left-0 right-0 z-9999 p-6 bg-dark/95 backdrop-blur-xl border-t border-accent/30 flex flex-col md:flex-row items-center justify-between gap-6 animate-in fade-in slide-in-from-bottom duration-700 shadow-[0_-10px_40px_rgba(0,0,0,0.5)]">
             <div className="text-base text-light font-mr px-4 text-center md:text-left max-w-3xl leading-relaxed">
                 <p>
-                    We use cookies to enhance your experience and analyze our traffic. By clicking <span className="text-accent font-bold">"Accept All"</span>, you consent to our use of cookies.
+                    We use cookies to enhance your experience and analyze our traffic. By clicking <span className="text-accent font-bold">Accept All</span>, you consent to our use of cookies.
                 </p>
             </div>
             <div className="flex gap-4 px-4 w-full md:w-auto">

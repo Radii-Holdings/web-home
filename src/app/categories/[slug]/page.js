@@ -3,6 +3,11 @@ import BlogLayoutThree from "@/src/components/Blog/BlogLayoutThree";
 import Categories from "@/src/components/Blog/Categories";
 import { slug } from "github-slugger";
 
+const formatCategoryName = (value) =>
+  value
+    .replaceAll("-", " ")
+    .replace(/\b\w/g, (letter) => letter.toUpperCase());
+
 export async function generateStaticParams() {
   const set = new Set(["all"]);
   for (const blog of allBlogs) {
@@ -15,11 +20,18 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug: s } = await params;
   const normalized = s.replace(/-\d+$/, "");
-  const title = `${normalized.replaceAll("-", " ")} Insights for Global & Indian Traders | Radii Labs`.replace(/\b\w/g, l => l.toUpperCase());
+  const categoryName = normalized === "all" ? "Trading Research" : formatCategoryName(normalized);
 
   return {
-    title: title,
+    title: `${categoryName} Insights`,
     description: `Explore ${normalized.replaceAll("-", " ")} research, strategy explainers, and actionable market insights for Global and Indian traders from Radii Labs.`,
+    alternates: {
+      canonical: `/categories/${s}`,
+    },
+    robots: {
+      index: false,
+      follow: true,
+    },
   };
 }
 

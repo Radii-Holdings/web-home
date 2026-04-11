@@ -1,15 +1,42 @@
 import Image from "next/image";
 import Link from "next/link";
-import ContactForm from "@/src/components/Contact/ContactForm";
+import BreadcrumbSchema from "@/src/components/StructuredData/BreadcrumbSchema";
+import FAQSchema from "@/src/components/StructuredData/FAQSchema";
+
+const faqs = [
+    {
+        question: "What brokers do you support?",
+        answer: "We support major Indian brokers including Zerodha, Angel One, 5Paisa, and Interactive Brokers through API integrations.",
+    },
+    {
+        question: "Do I need to know Python?",
+        answer: "No. The platform supports no-code strategy workflows, while advanced teams can use Python for custom research and execution logic.",
+    },
+    {
+        question: "Is historical data included?",
+        answer: "Historical data can be used for backtesting strategies before deployment, including checks for slippage, costs, and risk rules.",
+    },
+];
 
 export const metadata = {
-    title: "Algo Trading Platform India | Radii Labs",
-    description: "Automate your trading strategies with Radii Labs' advanced algorithmic platform for Indian markets. Backtest, deploy, and execute with precision.",
+    title: "Algo Trading Platform for Indian Brokers",
+    description: "Build, backtest, and deploy rules-based trading strategies across Indian brokers with Radii Labs' algorithmic execution platform.",
+    alternates: {
+        canonical: "/algo-trading-platform-india",
+    },
 };
 
 export default function AlgoTradingPlatformIndia() {
     return (
-        <main className="w-full flex flex-col items-center justify-center">
+        <>
+            <BreadcrumbSchema
+                items={[
+                    { name: "Home", url: "/" },
+                    { name: "Algo Trading Platform", url: "/algo-trading-platform-india" },
+                ]}
+            />
+            <FAQSchema faqs={faqs} />
+            <main className="w-full flex flex-col items-center justify-center">
             {/* Hero Section */}
             <section className="w-full h-[80vh] flex flex-col items-center justify-center text-center bg-dark text-light relative overflow-hidden">
                 <div className="z-10 px-5 md:px-10">
@@ -68,18 +95,12 @@ export default function AlgoTradingPlatformIndia() {
                 <div className="max-w-4xl mx-auto px-5">
                     <h2 className="text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
                     <div className="space-y-6">
-                        <details className="p-6 bg-light rounded-lg shadow-sm">
-                            <summary className="font-semibold text-xl cursor-pointer">What brokers do you support?</summary>
-                            <p className="mt-4">We support major Indian brokers including Zerodha, Angel One, 5Paisa, and Interactive Brokers via API integration.</p>
-                        </details>
-                        <details className="p-6 bg-light rounded-lg shadow-sm">
-                            <summary className="font-semibold text-xl cursor-pointer">Do I need to know Python?</summary>
-                            <p className="mt-4">No. Our platform offers a no-code strategy builder, but we also provide full Python access for advanced quants.</p>
-                        </details>
-                        <details className="p-6 bg-light rounded-lg shadow-sm">
-                            <summary className="font-semibold text-xl cursor-pointer">Is historical data included?</summary>
-                            <p className="mt-4">Yes, we provide tick-by-tick historical data for backtesting your strategies before going live.</p>
-                        </details>
+                        {faqs.map((faq) => (
+                            <details key={faq.question} className="p-6 bg-light rounded-lg shadow-sm">
+                                <summary className="font-semibold text-xl cursor-pointer">{faq.question}</summary>
+                                <p className="mt-4">{faq.answer}</p>
+                            </details>
+                        ))}
                     </div>
                 </div>
             </section>
@@ -103,6 +124,7 @@ export default function AlgoTradingPlatformIndia() {
                     </Link>
                 </div>
             </section>
-        </main>
+            </main>
+        </>
     );
 }

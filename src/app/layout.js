@@ -4,7 +4,6 @@ import { Inter, Manrope } from "next/font/google";
 import Header from "@/src/components/Header";
 import Footer from "../components/Footer";
 import siteMetadata from "../utils/siteMetaData";
-import Script from "next/script";
 import TelegramButton from "@/src/components/TelegramButton";
 import { Toaster } from "react-hot-toast";
 import GTMInit from "../components/GTM/GTMInit";
@@ -28,12 +27,15 @@ export const metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
   title: {
     template: `%s | ${siteMetadata.title}`,
-    default: siteMetadata.title,
+    default: `${siteMetadata.title} | AI Trading Research and Algo Execution`,
   },
   description: siteMetadata.description,
   keywords: siteMetadata.keywords,
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: siteMetadata.title,
+    title: `${siteMetadata.title} | AI Trading Research and Algo Execution`,
     description: siteMetadata.description,
     url: siteMetadata.siteUrl,
     siteName: siteMetadata.title,
@@ -55,7 +57,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: siteMetadata.title,
+    title: `${siteMetadata.title} | AI Trading Research and Algo Execution`,
+    description: siteMetadata.description,
     images: [siteMetadata.socialBanner],
   },
 };

@@ -7,17 +7,17 @@ const HomeBanner = () => {
         <div className="flex flex-col items-center justify-center">
           <div className="mb-8 text-center max-w-3xl lg:max-w-4xl">
             <h1 className="mb-4 font-semibold text-2xl md:text-4xl lg:text-5xl">
-              AI-Driven Trading Bots for Global & Indian Markets
+              AI Trading Research and Algo Execution
             </h1>
             <p className="mb-6 text-base md:text-lg text-dark/80">
-              <span className="font-bold text-lg md:text-xl text-dark">Radii Labs</span> empowers traders with <span className="font-bold text-lg md:text-xl text-dark">AI-driven trading system</span>. With <span className="font-bold text-lg md:text-xl text-dark">Layr0</span>, those AI insights become disciplined execution across Global Forex and Indian markets—removing emotional bias from every trade.
+              <span className="font-bold text-lg md:text-xl text-dark">Radii Labs</span> helps traders and teams move from research to rules-based execution across global forex and Indian markets.
             </p>
             <div className="mb-10">
               <Link
                 href="/multi-broker-order-routing"
                 className="inline-block px-5 py-2 text-sm md:text-base font-bold uppercase tracking-wider border-2 border-dark text-dark hover:bg-dark hover:text-light transition-all duration-300 rounded-none shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-x-[2px] active:translate-y-[2px]"
               >
-                Discover our AI-Enhanced Multi-Broker Order Routing Engine &rarr;
+                Discover our AI-enhanced multi-broker order routing engine &rarr;
               </Link>
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -31,10 +31,10 @@ const HomeBanner = () => {
                 Start Trading Now
               </Link>
               <Link
-                href="/categories/algo-trading"
+                href="/algo-trading-platform-india"
                 className="inline-flex items-center justify-center px-6 py-3 rounded-full text-dark font-semibold border border-dark hover:scale-105 transition-transform"
               >
-                Explore Strategies
+                Explore Algo Platform
               </Link>
             </div>
           </div>
@@ -43,7 +43,7 @@ const HomeBanner = () => {
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
                 src="https://www.youtube.com/embed/TSMkPJVfs_I"
-                title="Radii Labs AI Trading Bot"
+                title="Radii Labs AI trading platform walkthrough"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               ></iframe>

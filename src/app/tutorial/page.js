@@ -1,14 +1,25 @@
 import Link from "next/link";
 import Image from "next/image";
+import BreadcrumbSchema from "@/src/components/StructuredData/BreadcrumbSchema";
 
 export const metadata = {
-    title: "AI Trading Tutorial | Radii Labs",
-    description: "Learn how to download, activate, and use our AI-based trading software. Follow our step-by-step guide to transition from emotional to disciplined trading.",
+    title: "AI Trading Platform Tutorial",
+    description: "Learn how to access the Radii console, activate trading software, manage licenses, and prepare rules-based AI trading workflows.",
+    alternates: {
+        canonical: "/tutorial",
+    },
 };
 
 const TutorialPage = () => {
     return (
-        <main className="flex flex-col items-center justify-center py-20 px-5 sm:px-10 md:px-20 lg:px-32">
+        <>
+            <BreadcrumbSchema
+                items={[
+                    { name: "Home", url: "/" },
+                    { name: "Tutorial", url: "/tutorial" },
+                ]}
+            />
+            <main className="flex flex-col items-center justify-center py-20 px-5 sm:px-10 md:px-20 lg:px-32">
             <section className="w-full max-w-4xl">
                 <h1 className="text-4xl md:text-6xl font-bold text-dark mb-8 text-center">
                     AI Trading <span className="text-accent">Tutorial</span>
@@ -135,7 +146,8 @@ const TutorialPage = () => {
                     </Link>
                 </div>
             </section>
-        </main>
+            </main>
+        </>
     );
 };
 

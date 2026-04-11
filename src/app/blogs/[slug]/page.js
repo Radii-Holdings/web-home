@@ -2,9 +2,27 @@ import BlogDetails from "@/src/components/Blog/BlogDetails";
 import RenderMdx from "@/src/components/Blog/RenderMdx";
 import Tag from "@/src/components/Elements/Tag";
 import siteMetadata from "@/src/utils/siteMetaData";
+import BreadcrumbSchema from "@/src/components/StructuredData/BreadcrumbSchema";
 import { allBlogs } from "contentlayer2/generated";
 import { slug } from "github-slugger";
 import Image from "next/image";
+import { notFound } from "next/navigation";
+
+const toAbsoluteUrl = (path) => {
+  if (path.startsWith("http")) return path;
+  return `${siteMetadata.siteUrl}${path}`;
+};
+
+const getBlogImages = (blog) => {
+  if (!blog?.image) return [toAbsoluteUrl(siteMetadata.socialBanner)];
+
+  const images =
+    typeof blog.image.filePath === "string"
+      ? [blog.image.filePath.replace("../public", "")]
+      : blog.image;
+
+  return images.map((img) => toAbsoluteUrl(img));
+};
 
 export async function generateStaticParams() {
   return allBlogs.map((blog) => ({ slug: blog._raw.flattenedPath }));
@@ -20,22 +38,17 @@ export async function generateMetadata({ params }) {
   const publishedAt = new Date(blog.publishedAt).toISOString();
   const modifiedAt = new Date(blog.updatedAt || blog.publishedAt).toISOString();
 
-  let imageList = [siteMetadata.socialBanner];
-  if (blog.image) {
-    imageList =
-      typeof blog.image.filePath === "string"
-        ? [siteMetadata.siteUrl + blog.image.filePath.replace("../public", "")]
-        : blog.image;
-  }
-  const ogImages = imageList.map((img) => {
-    return { url: img.includes("http") ? img : siteMetadata.siteUrl + img };
-  });
+  const imageList = getBlogImages(blog);
+  const ogImages = imageList.map((img) => ({ url: img }));
 
-  const authors = blog?.author ? [blog.author] : siteMetadata.author;
+  const authors = blog?.author ? [blog.author] : [siteMetadata.author];
 
   return {
     title: blog.title,
-    description: blog.description, // Keeping original description as it might be specific, but template suggests "Understand [topic]..." - overriding could lose specific nuances unless we use a smart fallback.
+    description: blog.description,
+    alternates: {
+      canonical: blog.url,
+    },
     openGraph: {
       title: blog.title,
       description: blog.description,
@@ -60,18 +73,13 @@ export async function generateMetadata({ params }) {
 export default async function BlogPage({ params }) {
   const { slug: slugParam } = await params;
   const blog = allBlogs.find((blog) => blog._raw.flattenedPath === slugParam);
+  if (!blog) notFound();
 
-  let imageList = [siteMetadata.socialBanner];
-  if (blog.image) {
-    imageList =
-      typeof blog.image.filePath === "string"
-        ? [siteMetadata.siteUrl + blog.image.filePath.replace("../public", "")]
-        : blog.image;
-  }
+  const imageList = getBlogImages(blog);
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "BlogPosting",
     "headline": blog.title,
     "description": blog.description,
     "image": imageList,
@@ -84,10 +92,12 @@ export default async function BlogPage({ params }) {
     }],
     "publisher": {
       "@type": "Organization",
-      "name": siteMetadata.title,
+      "name": siteMetadata.author,
       "logo": {
         "@type": "ImageObject",
-        "url": siteMetadata.siteUrl + siteMetadata.siteLogo
+        "url": siteMetadata.siteUrl + siteMetadata.siteLogo,
+        "width": 512,
+        "height": 512
       },
       "sameAs": [
         siteMetadata.twitter,
@@ -103,6 +113,13 @@ export default async function BlogPage({ params }) {
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Research", url: "/categories/all" },
+          { name: blog.title, url: blog.url },
+        ]}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
