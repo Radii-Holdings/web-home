@@ -105,7 +105,7 @@ const TutorialPage = () => {
                                     Start AI Trading
                                 </h2>
                                 <p className="text-base md:text-lg text-dark/70">
-                                    Configure your risk parameters and select from our Patent Pending algorithms. Move from emotional trading to disciplined, data-backed execution with proven success rates of above 80%.
+                                    Configure risk parameters, review strategy assumptions, and move from manual reactions to disciplined, data-backed execution workflows.
                                 </p>
                             </div>
                         </div>

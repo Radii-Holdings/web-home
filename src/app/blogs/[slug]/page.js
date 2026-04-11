@@ -3,6 +3,9 @@ import RenderMdx from "@/src/components/Blog/RenderMdx";
 import Tag from "@/src/components/Elements/Tag";
 import siteMetadata from "@/src/utils/siteMetaData";
 import BreadcrumbSchema from "@/src/components/StructuredData/BreadcrumbSchema";
+import TrackedLink from "@/src/components/Analytics/TrackedLink";
+import { getAuthorByName } from "@/src/utils/authors";
+import { getBlogCta } from "@/src/utils/blogCta";
 import { allBlogs } from "contentlayer2/generated";
 import { slug } from "github-slugger";
 import Image from "next/image";
@@ -76,6 +79,8 @@ export default async function BlogPage({ params }) {
   if (!blog) notFound();
 
   const imageList = getBlogImages(blog);
+  const author = getAuthorByName(blog.author);
+  const cta = getBlogCta(blog);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -86,9 +91,9 @@ export default async function BlogPage({ params }) {
     "datePublished": new Date(blog.publishedAt).toISOString(),
     "dateModified": new Date(blog.updatedAt || blog.publishedAt).toISOString(),
     "author": [{
-      "@type": "Person",
-      "name": blog?.author ? blog.author : siteMetadata.author,
-      "url": siteMetadata.twitter,
+      "@type": "Organization",
+      "name": author.name,
+      "url": siteMetadata.siteUrl + author.url,
     }],
     "publisher": {
       "@type": "Organization",
@@ -191,19 +196,71 @@ export default async function BlogPage({ params }) {
             </details>
           </div>
           <div className="col-span-12 lg:col-span-8">
+            <section className="mb-8 rounded-lg border border-dark/15 bg-light p-6">
+              <p className="text-sm font-bold uppercase tracking-[0.24em] text-accent">
+                Author and methodology
+              </p>
+              <h2 className="mt-3 text-2xl font-bold">{author.name}</h2>
+              <p className="mt-2 text-sm font-semibold text-dark/60">
+                {author.role}
+              </p>
+              <p className="mt-4 leading-7 text-dark/75">{author.bio}</p>
+              <p className="mt-4 rounded-lg bg-accent/5 p-4 text-sm leading-6 text-dark/70">
+                Methodology: {author.methodology}
+              </p>
+              <p className="mt-4 text-sm leading-6 text-dark/60">
+                This article is educational and operational research. It is not
+                investment advice, and past or backtested performance does not
+                guarantee future results.
+              </p>
+            </section>
+            <section className="mb-10 rounded-lg border border-accent/25 bg-accent/5 p-6">
+              <p className="text-sm font-bold uppercase tracking-[0.24em] text-accent">
+                {cta.kicker}
+              </p>
+              <h2 className="mt-3 text-2xl font-bold">{cta.title}</h2>
+              <p className="mt-3 leading-7 text-dark/75">{cta.description}</p>
+              <TrackedLink
+                href={cta.href}
+                eventParams={{
+                  cta_location: "blog_pre_content",
+                  cta_label: cta.button,
+                  blog_slug: slugParam,
+                }}
+                className="mt-5 inline-flex rounded-lg bg-dark px-5 py-3 font-bold text-light transition hover:bg-dark/85"
+              >
+                {cta.button}
+              </TrackedLink>
+            </section>
             <RenderMdx blog={blog} />
             <div className="mt-16 p-8 bg-accent/10 rounded-lg border border-accent text-center">
-              <h3 className="text-xl font-bold mb-4">Ready to Automate Your Strategy?</h3>
+              <h3 className="text-xl font-bold mb-4">{cta.title}</h3>
               <p className="mb-6">
-                Transition from emotional trading to disciplined, data-backed execution with our AI tools.
+                {cta.description}
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://console.radii.in/" className="inline-block px-6 py-3 bg-accent text-light font-semibold rounded-full hover:scale-105 transition-transform">
-                  Explore The Console
-                </a>
-                <a href="/tutorial" className="inline-block px-6 py-3 border border-dark font-semibold rounded-full hover:scale-105 transition-transform">
-                  AI Trading Tutorial
-                </a>
+                <TrackedLink
+                  href={cta.href}
+                  eventParams={{
+                    cta_location: "blog_footer",
+                    cta_label: cta.button,
+                    blog_slug: slugParam,
+                  }}
+                  className="inline-block rounded-lg bg-accent px-6 py-3 font-semibold text-light transition-transform hover:scale-105"
+                >
+                  {cta.button}
+                </TrackedLink>
+                <TrackedLink
+                  href="/contact"
+                  eventParams={{
+                    cta_location: "blog_footer_secondary",
+                    cta_label: "Talk to Radii",
+                    blog_slug: slugParam,
+                  }}
+                  className="inline-block rounded-lg border border-dark px-6 py-3 font-semibold transition-transform hover:scale-105"
+                >
+                  Talk to Radii
+                </TrackedLink>
               </div>
             </div>
           </div>

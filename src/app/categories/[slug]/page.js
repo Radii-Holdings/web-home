@@ -1,6 +1,8 @@
 import { allBlogs } from "contentlayer2/generated";
 import BlogLayoutThree from "@/src/components/Blog/BlogLayoutThree";
 import Categories from "@/src/components/Blog/Categories";
+import TrackedLink from "@/src/components/Analytics/TrackedLink";
+import { moneyPageLinks } from "@/src/utils/servicePages";
 import { slug } from "github-slugger";
 
 const formatCategoryName = (value) =>
@@ -69,6 +71,33 @@ const CategoryPage = async ({ params }) => {
         </span>
       </div>
       <Categories categories={Array.from(allCategories)} currentSlug={normalized} />
+
+      <section className="mt-10 px-5 sm:px-10 md:px-24 sxl:px-32">
+        <div className="rounded-lg border border-dark/15 bg-accent/5 p-6">
+          <p className="text-sm font-bold uppercase tracking-[0.24em] text-accent">
+            Commercial research paths
+          </p>
+          <h2 className="mt-3 text-2xl font-bold md:text-3xl">
+            Move from reading to workflow review
+          </h2>
+          <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-5">
+            {moneyPageLinks.map((page) => (
+              <TrackedLink
+                key={page.href}
+                href={page.href}
+                eventParams={{
+                  cta_location: "category_service_hub",
+                  cta_label: page.label,
+                  category_slug: normalized,
+                }}
+                className="rounded-lg border border-dark/10 bg-light p-4 font-bold transition hover:border-accent"
+              >
+                {page.label}
+              </TrackedLink>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <div className="grid  grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 grid-rows-2 gap-16 mt-5 sm:mt-10 md:mt-24 sxl:mt-32 px-5 sm:px-10 md:px-24 sxl:px-32">
         {blogs.map((blog) => (

@@ -15,7 +15,7 @@ const siteMetadata = {
   facebook: 'https://www.facebook.com/radiilab',
   youtube: 'https://youtube.com/',
   linkedin: 'https://www.linkedin.com/company/radii-lab',
-  keywords: ['AI Trading', 'AI Trading Software', 'Radii Labs', 'Layr0', 'Algo Trading', 'Quantitative Research', 'Indian Stock Market', 'Forex Trading', 'Market Intelligence', 'Automated Trading', 'Fintech India', 'Machine Learning Trading', 'AI Trading Strategies'],
+  keywords: ['AI Trading', 'AI Trading Software', 'Radii Labs', 'Layr0', 'Algo Trading', 'Algo Trading Platform India', 'Zerodha Algo Trading', 'Angel One Algo Trading', 'Multi Broker Order Routing', 'Trading Risk Management Software', 'Quantitative Research', 'Indian Stock Market', 'Forex Trading', 'Market Intelligence', 'Automated Trading', 'Fintech India', 'Machine Learning Trading', 'AI Trading Strategies'],
   locale: 'en-US',
   gtmId: process.env.NEXT_PUBLIC_GTM_ID,
   subdomains: [],

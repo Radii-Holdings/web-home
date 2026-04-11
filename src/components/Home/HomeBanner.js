@@ -1,4 +1,5 @@
-import Link from "next/link";
+import TrackedLink from "@/src/components/Analytics/TrackedLink";
+import { moneyPageLinks } from "@/src/utils/servicePages";
 
 const HomeBanner = () => {
   return (
@@ -13,31 +14,66 @@ const HomeBanner = () => {
               <span className="font-bold text-lg md:text-xl text-dark">Radii Labs</span> helps traders and teams move from research to rules-based execution across global forex and Indian markets.
             </p>
             <div className="mb-10">
-              <Link
+              <TrackedLink
                 href="/multi-broker-order-routing"
+                eventParams={{
+                  cta_location: "home_intro",
+                  cta_label: "Discover multi-broker routing",
+                }}
                 className="inline-block px-5 py-2 text-sm md:text-base font-bold uppercase tracking-wider border-2 border-dark text-dark hover:bg-dark hover:text-light transition-all duration-300 rounded-none shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-x-[2px] active:translate-y-[2px]"
               >
                 Discover our AI-enhanced multi-broker order routing engine &rarr;
-              </Link>
+              </TrackedLink>
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
+              <TrackedLink
                 href="https://console.radii.in/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-6 py-3 rounded-full text-white font-semibold shadow hover:scale-105 transition-transform"
+                eventName="console_click"
+                eventParams={{
+                  cta_location: "home_hero",
+                  cta_label: "Start Trading Now",
+                }}
+                className="inline-flex items-center justify-center px-6 py-3 rounded-lg text-white font-semibold shadow hover:scale-105 transition-transform"
                 style={{ backgroundColor: "var(--brand-blue)" }}
               >
                 Start Trading Now
-              </Link>
-              <Link
+              </TrackedLink>
+              <TrackedLink
                 href="/algo-trading-platform-india"
-                className="inline-flex items-center justify-center px-6 py-3 rounded-full text-dark font-semibold border border-dark hover:scale-105 transition-transform"
+                eventParams={{
+                  cta_location: "home_hero",
+                  cta_label: "Explore Algo Platform",
+                }}
+                className="inline-flex items-center justify-center px-6 py-3 rounded-lg text-dark font-semibold border border-dark hover:scale-105 transition-transform"
               >
                 Explore Algo Platform
-              </Link>
+              </TrackedLink>
             </div>
           </div>
+
+          <div className="mb-14 grid w-full max-w-6xl grid-cols-1 gap-4 md:grid-cols-5">
+            {moneyPageLinks.map((page) => (
+              <TrackedLink
+                key={page.href}
+                href={page.href}
+                eventParams={{
+                  cta_location: "home_money_page_grid",
+                  cta_label: page.label,
+                }}
+                className="rounded-lg border border-dark/15 bg-white p-4 text-left transition hover:border-accent hover:shadow-md"
+              >
+                <span className="block text-sm font-bold uppercase tracking-[0.18em] text-accent">
+                  Service
+                </span>
+                <span className="mt-2 block text-lg font-bold text-dark">
+                  {page.label}
+                </span>
+              </TrackedLink>
+            ))}
+          </div>
+
           <div className="w-full max-w-4xl mx-auto">
             <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl border-4 border-dark/10">
               <iframe
@@ -49,13 +85,17 @@ const HomeBanner = () => {
               ></iframe>
             </div>
             <div className="mt-12 flex justify-center">
-              <Link
+              <TrackedLink
                 href="/tutorial"
-                className="inline-flex items-center justify-center px-6 py-3 rounded-full text-white font-semibold shadow hover:scale-105 transition-transform"
+                eventParams={{
+                  cta_location: "home_video",
+                  cta_label: "Tutorial",
+                }}
+                className="inline-flex items-center justify-center px-6 py-3 rounded-lg text-white font-semibold shadow hover:scale-105 transition-transform"
                 style={{ backgroundColor: "var(--brand-blue)" }}
               >
                 Tutorial
-              </Link>
+              </TrackedLink>
             </div>
           </div>
         </div>

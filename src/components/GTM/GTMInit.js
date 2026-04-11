@@ -12,6 +12,7 @@ export default function GTMInit() {
         function gtag() {
             window.dataLayer.push(arguments);
         }
+        window.gtag = window.gtag || gtag;
 
         const savedConsent = typeof window !== 'undefined' ? localStorage.getItem('cookie-consent') : null;
 
@@ -57,9 +58,10 @@ export default function GTMInit() {
                 id="gtm-init"
                 strategy="afterInteractive"
                 dangerouslySetInnerHTML={{
-                    __html: `
+            __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
             gtag('js', new Date());
             gtag('config', '${GTM_ID}', {
               page_path: window.location.pathname,

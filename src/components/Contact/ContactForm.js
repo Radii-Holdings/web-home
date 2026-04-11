@@ -2,13 +2,26 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
+import { trackEvent } from "@/src/components/Analytics/TrackedLink";
 
 export default function ContactForm() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
+  const hasTrackedStart = React.useRef(false);
+
+  const trackFormStart = () => {
+    if (hasTrackedStart.current) return;
+    hasTrackedStart.current = true;
+    trackEvent("form_start", {
+      form_name: "contact_form",
+      form_location: "contact_page",
+    });
+  };
+
   const onSubmit = async (data) => {
     try {
       const response = await fetch('/api/contact', {
@@ -23,9 +36,13 @@ export default function ContactForm() {
 
       if (response.ok) {
         console.log('Message sent successfully:', result);
+        trackEvent("form_submit", {
+          form_name: "contact_form",
+          form_location: "contact_page",
+          lead_type: "sales_contact",
+        });
         toast.success('Your message has been sent successfully!');
-        // Optionally, reset the form or redirect the user
-        // reset();
+        reset();
       } else {
         console.error('Failed to send message:', result.error || 'Unknown error');
         toast.error('Failed to send your message. Please try again.');
@@ -43,6 +60,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
+      onFocus={trackFormStart}
       className="mt-12 text-base xs:text-lg sm:text-xl font-medium leading-relaxed font-in w-full max-w-2xl"
     >
       Hello! My name is{" "}
@@ -54,18 +72,18 @@ export default function ContactForm() {
         focus:border-mediumGray bg-transparent"
       />
       and I want to discuss a potential project. You can email me at
-      <input type="email" placeholder="your@email" {...register("email", {})} className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-mediumGray 
+      <input type="email" placeholder="your@email" {...register("email", { required: true })} className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-mediumGray 
         focus:border-mediumGray bg-transparent"/>
       or reach out to me on
       <input
         type="tel"
         placeholder="your phone"
-        {...register("phone_number", {})}
+        {...register("phone_number", { required: true })}
         className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-mediumGray 
         focus:border-mediumGray bg-transparent"
       />
       Here are some details about my work: <br />
-      <textarea {...register("project_details", {})}
+      <textarea {...register("project_details", { required: true })}
         placeholder="My project is about..."
         rows={3}
         className="w-full outline-none border-0 p-0 mx-0 focus:ring-0  placeholder:text-lg border-b border-mediumGray 

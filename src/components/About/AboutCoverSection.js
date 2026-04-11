@@ -24,8 +24,8 @@ const AboutCoverSection = () => {
         <h2 className='font-bold capitalize text-3xl xs:text-4xl sxl:text-5xl text-center lg:text-left mb-4'>
           What We Solve
         </h2>
-        <p className='font-medium capitalize mt-2 text-base'>
-          AI BASED automated trading with Patent Pending algorithms and Proven success rates of above 80 percent success rate. We help you move from emotional trading to disciplined, data-backed execution. Learn more in our <Link href="/tutorial" className='font-bold underline underline-offset-2 text-accent'>AI Trading Platform</Link>.
+        <p className='font-medium mt-2 text-base'>
+          Radii Labs helps traders and teams move from manual reactions to disciplined, data-backed execution workflows with research review, broker-aware routing, and risk controls. Learn more in our <Link href="/algo-trading-platform-india" className='font-bold underline underline-offset-2 text-accent'>algo trading platform</Link>.
         </p>
       </div>
     </section>

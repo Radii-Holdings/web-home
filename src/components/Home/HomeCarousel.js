@@ -1,7 +1,7 @@
 "use client";
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import TrackedLink from "../Analytics/TrackedLink";
 
 // Dummy slides; can be overridden by passing `slides` prop
 const defaultSlides = [
@@ -35,19 +35,19 @@ const HomeCarousel = ({ slides = defaultSlides, autoIntervalMs = 5000 }) => {
   const containerRef = useRef(null);
   const dragState = useRef({ startX: 0, currentX: 0, dragging: false });
 
-  const goTo = (next) => setIndex((i) => clampIndex(next, length));
-  const next = () => setIndex((i) => clampIndex(i + 1, length));
-  const prev = () => setIndex((i) => clampIndex(i - 1, length));
+  const goTo = useCallback((nextIndex) => setIndex(() => clampIndex(nextIndex, length)), [length]);
+  const goNext = useCallback(() => setIndex((i) => clampIndex(i + 1, length)), [length]);
+  const goPrev = useCallback(() => setIndex((i) => clampIndex(i - 1, length)), [length]);
 
   // Auto-advance
   useEffect(() => {
     if (length <= 1) return;
     timerRef.current && clearInterval(timerRef.current);
     timerRef.current = setInterval(() => {
-      next();
+      goNext();
     }, autoIntervalMs);
     return () => timerRef.current && clearInterval(timerRef.current);
-  }, [length, autoIntervalMs]);
+  }, [length, autoIntervalMs, goNext]);
 
   // Drag handlers (mouse + touch)
   const onStart = (clientX) => {
@@ -63,8 +63,8 @@ const HomeCarousel = ({ slides = defaultSlides, autoIntervalMs = 5000 }) => {
     dragState.current.dragging = false;
     const threshold = 50; // px
     if (Math.abs(delta) > threshold) {
-      if (delta < 0) next(); // swiped left -> next
-      else prev(); // swiped right -> prev
+      if (delta < 0) goNext(); // swiped left -> next
+      else goPrev(); // swiped right -> prev
     }
   };
 
@@ -108,10 +108,16 @@ const HomeCarousel = ({ slides = defaultSlides, autoIntervalMs = 5000 }) => {
           >
             {slides.map((s, i) => (
               <div key={i} className="relative min-w-full h-full">
-                <Link
+                <TrackedLink
                   href={s.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  target={s.link.startsWith("http") ? "_blank" : undefined}
+                  rel={s.link.startsWith("http") ? "noopener noreferrer" : undefined}
+                  eventName={s.link.includes("console.radii.in") ? "console_click" : "cta_click"}
+                  eventParams={{
+                    cta_location: "home_carousel",
+                    cta_label: s.text,
+                    slide_index: i + 1,
+                  }}
                   className="block w-full h-full"
                 >
                   {/* Gradient overlay */}
@@ -135,7 +141,7 @@ const HomeCarousel = ({ slides = defaultSlides, autoIntervalMs = 5000 }) => {
                       </h2>
                     </div>
                   </div>
-                </Link>
+                </TrackedLink>
               </div>
             ))}
           </div>
@@ -147,7 +153,7 @@ const HomeCarousel = ({ slides = defaultSlides, autoIntervalMs = 5000 }) => {
                 aria-label="Previous slide"
                 onClick={(e) => {
                   e.preventDefault();
-                  prev();
+                  goPrev();
                 }}
                 className="absolute left-3 top-1/2 -translate-y-1/2 z-[3] grid place-items-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 text-white"
               >
@@ -157,7 +163,7 @@ const HomeCarousel = ({ slides = defaultSlides, autoIntervalMs = 5000 }) => {
                 aria-label="Next slide"
                 onClick={(e) => {
                   e.preventDefault();
-                  next();
+                  goNext();
                 }}
                 className="absolute right-3 top-1/2 -translate-y-1/2 z-[3] grid place-items-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 text-white"
               >

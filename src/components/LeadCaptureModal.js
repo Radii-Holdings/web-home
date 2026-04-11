@@ -3,9 +3,9 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { usePathname } from "next/navigation";
-import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
+import TrackedLink, { trackEvent } from "@/src/components/Analytics/TrackedLink";
 
 const DISABLE_COOKIE_NAME = "radii-lead-capture-disabled";
 const SUBMITTED_COOKIE_NAME = "radii-lead-capture-submitted";
@@ -57,6 +57,7 @@ export default function LeadCaptureModal() {
   const [isVisible, setIsVisible] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
   const [portalRoot, setPortalRoot] = useState(null);
+  const [hasTrackedFormStart, setHasTrackedFormStart] = useState(false);
   const {
     register,
     handleSubmit,
@@ -98,6 +99,7 @@ export default function LeadCaptureModal() {
 
     setIsVisible(false);
     reset(defaultValues);
+    setHasTrackedFormStart(false);
 
     if (hasCookie(DISABLE_COOKIE_NAME) || hasCookie(SUBMITTED_COOKIE_NAME)) {
       return undefined;
@@ -112,6 +114,15 @@ export default function LeadCaptureModal() {
     return () => window.clearTimeout(timer);
   }, [isMounted, pathname, reset]);
 
+  useEffect(() => {
+    if (!isVisible) return;
+
+    trackEvent("lead_modal_view", {
+      form_name: "lead_capture_modal",
+      source_page: pathname,
+    });
+  }, [isVisible, pathname]);
+
   const closeForNow = () => {
     setIsVisible(false);
   };
@@ -119,6 +130,10 @@ export default function LeadCaptureModal() {
   const disableFor48Hours = () => {
     setDisableCookie();
     setIsVisible(false);
+    trackEvent("lead_modal_disable", {
+      form_name: "lead_capture_modal",
+      source_page: pathname,
+    });
     toast.success("Lead form disabled for 48 hours.");
   };
 
@@ -146,11 +161,28 @@ export default function LeadCaptureModal() {
       setSubmittedCookie();
       setIsVisible(false);
       reset(defaultValues);
+      trackEvent("form_submit", {
+        form_name: "lead_capture_modal",
+        form_location: "timed_modal",
+        source_page: pathname,
+        lead_type: "modal_lead",
+      });
       toast.success("Thanks! We'll reach out to you shortly.");
     } catch (error) {
       console.error("Error submitting lead form:", error);
       toast.error("We couldn't save your details. Please try again.");
     }
+  };
+
+  const trackFormStart = () => {
+    if (hasTrackedFormStart) return;
+
+    setHasTrackedFormStart(true);
+    trackEvent("form_start", {
+      form_name: "lead_capture_modal",
+      form_location: "timed_modal",
+      source_page: pathname,
+    });
   };
 
   if (!isMounted || !isVisible || !portalRoot) {
@@ -182,18 +214,30 @@ export default function LeadCaptureModal() {
             </p>
 
             <div className="mt-4 flex items-center gap-3">
-              <Link
+              <TrackedLink
                 href="https://console.radii.in/login"
-                className="flex-1 rounded-2xl border border-[#7B00D3]/20 bg-[#7B00D3]/5 px-4 py-3 text-center text-sm font-bold text-[#7B00D3] transition hover:bg-[#7B00D3]/10"
+                eventName="console_click"
+                eventParams={{
+                  cta_location: "lead_modal",
+                  cta_label: "Login",
+                  source_page: pathname,
+                }}
+                className="flex-1 rounded-lg border border-[#7B00D3]/20 bg-[#7B00D3]/5 px-4 py-3 text-center text-sm font-bold text-[#7B00D3] transition hover:bg-[#7B00D3]/10"
               >
                 Login
-              </Link>
-              <Link
+              </TrackedLink>
+              <TrackedLink
                 href="https://console.radii.in/register"
-                className="flex-1 rounded-2xl bg-[#7B00D3] px-4 py-3 text-center text-sm font-bold text-white shadow-lg shadow-[#7B00D3]/20 transition hover:bg-[#7B00D3]/90"
+                eventName="console_click"
+                eventParams={{
+                  cta_location: "lead_modal",
+                  cta_label: "Sign Up",
+                  source_page: pathname,
+                }}
+                className="flex-1 rounded-lg bg-[#7B00D3] px-4 py-3 text-center text-sm font-bold text-white shadow-lg shadow-[#7B00D3]/20 transition hover:bg-[#7B00D3]/90"
               >
                 Sign Up
-              </Link>
+              </TrackedLink>
             </div>
 
             <h2 className="mt-6 font-in text-2xl font-semibold text-dark">
@@ -205,7 +249,7 @@ export default function LeadCaptureModal() {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit(onSubmit)} className="mt-6 space-y-4">
+          <form onFocus={trackFormStart} onSubmit={handleSubmit(onSubmit)} className="mt-6 space-y-4">
             <div>
               <label
                 htmlFor="lead-name"
