@@ -74,8 +74,8 @@ const SiteNavigationSchema = () => {
           {
             "@type": "SiteNavigationElement",
             "position": 5,
-            "name": "Console",
-            "url": "https://console.radii.in/"
+            "name": "Layr0 Console",
+            "url": siteMetadata.consoleUrl
           },
           {
             "@type": "SiteNavigationElement",

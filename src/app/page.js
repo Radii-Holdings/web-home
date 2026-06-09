@@ -3,14 +3,13 @@ import HomeCarousel from "../components/Home/HomeCarousel";
 import HomeBanner from "../components/Home/HomeBanner";
 import FeaturedPosts from "../components/Home/FeaturedPosts";
 import RecentPosts from "../components/Home/RecentPosts";
+import { buildPageMetadata } from "@/src/utils/pageMetadata";
 
-export const metadata = {
+export const metadata = buildPageMetadata({
   title: "AI Trading Research and Algo Execution | Radii Labs",
   description: "Use Radii Labs for quantitative market research, AI trading intelligence, and disciplined algorithmic execution workflows for Indian and global markets.",
-  alternates: {
-    canonical: "/",
-  },
-};
+  path: "/",
+});
 
 export default function Home() {
 

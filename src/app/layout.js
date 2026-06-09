@@ -10,6 +10,7 @@ import GTMInit from "../components/GTM/GTMInit";
 import CookieConsent from "../components/GTM/CookieConsent";
 import SiteNavigationSchema from "../components/StructuredData/SiteNavigationSchema";
 import LeadCaptureModal from "../components/LeadCaptureModal";
+import { toAbsoluteUrl } from "@/src/utils/pageMetadata";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -39,7 +40,7 @@ export const metadata = {
     description: siteMetadata.description,
     url: siteMetadata.siteUrl,
     siteName: siteMetadata.title,
-    images: [siteMetadata.socialBanner],
+    images: [{ url: toAbsoluteUrl(siteMetadata.socialBanner) }],
     locale: "en_US",
     type: "website",
   },
@@ -59,7 +60,9 @@ export const metadata = {
     card: "summary_large_image",
     title: `${siteMetadata.title} | AI Trading Research and Algo Execution`,
     description: siteMetadata.description,
-    images: [siteMetadata.socialBanner],
+    images: [toAbsoluteUrl(siteMetadata.socialBanner)],
+    site: siteMetadata.twitterHandle,
+    creator: siteMetadata.twitterHandle,
   },
 };
 

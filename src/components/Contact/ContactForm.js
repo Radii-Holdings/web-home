@@ -52,43 +52,75 @@ export default function ContactForm() {
       toast.error('An error occurred. Please try again.');
     }
   };
-  console.log(errors);
-
-
-
 
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
       onFocus={trackFormStart}
-      className="mt-12 text-base xs:text-lg sm:text-xl font-medium leading-relaxed font-in w-full max-w-2xl"
+      className="mt-12 w-full max-w-2xl space-y-6 rounded-3xl border border-dark/10 bg-light p-6 font-in text-base shadow-sm"
     >
-      Hello! My name is{" "}
+      <div className="grid gap-5 md:grid-cols-2">
+        <div>
+          <label htmlFor="contact-name" className="mb-2 block text-sm font-semibold uppercase tracking-[0.16em] text-dark/70">
+            Full name
+          </label>
+          <input
+            id="contact-name"
+            type="text"
+            placeholder="Your full name"
+            {...register("name", { required: true, maxLength: 80 })}
+            className="w-full rounded-2xl border border-dark/15 px-4 py-3 outline-none transition focus:border-accent"
+          />
+          {errors.name ? <p className="mt-2 text-sm text-red-500">Please share your name.</p> : null}
+        </div>
+        <div>
+          <label htmlFor="contact-email" className="mb-2 block text-sm font-semibold uppercase tracking-[0.16em] text-dark/70">
+            Work email
+          </label>
+          <input
+            id="contact-email"
+            type="email"
+            placeholder="you@example.com"
+            {...register("email", { required: true })}
+            className="w-full rounded-2xl border border-dark/15 px-4 py-3 outline-none transition focus:border-accent"
+          />
+          {errors.email ? <p className="mt-2 text-sm text-red-500">Please share a valid email.</p> : null}
+        </div>
+      </div>
+
+      <div>
+        <label htmlFor="contact-phone" className="mb-2 block text-sm font-semibold uppercase tracking-[0.16em] text-dark/70">
+          WhatsApp or phone number
+        </label>
+        <input
+          id="contact-phone"
+          type="tel"
+          placeholder="+91 98765 43210"
+          {...register("phone_number", { required: true })}
+          className="w-full rounded-2xl border border-dark/15 px-4 py-3 outline-none transition focus:border-accent"
+        />
+        {errors.phone_number ? <p className="mt-2 text-sm text-red-500">Please share a contact number.</p> : null}
+      </div>
+
+      <div>
+        <label htmlFor="contact-details" className="mb-2 block text-sm font-semibold uppercase tracking-[0.16em] text-dark/70">
+          What would you like to review?
+        </label>
+        <textarea
+          id="contact-details"
+          {...register("project_details", { required: true })}
+          placeholder="Tell us about your research, broker workflow, platform needs, or risk-control questions."
+          rows={5}
+          className="w-full rounded-2xl border border-dark/15 px-4 py-3 outline-none transition focus:border-accent"
+        />
+        {errors.project_details ? <p className="mt-2 text-sm text-red-500">Please add a short project summary.</p> : null}
+      </div>
+
       <input
-        type="text"
-        placeholder="your name"
-        {...register("name", { required: true, maxLength: 80 })}
-        className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-mediumGray 
-        focus:border-mediumGray bg-transparent"
+        type="submit"
+        value="Send request"
+        className="inline-block cursor-pointer rounded-2xl bg-dark px-6 py-3 text-lg font-semibold text-light transition hover:bg-dark/85"
       />
-      and I want to discuss a potential project. You can email me at
-      <input type="email" placeholder="your@email" {...register("email", { required: true })} className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-mediumGray 
-        focus:border-mediumGray bg-transparent"/>
-      or reach out to me on
-      <input
-        type="tel"
-        placeholder="your phone"
-        {...register("phone_number", { required: true })}
-        className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-mediumGray 
-        focus:border-mediumGray bg-transparent"
-      />
-      Here are some details about my work: <br />
-      <textarea {...register("project_details", { required: true })}
-        placeholder="My project is about..."
-        rows={3}
-        className="w-full outline-none border-0 p-0 mx-0 focus:ring-0  placeholder:text-lg border-b border-mediumGray 
-        focus:border-mediumGray bg-transparent" />
-      <input type="submit" value="send request" className="mt-8 font-medium inline-block capitalize text-lg sm:text-xl py-2 sm:py-3 px-6 sm:px-8 border-2 border-solid border-dark rounded cursor-pointer" />
     </form>
   );
 }

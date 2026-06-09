@@ -3,6 +3,8 @@ import BlogLayoutThree from "@/src/components/Blog/BlogLayoutThree";
 import Categories from "@/src/components/Blog/Categories";
 import TrackedLink from "@/src/components/Analytics/TrackedLink";
 import { moneyPageLinks } from "@/src/utils/servicePages";
+import { CollectionPageSchema } from "@/src/components/StructuredData/PageSchemas";
+import { buildPageMetadata } from "@/src/utils/pageMetadata";
 import { slug } from "github-slugger";
 
 const formatCategoryName = (value) =>
@@ -22,24 +24,26 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug: s } = await params;
   const normalized = s.replace(/-\d+$/, "");
-  const categoryName = normalized === "all" ? "Trading Research" : formatCategoryName(normalized);
+  const isHub = normalized === "all";
+  const categoryName = isHub ? "Trading Research Hub" : formatCategoryName(normalized);
 
-  return {
-    title: `${categoryName} Insights`,
-    description: `Explore ${normalized.replaceAll("-", " ")} research, strategy explainers, and actionable market insights for Global and Indian traders from Radii Labs.`,
-    alternates: {
-      canonical: `/categories/${s}`,
-    },
+  return buildPageMetadata({
+    title: `${categoryName} | Radii Labs`,
+    description: isHub
+      ? "Browse the Radii Labs research hub for quantitative analysis, execution explainers, broker workflow articles, and practical trading intelligence."
+      : `Explore ${normalized.replaceAll("-", " ")} research, strategy explainers, and actionable market insights for Indian and global traders from Radii Labs.`,
+    path: `/categories/${s}`,
     robots: {
-      index: false,
+      index: isHub,
       follow: true,
     },
-  };
+  });
 }
 
 const CategoryPage = async ({ params }) => {
   const { slug: current } = await params;
   const normalized = current.replace(/-\d+$/, "");
+  const isHub = normalized === "all";
   if (!current || typeof current !== 'string') {
     return <div>Category Not Found</div>;
   }
@@ -60,14 +64,25 @@ const CategoryPage = async ({ params }) => {
     "all": "A comprehensive collection of insights covering quantitative analysis, algorithmic execution, and market intelligence for modern traders.",
   };
 
+  const categoryHeading = isHub ? "Trading Research Hub" : formatCategoryName(normalized);
   const defaultIntro = `Deep dive into ${normalized.replaceAll("-", " ")} with data-backed research and execution strategies designed for disciplined trading.`;
 
   return (
     <article className="mt-12 flex flex-col text-dark">
+      <CollectionPageSchema
+        name={categoryHeading}
+        description={
+          isHub
+            ? "Browse the Radii Labs research hub for quantitative analysis, execution explainers, broker workflow articles, and practical trading intelligence."
+            : defaultIntro
+        }
+        path={`/categories/${current}`}
+        items={blogs.slice(0, 12).map((blog) => ({ name: blog.title, url: blog.url }))}
+      />
       <div className=" px-5 sm:px-10  md:px-24  sxl:px-32 flex flex-col">
-        <h1 className="mt-6 font-semibold text-2xl md:text-4xl lg:text-5xl">#{normalized}</h1>
+        <h1 className="mt-6 font-semibold text-2xl md:text-4xl lg:text-5xl">{categoryHeading}</h1>
         <span className="mt-2 inline-block font-medium text-lg">
-          {categoryIntros[normalized] || defaultIntro}
+          {isHub ? categoryIntros.all : categoryIntros[normalized] || defaultIntro}
         </span>
       </div>
       <Categories categories={Array.from(allCategories)} currentSlug={normalized} />

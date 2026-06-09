@@ -3,6 +3,8 @@ import Link from "next/link";
 import React from "react";
 
 const Category = ({ link = "#", name, active, ...props }) => {
+  const label = name === "all" ? "Research Hub" : `#${name}`;
+
   return (
     <Link
       href={link}
@@ -12,7 +14,7 @@ const Category = ({ link = "#", name, active, ...props }) => {
         active ? "bg-dark text-light" : "bg-light text-dark"
       )}
     >
-      #{name}
+      {label}
     </Link>
   );
 };

@@ -1,14 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import BreadcrumbSchema from "@/src/components/StructuredData/BreadcrumbSchema";
+import { buildPageMetadata } from "@/src/utils/pageMetadata";
 
-export const metadata = {
-    title: "AI Trading Platform Tutorial",
+export const metadata = buildPageMetadata({
+    title: "AI Trading Platform Tutorial | Radii Labs",
     description: "Learn how to access the Radii console, activate trading software, manage licenses, and prepare rules-based AI trading workflows.",
-    alternates: {
-        canonical: "/tutorial",
-    },
-};
+    path: "/tutorial",
+});
 
 const TutorialPage = () => {
     return (

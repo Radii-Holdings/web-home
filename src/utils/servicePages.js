@@ -1,6 +1,9 @@
+import { buildPageMetadata } from "@/src/utils/pageMetadata";
+
 export const servicePages = {
   "algo-trading-platform-india": {
     slug: "algo-trading-platform-india",
+    lastReviewed: "2026-06-09",
     label: "Algo Trading Platform",
     eyebrow: "Algo trading platform India",
     metaTitle: "Algo Trading Platform for Zerodha and Angel One",
@@ -62,6 +65,7 @@ export const servicePages = {
   },
   "multi-broker-order-routing": {
     slug: "multi-broker-order-routing",
+    lastReviewed: "2026-06-09",
     label: "Multi-Broker Routing",
     eyebrow: "Multi-broker order routing",
     metaTitle: "Multi-Broker Order Routing for Zerodha, Angel One, and IBKR",
@@ -123,6 +127,7 @@ export const servicePages = {
   },
   "forex-algo-execution-india": {
     slug: "forex-algo-execution-india",
+    lastReviewed: "2026-06-09",
     label: "Forex Algo Execution",
     eyebrow: "Forex algo execution India",
     metaTitle: "Forex Algo Execution for INR and Global FX Workflows",
@@ -184,6 +189,7 @@ export const servicePages = {
   },
   "risk-managed-trading-automation": {
     slug: "risk-managed-trading-automation",
+    lastReviewed: "2026-06-09",
     label: "Risk Automation",
     eyebrow: "Trading risk management software",
     metaTitle: "Trading Risk Management Software for Algo Teams",
@@ -245,6 +251,7 @@ export const servicePages = {
   },
   "quant-research-services-india": {
     slug: "quant-research-services-india",
+    lastReviewed: "2026-06-09",
     label: "Quant Research",
     eyebrow: "Quant research services India",
     metaTitle: "Quant Research Services for Indian Trading Teams",
@@ -316,28 +323,12 @@ export const getServicePage = (slug) => servicePages[slug];
 
 export const getServiceMetadata = (slug) => {
   const page = getServicePage(slug);
-  const url = `https://www.radii.in/${page.slug}`;
 
-  return {
-    title: page.metaTitle,
+  return buildPageMetadata({
+    title: `${page.metaTitle} | Radii Labs`,
     description: page.metaDescription,
-    alternates: {
-      canonical: `/${page.slug}`,
-    },
-    openGraph: {
-      title: `${page.metaTitle} | Radii Labs`,
-      description: page.metaDescription,
-      url,
-      siteName: "Radii Labs",
-      images: [page.image],
-      locale: "en_US",
-      type: "website",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: `${page.metaTitle} | Radii Labs`,
-      description: page.metaDescription,
-      images: [page.image],
-    },
-  };
+    path: `/${page.slug}`,
+    image: page.image,
+    type: "website",
+  });
 };

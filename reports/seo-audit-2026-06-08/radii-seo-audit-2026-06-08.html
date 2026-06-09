@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Radii SEO Audit - June 8, 2026</title>
+    <style>
+      :root {
+        --ink: #102033;
+        --muted: #5a6a7f;
+        --line: #d5dee8;
+        --panel: #f5f8fb;
+        --blue: #0c67c2;
+        --blue-soft: #e8f2fd;
+        --amber: #b26a00;
+        --amber-soft: #fff5e5;
+        --red: #b42318;
+        --red-soft: #feeceb;
+        --green: #027a48;
+        --green-soft: #ecfdf3;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: var(--ink);
+        background: #ffffff;
+        line-height: 1.45;
+      }
+
+      .page {
+        width: 210mm;
+        margin: 0 auto;
+        padding: 18mm 16mm 18mm 16mm;
+      }
+
+      .cover {
+        min-height: 250mm;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .hero {
+        padding: 16mm 14mm;
+        border: 1px solid var(--line);
+        background:
+          radial-gradient(circle at top right, rgba(12, 103, 194, 0.12), transparent 34%),
+          linear-gradient(180deg, #f8fbff 0%, #f2f7fc 100%);
+      }
+
+      .eyebrow {
+        display: inline-block;
+        font-size: 11px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--blue);
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 34px;
+        line-height: 1.08;
+      }
+
+      h2 {
+        font-size: 22px;
+        margin: 22px 0 10px;
+        line-height: 1.15;
+      }
+
+      h3 {
+        font-size: 16px;
+        margin: 18px 0 8px;
+      }
+
+      p {
+        margin: 8px 0;
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      .meta-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 16px;
+        margin-top: 18px;
+        font-size: 13px;
+      }
+
+      .meta-card {
+        border: 1px solid var(--line);
+        background: #fff;
+        padding: 10px 12px;
+      }
+
+      .meta-card strong {
+        display: block;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        margin-bottom: 5px;
+      }
+
+      .section {
+        margin-top: 24px;
+      }
+
+      .summary {
+        border-left: 4px solid var(--blue);
+        background: var(--blue-soft);
+        padding: 12px 14px;
+      }
+
+      .callout-warn {
+        border-left: 4px solid var(--amber);
+        background: var(--amber-soft);
+        padding: 12px 14px;
+      }
+
+      .callout-risk {
+        border-left: 4px solid var(--red);
+        background: var(--red-soft);
+        padding: 12px 14px;
+      }
+
+      .callout-good {
+        border-left: 4px solid var(--green);
+        background: var(--green-soft);
+        padding: 12px 14px;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 12px;
+      }
+
+      .card {
+        border: 1px solid var(--line);
+        background: var(--panel);
+        padding: 10px 12px;
+      }
+
+      .card .label {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        margin-bottom: 4px;
+      }
+
+      .card .value {
+        font-size: 21px;
+        font-weight: 700;
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 3px 8px;
+        border-radius: 999px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .badge-red {
+        background: var(--red-soft);
+        color: var(--red);
+      }
+
+      .badge-amber {
+        background: var(--amber-soft);
+        color: var(--amber);
+      }
+
+      .badge-green {
+        background: var(--green-soft);
+        color: var(--green);
+      }
+
+      ul {
+        margin: 8px 0 8px 20px;
+        padding: 0;
+      }
+
+      li {
+        margin: 5px 0;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        font-size: 12px;
+      }
+
+      th,
+      td {
+        border: 1px solid var(--line);
+        padding: 8px 9px;
+        vertical-align: top;
+        text-align: left;
+      }
+
+      th {
+        background: #eef4fa;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      code,
+      .mono {
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 0.95em;
+      }
+
+      a {
+        color: var(--blue);
+        text-decoration: none;
+      }
+
+      .small {
+        font-size: 12px;
+      }
+
+      .footer-note {
+        margin-top: 28px;
+        padding-top: 10px;
+        border-top: 1px solid var(--line);
+        font-size: 11px;
+        color: var(--muted);
+      }
+
+      .page-break {
+        break-before: page;
+        page-break-before: always;
+      }
+
+      @page {
+        size: A4;
+        margin: 12mm;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page cover">
+      <div class="hero">
+        <div class="eyebrow">SEO Site Audit</div>
+        <h1>Radii.in SEO Audit and Click/Impression Diagnosis</h1>
+        <p class="muted small">
+          Audit-only deliverable. No application code was changed as part of this review.
+        </p>
+
+        <div class="meta-grid">
+          <div class="meta-card">
+            <strong>Audit Date</strong>
+            June 8, 2026
+          </div>
+          <div class="meta-card">
+            <strong>Primary Domain Audited</strong>
+            <span class="mono">https://www.radii.in/</span>
+          </div>
+          <div class="meta-card">
+            <strong>Search Console Context Reviewed</strong>
+            Last 28 days screenshot, approximately May 10, 2026 to June 6, 2026
+          </div>
+          <div class="meta-card">
+            <strong>Site Footprint Sampled</strong>
+            29 URLs in sitemap, homepage, 5 money pages, about, contact, category hub, blog sample, repo templates
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="cards">
+          <div class="card">
+            <div class="label">Clicks</div>
+            <div class="value">13</div>
+          </div>
+          <div class="card">
+            <div class="label">Impressions</div>
+            <div class="value">5.61K</div>
+          </div>
+          <div class="card">
+            <div class="label">Average CTR</div>
+            <div class="value">0.2%</div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="label">Average Position</div>
+            <div class="value">4.6</div>
+          </div>
+          <div class="card">
+            <div class="label">Homepage Mobile Perf</div>
+            <div class="value">55</div>
+          </div>
+          <div class="card">
+            <div class="label">Algo Page Mobile Perf</div>
+            <div class="value">56</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="page">
+      <div class="section">
+        <h2>Executive Summary</h2>
+        <div class="summary">
+          <p>
+            <strong>The site is not primarily suffering from basic crawlability failure.</strong>
+            Robots, canonicals, indexing directives, sitemap coverage, HTTPS, and baseline technical SEO are mostly present.
+            In fact, the sampled pages scored <strong>100/100 in Lighthouse SEO</strong>.
+          </p>
+          <p>
+            The bigger problems are <strong>CTR, query-intent fit, trust, brand clarity, and live deployment consistency</strong>.
+            Google appears willing to index and surface the site, but users are not clicking enough because the commercial pages
+            are not distinct or trustworthy enough in search results, especially for finance-related queries.
+          </p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Bottom Line</h2>
+        <ul>
+          <li>Clicks are low because the snippets and page positioning do not sell the click, even when the site appears for relevant terms.</li>
+          <li>Impressions are still limited because the domain has a small number of indexable commercial entry pages and a weak topical hub strategy.</li>
+          <li>Trust signals are not strong enough for a YMYL finance/trading site, and some live content looks unfinished or over-claiming.</li>
+          <li>The live website is also out of sync with stronger SEO work already present in the repo, so some intended improvements are not live.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Audit Scorecard</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Status</th>
+              <th>Audit View</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Indexability and crawl access</td>
+              <td><span class="badge badge-green">Mostly pass</span></td>
+              <td>Robots, sitemap, canonicals, and index directives are present on the main pages.</td>
+            </tr>
+            <tr>
+              <td>SERP clickability</td>
+              <td><span class="badge badge-red">Weak</span></td>
+              <td>Money pages use generic or hype-led H1s, repetitive social metadata, and limited proof/trust in the search snippet layer.</td>
+            </tr>
+            <tr>
+              <td>Commercial page specificity</td>
+              <td><span class="badge badge-red">Weak</span></td>
+              <td>Service pages are less structured and less differentiated than the blog pages.</td>
+            </tr>
+            <tr>
+              <td>Trust and E-E-A-T signals</td>
+              <td><span class="badge badge-red">Weak</span></td>
+              <td>Finance-sensitive claims, Gmail contact, missing H1s on trust pages, placeholder contact copy, and fragmented brand naming reduce confidence.</td>
+            </tr>
+            <tr>
+              <td>Content hub architecture</td>
+              <td><span class="badge badge-amber">Mixed</span></td>
+              <td>The main research hub is linked in navigation but intentionally <span class="mono">noindex</span>, limiting its value as an impression generator.</td>
+            </tr>
+            <tr>
+              <td>Mobile performance</td>
+              <td><span class="badge badge-red">Poor</span></td>
+              <td>Homepage LCP 24.3s and sampled money-page LCP 13.6s in mobile Lighthouse runs are far too slow for a first impression.</td>
+            </tr>
+            <tr>
+              <td>Deployment consistency</td>
+              <td><span class="badge badge-amber">At risk</span></td>
+              <td>The local repo contains stronger service metadata and author structures than what is currently live.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section">
+        <h2>Why Clicks Are Low</h2>
+        <div class="callout-risk">
+          <p>
+            A sitewide average position of <strong>4.6</strong> with a CTR of only <strong>0.2%</strong> is a classic sign that the issue is
+            <strong> not just ranking</strong>. It usually means one or more of these are happening:
+          </p>
+          <ul>
+            <li>Google is showing the page, but the title/snippet is not persuasive enough to win the click.</li>
+            <li>The query intent is only partially matched, so the result gets impressions but not trust.</li>
+            <li>The brand is unfamiliar compared with stronger competitors in the same SERP.</li>
+            <li>Google may be rewriting titles because the live H1 and title signals are not aligned cleanly.</li>
+          </ul>
+        </div>
+
+        <h3>Primary click-through blockers</h3>
+        <ul>
+          <li><strong>Service-page search messaging is generic.</strong> Titles are serviceable, but the live H1s are more promotional than query-matching. Example: <span class="mono">/algo-trading-platform-india</span> has the title “Algo Trading Platform for Indian Brokers” but the live H1 is “India's Premier Algorithmic Trading Platform.”</li>
+          <li><strong>Most static pages share the same OG/Twitter identity.</strong> Homepage, money pages, about, contact, and category hub all reuse the same social title and OG URL pointing at the homepage, while the blog sample has fully page-specific metadata. That means the informational side is technically sharper than the commercial side.</li>
+          <li><strong>Trust pages do not strengthen the snippet.</strong> The live <span class="mono">/about</span> and <span class="mono">/contact</span> pages have no live H1, and the contact page exposes prose-style placeholder form text that looks unfinished when search engines surface it.</li>
+          <li><strong>Brand naming is fragmented.</strong> The ecosystem refers to Radii Labs, Layr0, Console, <span class="mono">console.radii.in</span>, <span class="mono">layr0.org</span>, and <span class="mono">aitrade.ing</span>. This weakens brand clarity in a SERP where users want to know exactly who they are clicking.</li>
+          <li><strong>Finance claims may reduce trust.</strong> The about page includes “Patent Pending algorithms” and “above 80 percent success rate” language without supporting proof nearby. For a finance site, that can create skepticism rather than clicks.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="page">
+      <div class="section">
+        <h2>Why Impressions Are Still Low</h2>
+        <div class="callout-warn">
+          <p>
+            The domain is being indexed, but its impression ceiling is still low because the site is not yet set up like a broad,
+            high-authority commercial/search entity.
+          </p>
+        </div>
+
+        <ul>
+          <li><strong>The sitemap only exposes 29 URLs.</strong> That is a small indexable footprint for a company trying to grow across multiple trading, quant, and broker-integration themes.</li>
+          <li><strong>The main research hub is <span class="mono">noindex</span>.</strong> The live navigation points users and crawlers to <span class="mono">/categories/all</span> as “Research,” but that page is intentionally excluded from indexing. This removes a natural hub page that could rank for broader topical queries.</li>
+          <li><strong>Commercial pages are not yet fully schema-rich.</strong> Blogs have specific article metadata and BlogPosting schema; service pages do not yet present the same level of page-specific structure such as Service, SoftwareApplication, or proof-led entity signals.</li>
+          <li><strong>The site mixes broad macro/investment blog topics with product/service pages.</strong> That can generate some impressions, but it dilutes focus unless the blog clusters are tightly tied back to commercial themes and expertise.</li>
+          <li><strong>Freshness signaling is weak.</strong> All sampled sitemap URLs share the same <span class="mono">lastmod</span> timestamp: <span class="mono">2026-04-11T12:39:54.540Z</span>. That makes freshness updates look mechanical rather than page-specific.</li>
+          <li><strong>Entity authority is still developing.</strong> In trading/finance SERPs, impressions often expand only after Google sees strong expertise, clear business identity, proof, citations, backlinks, and consistent brand/product naming.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Highest-Impact Findings</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Priority</th>
+              <th>Finding</th>
+              <th>Why It Matters</th>
+              <th>Evidence</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="badge badge-red">P0</span></td>
+              <td>Static service pages reuse homepage social metadata</td>
+              <td>Google and users get weaker page differentiation. Commercial pages look less distinct than blog pages.</td>
+              <td>Sampled money pages have <span class="mono">og:title = Radii Labs | AI Trading Research and Algo Execution</span> and <span class="mono">og:url = https://www.radii.in</span>.</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-red">P0</span></td>
+              <td>Live service-page H1s are hype-led, not query-led</td>
+              <td>Low CTR and possible title rewriting risk. Searchers do not see enough exact relevance fast enough.</td>
+              <td><span class="mono">/algo-trading-platform-india</span>, <span class="mono">/forex-algo-execution-india</span>, <span class="mono">/risk-managed-trading-automation</span>.</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-red">P0</span></td>
+              <td>Trust pages weaken trust</td>
+              <td>Finance/trading queries need stronger business credibility and cleaner user experience.</td>
+              <td>Missing H1 on live about/contact; contact prose placeholder; Gmail contact; typo “Open market Reseach.”</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-amber">P1</span></td>
+              <td>Main research hub is noindex</td>
+              <td>The site loses a potential topical landing page for broad research/impression queries.</td>
+              <td><span class="mono">/categories/all</span> is in main nav, returns <span class="mono">noindex, follow</span>, and categories are excluded from sitemap generation.</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-red">P0</span></td>
+              <td>Mobile performance is poor</td>
+              <td>Slow first paint and LCP hurt user perception, reduce landing-page quality, and make commercial pages less competitive.</td>
+              <td>Homepage mobile: Perf 55, FCP 19.4s, LCP 24.3s. Sampled service page: Perf 56, FCP 11.5s, LCP 13.6s.</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-amber">P1</span></td>
+              <td>Repo and live site are not aligned</td>
+              <td>Some of the intended CTR and author-credibility upgrades appear not to be deployed, limiting their SEO impact.</td>
+              <td>Local repo has stronger service metadata and author/methodology blocks than what the live site renders.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section">
+        <h2>Technical Reality: This Is Not a “Google Cannot Crawl Me” Problem</h2>
+        <div class="callout-good">
+          <p>
+            The sampled pages are indexable, canonicalized, HTTPS-enabled, and structured well enough to score
+            <strong>100/100 in Lighthouse SEO</strong>. That matters because it narrows the diagnosis:
+            the site needs <strong>better click-winning SERP assets and stronger authority/trust signals</strong>,
+            not just more titles and canonicals.
+          </p>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Sample</th>
+              <th>Performance</th>
+              <th>Accessibility</th>
+              <th>Best Practices</th>
+              <th>SEO</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Homepage</td>
+              <td>55</td>
+              <td>91</td>
+              <td>79</td>
+              <td>100</td>
+              <td>Very slow mobile rendering despite technically complete SEO basics.</td>
+            </tr>
+            <tr>
+              <td><span class="mono">/algo-trading-platform-india</span></td>
+              <td>56</td>
+              <td>100</td>
+              <td>79</td>
+              <td>100</td>
+              <td>Same pattern: technically indexable, but not compelling enough at the snippet/trust layer.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="page">
+      <div class="section">
+        <h2>Page-Level Observations</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>URL</th>
+              <th>Live Title / H1</th>
+              <th>Main Issue</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="mono">/</span></td>
+              <td>Title and H1 align reasonably</td>
+              <td>Homepage is blog-forward and brand-forward, but not especially proof-forward. Slow mobile load worsens the first impression.</td>
+            </tr>
+            <tr>
+              <td><span class="mono">/algo-trading-platform-india</span></td>
+              <td>Title is commercial, H1 is promotional</td>
+              <td>Query mismatch risk; generic social metadata; commercial page not obviously stronger than competitors from the snippet alone.</td>
+            </tr>
+            <tr>
+              <td><span class="mono">/multi-broker-order-routing</span></td>
+              <td>Title is decent, H1 is abstract</td>
+              <td>One of the better-aligned pages, but still uses homepage social metadata and lacks stronger commercial proof signals.</td>
+            </tr>
+            <tr>
+              <td><span class="mono">/forex-algo-execution-india</span></td>
+              <td>Title is commercial, H1 is “Dominating Global Forex from India”</td>
+              <td>High hype, low trust. For regulated/finance-sensitive queries, this language can reduce confidence and clicks.</td>
+            </tr>
+            <tr>
+              <td><span class="mono">/quant-research-services-india</span></td>
+              <td>Title is specific, H1 is broad</td>
+              <td>Better than the hype pages, but still uses generic static-page social metadata and light trust proof.</td>
+            </tr>
+            <tr>
+              <td><span class="mono">/risk-managed-trading-automation</span></td>
+              <td>Title is good, H1 is “Automated Discipline, Every Trade”</td>
+              <td>Strong concept, but commercial searchers would likely respond better to explicit software/risk-control wording in the visible headline.</td>
+            </tr>
+            <tr>
+              <td><span class="mono">/about</span></td>
+              <td>No live H1 detected</td>
+              <td>Contains “80 percent success rate” claim, no strong leadership/entity proof, and fragmented product naming.</td>
+            </tr>
+            <tr>
+              <td><span class="mono">/contact</span></td>
+              <td>No live H1 detected</td>
+              <td>Form uses unfinished conversational placeholder text that leaks into snippets and reduces trust.</td>
+            </tr>
+            <tr>
+              <td><span class="mono">/categories/all</span></td>
+              <td><span class="mono">noindex, follow</span></td>
+              <td>Main nav hub is intentionally excluded from indexing, which caps category-level impression growth.</td>
+            </tr>
+            <tr>
+              <td>Blog sample</td>
+              <td>Specific title, H1, OG, Twitter, Article metadata</td>
+              <td>The blog template is more SEO-complete than the service-page template, which is the opposite of the ideal commercial SEO setup.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section">
+        <h2>What To Fix First</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Priority</th>
+              <th>Action</th>
+              <th>Expected SEO Effect</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="badge badge-red">1</span></td>
+              <td>Deploy the repo's stronger service metadata and verify the rendered live HTML, not just source code.</td>
+              <td>Improves title specificity, SERP clarity, and commercial relevance quickly.</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-red">2</span></td>
+              <td>Rewrite live service-page H1 and hero copy to match query intent directly and reduce hype language.</td>
+              <td>Improves CTR and lowers title-rewrite risk.</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-red">3</span></td>
+              <td>Clean up about/contact trust signals: real business email, remove/justify aggressive claims, add proper H1s, fix typos, replace placeholder copy.</td>
+              <td>Improves YMYL trust, user confidence, and click willingness.</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-amber">4</span></td>
+              <td>Decide whether the research hub should become indexable and optimized instead of living as a nav-linked noindex page.</td>
+              <td>Raises broader-topic impression potential.</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-amber">5</span></td>
+              <td>Add page-specific Service / SoftwareApplication schema on money pages.</td>
+              <td>Improves commercial entity clarity and structured understanding.</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-amber">6</span></td>
+              <td>Reduce mobile render delay and above-the-fold weight on homepage and money pages.</td>
+              <td>Supports rankings, engagement, and landing-page quality.</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-amber">7</span></td>
+              <td>Tighten blog clusters around service intents instead of broad low-conversion macro topics alone.</td>
+              <td>Improves topical authority and impression quality.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section">
+        <h2>Expected Outcome If The Right Changes Ship</h2>
+        <ul>
+          <li>The first improvement should appear in CTR, not just rankings, especially on the five money pages already called out in the repo.</li>
+          <li>Impression growth should follow after Google sees clearer commercial structure, better trust pages, and more consistent internal topical architecture.</li>
+          <li>If nothing changes but the site keeps publishing more broad blogs, impressions may grow slowly, but qualified clicks will likely stay weak.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="page">
+      <div class="section">
+        <h2>Evidence Appendix</h2>
+
+        <h3>Search Console context supplied</h3>
+        <ul>
+          <li>13 clicks</li>
+          <li>5.61K impressions</li>
+          <li>0.2% CTR</li>
+          <li>Average position 4.6</li>
+          <li>View appears to be the last 28 days, approximately May 10, 2026 through June 6, 2026</li>
+        </ul>
+
+        <h3>Sitemap and crawl notes</h3>
+        <ul>
+          <li>Sitemap index points to a single sitemap file.</li>
+          <li>Sampled sitemap URL count: <strong>29</strong></li>
+          <li>Sampled sitemap entries all shared the same <span class="mono">lastmod</span> value: <span class="mono">2026-04-11T12:39:54.540Z</span></li>
+          <li>Main navigation research hub is live but noindexed: <span class="mono">https://www.radii.in/categories/all</span></li>
+        </ul>
+
+        <h3>Sample metadata matrix</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>URL</th>
+              <th>Robots</th>
+              <th>OG title behavior</th>
+              <th>H1 note</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="mono">/algo-trading-platform-india</span></td>
+              <td>index, follow</td>
+              <td>Reuses homepage OG title and homepage OG URL</td>
+              <td>Commercial title, promotional H1</td>
+            </tr>
+            <tr>
+              <td><span class="mono">/multi-broker-order-routing</span></td>
+              <td>index, follow</td>
+              <td>Reuses homepage OG title and homepage OG URL</td>
+              <td>Abstract H1</td>
+            </tr>
+            <tr>
+              <td><span class="mono">/forex-algo-execution-india</span></td>
+              <td>index, follow</td>
+              <td>Reuses homepage OG title and homepage OG URL</td>
+              <td>Hype-led H1</td>
+            </tr>
+            <tr>
+              <td><span class="mono">/about</span></td>
+              <td>index, follow</td>
+              <td>Reuses homepage OG title and homepage OG URL</td>
+              <td>No live H1 detected</td>
+            </tr>
+            <tr>
+              <td><span class="mono">/contact</span></td>
+              <td>index, follow</td>
+              <td>Reuses homepage OG title and homepage OG URL</td>
+              <td>No live H1 detected</td>
+            </tr>
+            <tr>
+              <td>Blog sample</td>
+              <td>index, follow</td>
+              <td>Own OG title, own OG URL, article type</td>
+              <td>Strong, explicit H1</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Performance sample</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Page</th>
+              <th>FCP</th>
+              <th>LCP</th>
+              <th>Speed Index</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Homepage mobile Lighthouse</td>
+              <td>19.4s</td>
+              <td>24.3s</td>
+              <td>19.4s</td>
+              <td>Google Tag Manager accounted for roughly 159.1 KB of third-party transfer in the sample.</td>
+            </tr>
+            <tr>
+              <td><span class="mono">/algo-trading-platform-india</span> mobile Lighthouse</td>
+              <td>11.5s</td>
+              <td>13.6s</td>
+              <td>11.5s</td>
+              <td>Still materially too slow for a commercial landing page.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Repo vs live-site drift noted</h3>
+        <ul>
+          <li>Local file <span class="mono">src/utils/servicePages.js</span> contains more specific broker-targeted metadata than the live sampled service pages currently render.</li>
+          <li>Local file <span class="mono">src/app/blogs/[slug]/page.js</span> includes richer author and methodology presentation than what the live blog sample currently exposes in structured data.</li>
+          <li>Local file <span class="mono">src/app/categories/[slug]/page.js</span> intentionally sets category pages to <span class="mono">noindex</span>, which is currently visible in the live hub page.</li>
+        </ul>
+
+        <h3>Sources reviewed</h3>
+        <ul class="small">
+          <li><a href="https://www.radii.in/">https://www.radii.in/</a></li>
+          <li><a href="https://www.radii.in/robots.txt">https://www.radii.in/robots.txt</a></li>
+          <li><a href="https://www.radii.in/sitemap.xml">https://www.radii.in/sitemap.xml</a></li>
+          <li><a href="https://www.radii.in/sitemap-0.xml">https://www.radii.in/sitemap-0.xml</a></li>
+          <li><a href="https://www.radii.in/algo-trading-platform-india">https://www.radii.in/algo-trading-platform-india</a></li>
+          <li><a href="https://www.radii.in/multi-broker-order-routing">https://www.radii.in/multi-broker-order-routing</a></li>
+          <li><a href="https://www.radii.in/forex-algo-execution-india">https://www.radii.in/forex-algo-execution-india</a></li>
+          <li><a href="https://www.radii.in/quant-research-services-india">https://www.radii.in/quant-research-services-india</a></li>
+          <li><a href="https://www.radii.in/risk-managed-trading-automation">https://www.radii.in/risk-managed-trading-automation</a></li>
+          <li><a href="https://www.radii.in/about">https://www.radii.in/about</a></li>
+          <li><a href="https://www.radii.in/contact">https://www.radii.in/contact</a></li>
+          <li><a href="https://www.radii.in/categories/all">https://www.radii.in/categories/all</a></li>
+          <li><a href="https://www.radii.in/blogs/ai-trading-performance-india-2026">https://www.radii.in/blogs/ai-trading-performance-india-2026</a></li>
+          <li>Local source review: <span class="mono">src/app/layout.js</span>, <span class="mono">src/utils/servicePages.js</span>, <span class="mono">src/app/blogs/[slug]/page.js</span>, <span class="mono">src/app/categories/[slug]/page.js</span>, <span class="mono">src/utils/authors.js</span>, <span class="mono">src/components/StructuredData/SiteNavigationSchema.js</span></li>
+        </ul>
+
+        <div class="footer-note">
+          This report diagnoses likely causes of low clicks and limited impressions from the live site and supplied Search Console screenshot.
+          Query-level CTR prioritization would become even sharper with direct Search Console exports for queries and pages across the same date range.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

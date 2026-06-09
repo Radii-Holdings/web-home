@@ -1,6 +1,7 @@
 import BreadcrumbSchema from "@/src/components/StructuredData/BreadcrumbSchema";
 import { authorList, getAuthorBySlug } from "@/src/utils/authors";
 import siteMetadata from "@/src/utils/siteMetaData";
+import { buildPageMetadata } from "@/src/utils/pageMetadata";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -13,13 +14,11 @@ export async function generateMetadata({ params }) {
   const author = getAuthorBySlug(slug);
   if (!author) return {};
 
-  return {
-    title: `${author.name} Author Profile`,
+  return buildPageMetadata({
+    title: `${author.name} Author Profile | Radii Labs`,
     description: author.bio,
-    alternates: {
-      canonical: author.url,
-    },
-  };
+    path: author.url,
+  });
 }
 
 export default async function AuthorPage({ params }) {

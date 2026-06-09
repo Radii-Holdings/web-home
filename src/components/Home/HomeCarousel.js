@@ -2,6 +2,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import TrackedLink from "../Analytics/TrackedLink";
+import siteMetadata from "@/src/utils/siteMetaData";
 
 // Dummy slides; can be overridden by passing `slides` prop
 const defaultSlides = [
@@ -17,8 +18,8 @@ const defaultSlides = [
   },
   {
     image: "/layr0_mobile_app_showcase.png",
-    link: "https://aitrade.ing/",
-    text: "Layr0 Mobile: Execution on Android & iOS",
+    link: siteMetadata.consoleUrl,
+    text: "Layr0 execution console for trading teams",
   },
 ];
 

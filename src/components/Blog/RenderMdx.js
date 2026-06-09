@@ -24,11 +24,41 @@ const normalizeSrc = (src) => {
   return out
 }
 
-// Map Markdown `![]()` -> <img> with normalized src
+const RemoteImg = (props) => React.createElement("img", props)
+
+// Map Markdown `![]()` -> optimized image rendering for local assets while
+// preserving authoring flexibility for remote or edge-case sources.
 const MdxImg = (props) => {
-  const { src, alt, ...rest } = props
+  const { src, alt, width, height, className, sizes, ...rest } = props
   const normalized = normalizeSrc(src)
-  return <img src={normalized} alt={alt || ''} {...rest} />
+  const parsedWidth = Number(width) || 1600
+  const parsedHeight = Number(height) || 900
+  const responsiveSizes = sizes || "(max-width: 768px) 100vw, 768px"
+  const sharedClassName = ["h-auto w-full rounded-lg", className].filter(Boolean).join(" ")
+
+  if (normalized?.startsWith("http://") || normalized?.startsWith("https://")) {
+    return (
+      <RemoteImg
+        src={normalized}
+        alt={alt || ''}
+        className={sharedClassName}
+        loading="lazy"
+        {...rest}
+      />
+    )
+  }
+
+  return (
+    <Image
+      src={normalized}
+      alt={alt || ''}
+      width={parsedWidth}
+      height={parsedHeight}
+      sizes={responsiveSizes}
+      className={sharedClassName}
+      {...rest}
+    />
+  )
 }
 
 // Fallback: If Markdown image wasn't parsed (due to spaces in URL),
@@ -49,8 +79,7 @@ const MdxP = (props) => {
       if ((src.startsWith('<') && src.endsWith('>')) || (src.startsWith('"') && src.endsWith('"')) || (src.startsWith("'") && src.endsWith("'"))) {
         src = src.slice(1, -1)
       }
-      const normalized = normalizeSrc(src)
-      return <img src={normalized} alt={alt} />
+      return <MdxImg src={src} alt={alt} />
     }
   }
   return <p {...rest}>{children}</p>

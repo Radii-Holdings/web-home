@@ -1,75 +1,44 @@
-"use client";
-import React from "react";
-import { useForm } from "react-hook-form";
 import { DribbbleIcon, GithubIcon, LinkedinIcon, TwitterIcon } from "../Icons";
 import Link from "next/link";
 import siteMetadata from "../../utils/siteMetaData";
-import { toast } from "react-hot-toast";
 const Footer = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = async (data) => {
-    try {
-      const res = await fetch('/api/subscribe', {
-        method: 'POST',
-
-        body: JSON.stringify(data),
-      });
-      if (res.status === 200) {
-        toast.success('You have successfully subscribed to our newsletters')
-      }
-    }
-    catch (error) {
-      console.log(error);
-    }
-  }
-
   return (
     <footer className="mt-16 rounded-2xl bg-dark m-2 sm:m-10 flex flex-col items-center text-light">
       <h3 className="mt-16 font-medium text-center capitalize text-2xl sm:text-3xl lg:text-4xl px-4">
-        Interesting Stories | Updates | Guides
+        Research briefings | product notes | workflow updates
       </h3>
 
 
-      <div className="mt-6 w-full sm:w-3/5 px-4 py-6 bg-light rounded-lg shadow-lg">
-        <h4 className="text-lg font-medium text-dark mb-4">
-          Latest Posts
+      <div className="mt-6 w-full max-w-3xl px-6 py-8 bg-light rounded-2xl shadow-lg text-dark">
+        <h4 className="text-lg font-medium mb-4">
+          Follow the Radii Labs research brief
         </h4>
-        <div id="substack-feed-embed" className="space-y-4">
-          {React.useEffect(() => {
-            const script1 = document.createElement("script");
-            script1.innerHTML = `
-          window.SubstackFeedWidget = {
-            substackUrl: "radiilab.substack.com",
-            posts: 3,
-          };
-        `;
-            document.body.appendChild(script1);
-
-            const script2 = document.createElement("script");
-            script2.src = "https://substackapi.com/embeds/feed.js";
-            script2.async = true;
-            document.body.appendChild(script2);
-
-            return () => {
-              document.body.removeChild(script1);
-              document.body.removeChild(script2);
-            };
-          }, [])}
+        <p className="text-base leading-7 text-dark/75">
+          Subscribe for new market research, broker workflow explainers, and execution-control updates without loading third-party feeds on every page visit.
+        </p>
+        <div className="mt-6 flex flex-col gap-4 sm:flex-row">
+          <a
+            href={siteMetadata.newsletterUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-xl bg-dark px-5 py-3 font-semibold text-light transition hover:bg-dark/85"
+          >
+            Open the Substack brief
+          </a>
+          <Link
+            href="/categories/all"
+            className="inline-flex items-center justify-center rounded-xl border border-dark px-5 py-3 font-semibold transition hover:bg-dark hover:text-light"
+          >
+            Browse research hub
+          </Link>
         </div>
       </div>
       <p className="mt-5 px-4 text-center w-full sm:w-3/5 font-light text-sm sm:text-base">
-        Subscribe to learn about new developments and updates. Join us as one of our
-        <span className="font-medium"> 100+ </span>
-        subscribers and get the latest updates in your inbox.
-        <br /> It&apos;s FREE ...
+        If you prefer the embedded signup, it loads only when this section comes into view.
       </p>
       <div className="mt-6 w-fit sm:min-w-[384px] flex items-stretch bg-light p-1 sm:p-2 rounded mx04">
         <iframe
-          src="https://radiilab.substack.com/embed"
+          src={`${siteMetadata.newsletterUrl}/embed`}
           style={{
             border: "1px solid transparent",
             background: "inherit",
@@ -78,6 +47,7 @@ const Footer = () => {
             width: "100%",
             height: "100%",
           }}
+          loading="lazy"
           frameBorder="0"
           scrolling="no"
           title="Substack Embed"

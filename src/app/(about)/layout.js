@@ -2,8 +2,8 @@ import InsightRoll from "@/src/components/About/InsightRoll";
 
 
 const insights = [
-  "Discussions", "Market Watch", "Testimonials",
-  "Open market Reseach", "Radii Console", "Patented-Innovations"
+  "Research Workflows", "Market Structure", "Broker Connectivity",
+  "Execution Controls", "Radii Console", "Operator Reviews"
   ];
 
 export default function AboutLayout({ children }) {

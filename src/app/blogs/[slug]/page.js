@@ -6,10 +6,12 @@ import BreadcrumbSchema from "@/src/components/StructuredData/BreadcrumbSchema";
 import TrackedLink from "@/src/components/Analytics/TrackedLink";
 import { getAuthorByName } from "@/src/utils/authors";
 import { getBlogCta } from "@/src/utils/blogCta";
+import { moneyPageLinks } from "@/src/utils/servicePages";
+import legacyBlogSlugs from "@/src/data/legacy-blog-slugs.json";
 import { allBlogs } from "contentlayer2/generated";
 import { slug } from "github-slugger";
 import Image from "next/image";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 
 const toAbsoluteUrl = (path) => {
   if (path.startsWith("http")) return path;
@@ -26,6 +28,13 @@ const getBlogImages = (blog) => {
 
   return images.map((img) => toAbsoluteUrl(img));
 };
+
+const legacySlugMap = Object.fromEntries(
+  legacyBlogSlugs.map(({ source, destination }) => [source, destination])
+);
+
+const getLegacyRedirectPath = (slugParam) =>
+  legacySlugMap[`/blogs/${slugParam}`] || null;
 
 export async function generateStaticParams() {
   return allBlogs.map((blog) => ({ slug: blog._raw.flattenedPath }));
@@ -69,18 +78,35 @@ export async function generateMetadata({ params }) {
       title: blog.title,
       description: blog.description,
       images: ogImages,
+      site: siteMetadata.twitterHandle,
+      creator: siteMetadata.twitterHandle,
     },
   };
 }
 
 export default async function BlogPage({ params }) {
   const { slug: slugParam } = await params;
+  const legacyRedirectPath = getLegacyRedirectPath(slugParam);
+  if (legacyRedirectPath) {
+    permanentRedirect(legacyRedirectPath);
+  }
   const blog = allBlogs.find((blog) => blog._raw.flattenedPath === slugParam);
   if (!blog) notFound();
 
   const imageList = getBlogImages(blog);
   const author = getAuthorByName(blog.author);
   const cta = getBlogCta(blog);
+  const relatedBlogs = allBlogs
+    .filter(
+      (entry) =>
+        entry.isPublished &&
+        entry._raw.flattenedPath !== slugParam &&
+        entry.tags.some((tag) => blog.tags.includes(tag))
+    )
+    .slice(0, 3);
+  const suggestedServices = moneyPageLinks
+    .filter((page) => page.href !== cta.href)
+    .slice(0, 2);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -233,6 +259,67 @@ export default async function BlogPage({ params }) {
               </TrackedLink>
             </section>
             <RenderMdx blog={blog} />
+            {relatedBlogs.length > 0 ? (
+              <section className="mt-12 rounded-lg border border-dark/15 bg-light p-6">
+                <p className="text-sm font-bold uppercase tracking-[0.24em] text-accent">
+                  Related research
+                </p>
+                <h2 className="mt-3 text-2xl font-bold">Keep exploring this topic</h2>
+                <div className="mt-6 grid gap-4 md:grid-cols-3">
+                  {relatedBlogs.map((entry) => (
+                    <TrackedLink
+                      key={entry._id}
+                      href={entry.url}
+                      eventParams={{
+                        cta_location: "blog_related_research",
+                        cta_label: entry.title,
+                        blog_slug: slugParam,
+                      }}
+                      className="rounded-lg border border-dark/10 p-4 transition hover:border-accent"
+                    >
+                      <p className="text-sm font-semibold uppercase tracking-[0.16em] text-accent">
+                        {entry.tags[0]}
+                      </p>
+                      <h3 className="mt-3 text-lg font-bold text-dark">{entry.title}</h3>
+                      <p className="mt-3 text-sm leading-6 text-dark/70">{entry.description}</p>
+                    </TrackedLink>
+                  ))}
+                </div>
+              </section>
+            ) : null}
+            <section className="mt-12 rounded-lg border border-dark/15 bg-accent/5 p-6">
+              <p className="text-sm font-bold uppercase tracking-[0.24em] text-accent">
+                Next workflow review
+              </p>
+              <h2 className="mt-3 text-2xl font-bold">Move from reading to execution planning</h2>
+              <div className="mt-6 grid gap-4 md:grid-cols-3">
+                <TrackedLink
+                  href={cta.href}
+                  eventParams={{
+                    cta_location: "blog_next_step",
+                    cta_label: cta.button,
+                    blog_slug: slugParam,
+                  }}
+                  className="rounded-lg border border-dark/10 bg-light p-4 font-bold transition hover:border-accent"
+                >
+                  {cta.button}
+                </TrackedLink>
+                {suggestedServices.map((page) => (
+                  <TrackedLink
+                    key={page.href}
+                    href={page.href}
+                    eventParams={{
+                      cta_location: "blog_next_step",
+                      cta_label: page.label,
+                      blog_slug: slugParam,
+                    }}
+                    className="rounded-lg border border-dark/10 bg-light p-4 font-bold transition hover:border-accent"
+                  >
+                    {page.label}
+                  </TrackedLink>
+                ))}
+              </div>
+            </section>
             <div className="mt-16 p-8 bg-accent/10 rounded-lg border border-accent text-center">
               <h3 className="text-xl font-bold mb-4">{cta.title}</h3>
               <p className="mb-6">

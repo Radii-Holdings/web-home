@@ -1,6 +1,6 @@
 const SkillList = [
   [
-    { label: "Layr0 Cross Broker Platfom", url: "https://layr0.org" },
+    { label: "Layr0 Execution Console", url: "https://console.radii.in/" },
   ],
 ];
 
