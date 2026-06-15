@@ -1,3 +1,13 @@
+# Legacy Repository Notice
+
+Active development for this website has moved to the unified Home 2.0 codebase:
+
+- Canonical repository: https://github.com/layrZero/home
+- Current marketing app location: `apps/marketing`
+- Former live site: https://www.radii.in/
+
+This repository is kept as the legacy source history for the older Radii marketing website.
+
 # Radii Web Home
 
 Marketing website for [radii.in](https://www.radii.in/) built with Next.js, Contentlayer, and Tailwind CSS.
